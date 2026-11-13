@@ -1,0 +1,22 @@
+{
+ "system": "vector-agent",
+ "answer": "Lewis Hamilton",
+ "raw": "Lewis Hamilton won the 2018 Formula 1 drivers' championship for Mercedes. He finished with 408 points and 11 race wins, ahead of Sebastian Vettel (Ferrari) on 320 points.\n\nANSWER: Lewis Hamilton",
+ "trace": [
+  {
+   "tool": "vector_search",
+   "input": {
+    "query": "2018 Formula 1 drivers' championship final standings champion"
+   },
+   "output": "{\"results\": [{\"title\": \"2018 season standings\", \"text\": \"2018 Formula 1 season final standings. Drivers: 1. Lewis Hamilton (Mercedes) 408 pts, 11 wins; 2. Sebastian Vettel (Ferrari) 320 pts, 5 wins; 3. Kimi Räikkönen (Ferrari) 251 pts, 1 wins; 4. Max Verstappen (Red Bull) 249 pts, 2 wins; 5. Valtteri Bottas (Mercedes) 247 pts, 0 wins; 6. Daniel Ricciardo (Red Bull) 170 pts, 2 wins; 7. Nico Hülkenberg (Renault) 69 pts, 0 wins; 8. Sergio Pérez (Force India) 62 pts, 0 wins; 9. Kevin Magnussen (Haas F1 Team) 56 pts, 0 wins; 10. Carlos Sainz (Renault) 53 pts, 0 wins; 11. Fernando Alonso (McLaren) 50 pts, 0 wins; 12. Esteban Ocon (Force India) 49 pts, 0 wins; 13. Charles Leclerc (Sauber) 39 pts, 0 wins; 14. Romain Grosjean (Haas F1 Team) 37 pts, 0 wins; 15. Pierre Gasly (Toro Rosso) 29 pts, 0 wins; 16. Stoffel Vandoorne (McLaren) 12 pts, 0 wins; 17. Marcus Ericsson (Sauber) 9 pts, 0 wins; 18. Lance Stroll (Williams) 6 pts, 0 wins; 19. Brendon Hartley (Toro Rosso) 4 pts, 0 wins; 20. Sergey Sirotkin (Williams) 1 pts, 0 wins. Constructors: 1. Mercedes 655 pts, 11 wins; 2. Ferrari 571 pts, 6 wins; 3. Red Bull 419 pts, 4 wins; 4. Renault 122 pts, 0 wins; 5. Force India 111 pts, 0 wins; 6. Haas F1 Team 93 pts, 0 wins; 7. McLaren 62 pts, 0 wins; 8. Sauber 48 pts, 0 wins; 9. Toro Rosso 33 pts, 0 wins; 10. Williams 7 pts, 0 wins.\"}, {\"title\": \"2019 season standings\", \"text\": \"2019 Formula 1 season final standings. Drivers: 1. Lewis Hamilton (Mercedes) 413 pts, 11 wins; 2. Valtteri Bottas (M"
+  }
+ ],
+ "input_tokens": 4888,
+ "output_tokens": 219,
+ "seconds": 3.182233900006395,
+ "error": null,
+ "qid": "drivers_champion-08",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0005983,
+ "correct": true
+}

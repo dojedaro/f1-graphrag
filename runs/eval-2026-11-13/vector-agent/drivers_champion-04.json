@@ -1,22 +1,29 @@
 {
  "system": "vector-agent",
  "answer": "Michael Schumacher",
- "raw": "The 2002 Formula 1 drivers' championship was won by Michael Schumacher (Ferrari), who finished on 144 points with 11 race wins. Rubens Barrichello (Ferrari) was second on 77 points.\n\nANSWER: Michael Schumacher",
+ "raw": "Michael Schumacher won the 2002 Formula 1 drivers' championship, driving for Ferrari. The 2002 season standings show him on top with 144 points and 11 wins. Rubens Barrichello was second on 77 points, and Juan Pablo Montoya third on 50.\n\nANSWER: Michael Schumacher",
  "trace": [
   {
    "tool": "vector_search",
    "input": {
-    "query": "2002 Formula 1 drivers' championship winner"
+    "query": "2002 Formula 1 drivers' championship final standings"
    },
-   "output": "{\"results\": [{\"title\": \"2002 season standings\", \"text\": \"2002 Formula 1 season final standings. Drivers: 1. Michael Schumacher (Ferrari) 144 pts, 11 wins; 2. Rubens Barrichello (Ferrari) 77 pts, 4 wins; 3. Juan Pablo Montoya (Williams) 50 pts, 0 wins; 4. Ralf Schumacher (Williams) 42 pts, 1 wins; 5. David Coulthard (McLaren) 41 pts, 1 wins; 6. Kimi Räikkönen (McLaren) 24 pts, 0 wins; 7. Jenson Button (Renault) 14 pts, 0 wins; 8. Jarno Trulli (Renault) 9 pts, 0 wins; 9. Eddie Irvine (Jaguar) 8 pts, 0 wins; 10. Nick Heidfeld (Sauber) 7 pts, 0 wins; 11. Giancarlo Fisichella (Jordan) 7 pts, 0 wins; 12. Jacques Villeneuve (BAR) 4 pts, 0 wins; 13. Felipe Massa (Sauber) 4 pts, 0 wins; 14. Olivier Panis (BAR) 3 pts, 0 wins; 15. Takuma Sato (Jordan) 2 pts, 0 wins; 16. Mark Webber (Minardi) 2 pts, 0 wins; 17. Mika Salo (Toyota) 2 pts, 0 wins; 18. Heinz-Harald Frentzen (Arrows, Sauber) 2 pts, 0 wins; 19. Allan McNish (Toyota) 0 pts, 0 wins; 20. Alex Yoong (Minardi) 0 pts, 0 wins; 21. Pedro de la Rosa (Jaguar) 0 pts, 0 wins; 22. Enrique Bernoldi (Arrows) 0 pts, 0 wins; 0. Anthony Davidson (Minardi) 0 pts, 0 wins. Constructors: 1. Ferrari 221 pts, 15 wins; 2. Williams 92 pts, 1 wins; 3. McLaren 65 pts, 1 wins; 4. Renault 23 pts, 0 wins; 5. Sauber 11 pts, 0 wins; 6. Jordan 9 pts, 0 wins; 7. Jaguar 8 pts, 0 wins; 8. BAR 7 pts, 0 wins; 9. Minardi 2 pts, 0 wins; 10. Toyota 2 pts, 0 wins; 11. Arrows 2 pts, 0 wins.\"}, {\"title\": \"2001 season standings\", \"text\": \"2001 Formula 1 season final stand"
+   "output": "{\"results\": [{\"title\": \"2002 season standings\", \"text\": \"2002 Formula 1 season final standings. Drivers: 1. Michael Schumacher (Ferrari) 144 pts, 11 wins; 2. Rubens Barrichello (Ferrari) 77 pts, 4 wins; 3. Juan Pablo Montoya (Williams) 50 pts, 0 wins; 4. Ralf Schumacher (Williams) 42 pts, 1 wins; 5. David Coulthard (McLaren) 41 pts, 1 wins; 6. Kimi Räikkönen (McLaren) 24 pts, 0 wins; 7. Jenson Button (Renault) 14 pts, 0 wins; 8. Jarno Trulli (Renault) 9 pts, 0 wins; 9. Eddie Irvine (Jaguar) 8 pts, 0 wins; 10. Nick Heidfeld (Sauber) 7 pts, 0 wins; 11. Giancarlo Fisichella (Jordan) 7 pts, 0 wins; 12. Jacques Villeneuve (BAR) 4 pts, 0 wins; 13. Felipe Massa (Sauber) 4 pts, 0 wins; 14. Olivier Panis (BAR) 3 pts, 0 wins; 15. Takuma Sato (Jordan) 2 pts, 0 wins; 16. Mark Webber (Minardi) 2 pts, 0 wins; 17. Mika Salo (Toyota) 2 pts, 0 wins; 18. Heinz-Harald Frentzen (Arrows, Sauber) 2 pts, 0 wins; 19. Allan McNish (Toyota) 0 pts, 0 wins; 20. Alex Yoong (Minardi) 0 pts, 0 wins; 21. Pedro de la Rosa (Jaguar) 0 pts, 0 wins; 22. Enrique Bernoldi (Arrows) 0 pts, 0 wins; 0. Anthony Davidson (Minardi) 0 pts, 0 wins. Constructors: 1. Ferrari 221 pts, 15 wins; 2. Williams 92 pts, 1 wins; 3. McLaren 65 pts, 1 wins; 4. Renault 23 pts, 0 wins; 5. Sauber 11 pts, 0 wins; 6. Jordan 9 pts, 0 wins; 7. Jaguar 8 pts, 0 wins; 8. BAR 7 pts, 0 wins; 9. Minardi 2 pts, 0 wins; 10. Toyota 2 pts, 0 wins; 11. Arrows 2 pts, 0 wins.\"}, {\"title\": \"2002 United States Grand Prix\", \"text\": \"2002 United States Grand "
+  },
+  {
+   "tool": "vector_search",
+   "input": {
+    "query": "2002 season world champion race report"
+   },
+   "output": "{\"results\": [{\"title\": \"2002 German Grand Prix\", \"text\": \"2002 German Grand Prix, round 12 of the 2002 season, at Hockenheimring on 2002-07-28. Top 10: 1. Michael Schumacher (Ferrari), started 1, Finished; 2. Juan Pablo Montoya (Williams), started 4, Finished; 3. Ralf Schumacher (Williams), started 2, Finished; 4. Rubens Barrichello (Ferrari), started 3, Finished; 5. David Coulthard (McLaren), started 9, +1 Lap; 6. Nick Heidfeld (Sauber), started 10, +1 Lap; 7. Felipe Massa (Sauber), started 14, +1 Lap; 8. Takuma Sato (Jordan), started 12, +1 Lap; 9. Mika Salo (Toyota), started 19, +1 Lap; R. Giancarlo Fisichella (Jordan), started 6, Engine\"}, {\"title\": \"2002 British Grand Prix\", \"text\": \"2002 British Grand Prix, round 10 of the 2002 season, at Silverstone Circuit on 2002-07-07. Top 10: 1. Michael Schumacher (Ferrari), started 3, Finished; 2. Rubens Barrichello (Ferrari), started 2, Finished; 3. Juan Pablo Montoya (Williams), started 1, Finished; 4. Jacques Villeneuve (BAR), started 9, +1 Lap; 5. Olivier Panis (BAR), started 13, +1 Lap; 6. Nick Heidfeld (Sauber), started 10, +1 Lap; 7. Giancarlo Fisichella (Jordan), started 17, +1 Lap; 8. Ralf Schumacher (Williams), started 4, +1 Lap; 9. Felipe Massa (Sauber), started 11, +1 Lap; 10. David Coulthard (McLaren), started 6, +2 Laps\"}, {\"title\": \"2002 Malaysian Grand Prix\", \"text\": \"2002 Malaysian Grand Prix, round 2 of the 2002 season, at Sepang International Circuit on 2002-03-17. Top 10: 1. Ralf Schumacher (Williams), started "
   }
  ],
- "input_tokens": 3934,
- "output_tokens": 196,
- "seconds": 3.2751887000049464,
+ "input_tokens": 8150,
+ "output_tokens": 254,
+ "seconds": 2.6572501999908127,
  "error": null,
  "qid": "drivers_champion-04",
  "model": "claude-haiku-5-5",
- "cost_usd": 0.0004914,
+ "cost_usd": 0.000942,
  "correct": true
 }

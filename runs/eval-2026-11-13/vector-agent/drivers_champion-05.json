@@ -1,22 +1,29 @@
 {
  "system": "vector-agent",
  "answer": "Sebastian Vettel",
- "raw": "The 2013 Formula 1 drivers' champion was Sebastian Vettel of Red Bull. The final standings show him on 397 points with 13 wins, ahead of Fernando Alonso (Ferrari) on 242 points.\n\nANSWER: Sebastian Vettel",
+ "raw": "The 2013 season standings show Sebastian Vettel (Red Bull) finished first with 397 points and 13 race wins. Fernando Alonso was second with 242 points, so Vettel's title was not close.\n\nANSWER: Sebastian Vettel",
  "trace": [
   {
    "tool": "vector_search",
    "input": {
-    "query": "2013 Formula 1 drivers' championship final standings world champion"
+    "query": "2013 Formula 1 drivers' championship final standings"
+   },
+   "output": "{\"results\": [{\"title\": \"2013 season standings\", \"text\": \"2013 Formula 1 season final standings. Drivers: 1. Sebastian Vettel (Red Bull) 397 pts, 13 wins; 2. Fernando Alonso (Ferrari) 242 pts, 2 wins; 3. Mark Webber (Red Bull) 199 pts, 0 wins; 4. Lewis Hamilton (Mercedes) 189 pts, 1 wins; 5. Kimi Räikkönen (Lotus F1) 183 pts, 1 wins; 6. Nico Rosberg (Mercedes) 171 pts, 2 wins; 7. Romain Grosjean (Lotus F1) 132 pts, 0 wins; 8. Felipe Massa (Ferrari) 112 pts, 0 wins; 9. Jenson Button (McLaren) 73 pts, 0 wins; 10. Nico Hülkenberg (Sauber) 51 pts, 0 wins; 11. Sergio Pérez (McLaren) 49 pts, 0 wins; 12. Paul di Resta (Force India) 48 pts, 0 wins; 13. Adrian Sutil (Force India) 29 pts, 0 wins; 14. Daniel Ricciardo (Toro Rosso) 20 pts, 0 wins; 15. Jean-Éric Vergne (Toro Rosso) 13 pts, 0 wins; 16. Esteban Gutiérrez (Sauber) 6 pts, 0 wins; 17. Valtteri Bottas (Williams) 4 pts, 0 wins; 18. Pastor Maldonado (Williams) 1 pts, 0 wins; 19. Jules Bianchi (Marussia) 0 pts, 0 wins; 20. Charles Pic (Caterham) 0 pts, 0 wins; 21. Giedo van der Garde (Caterham) 0 pts, 0 wins; 22. Heikki Kovalainen (Lotus F1) 0 pts, 0 wins; 23. Max Chilton (Marussia) 0 pts, 0 wins. Constructors: 1. Red Bull 596 pts, 13 wins; 2. Mercedes 360 pts, 3 wins; 3. Ferrari 354 pts, 2 wins; 4. Lotus F1 315 pts, 1 wins; 5. McLaren 122 pts, 0 wins; 6. Force India 77 pts, 0 wins; 7. Sauber 57 pts, 0 wins; 8. Toro Rosso 33 pts, 0 wins; 9. Williams 5 pts, 0 wins; 10. Marussia 0 pts, 0 wins; 11. Caterham 0 pts, 0 wins.\"}, {\"title\":"
+  },
+  {
+   "tool": "vector_search",
+   "input": {
+    "query": "2013 season world champion Formula 1"
    },
    "output": "{\"results\": [{\"title\": \"2013 season standings\", \"text\": \"2013 Formula 1 season final standings. Drivers: 1. Sebastian Vettel (Red Bull) 397 pts, 13 wins; 2. Fernando Alonso (Ferrari) 242 pts, 2 wins; 3. Mark Webber (Red Bull) 199 pts, 0 wins; 4. Lewis Hamilton (Mercedes) 189 pts, 1 wins; 5. Kimi Räikkönen (Lotus F1) 183 pts, 1 wins; 6. Nico Rosberg (Mercedes) 171 pts, 2 wins; 7. Romain Grosjean (Lotus F1) 132 pts, 0 wins; 8. Felipe Massa (Ferrari) 112 pts, 0 wins; 9. Jenson Button (McLaren) 73 pts, 0 wins; 10. Nico Hülkenberg (Sauber) 51 pts, 0 wins; 11. Sergio Pérez (McLaren) 49 pts, 0 wins; 12. Paul di Resta (Force India) 48 pts, 0 wins; 13. Adrian Sutil (Force India) 29 pts, 0 wins; 14. Daniel Ricciardo (Toro Rosso) 20 pts, 0 wins; 15. Jean-Éric Vergne (Toro Rosso) 13 pts, 0 wins; 16. Esteban Gutiérrez (Sauber) 6 pts, 0 wins; 17. Valtteri Bottas (Williams) 4 pts, 0 wins; 18. Pastor Maldonado (Williams) 1 pts, 0 wins; 19. Jules Bianchi (Marussia) 0 pts, 0 wins; 20. Charles Pic (Caterham) 0 pts, 0 wins; 21. Giedo van der Garde (Caterham) 0 pts, 0 wins; 22. Heikki Kovalainen (Lotus F1) 0 pts, 0 wins; 23. Max Chilton (Marussia) 0 pts, 0 wins. Constructors: 1. Red Bull 596 pts, 13 wins; 2. Mercedes 360 pts, 3 wins; 3. Ferrari 354 pts, 2 wins; 4. Lotus F1 315 pts, 1 wins; 5. McLaren 122 pts, 0 wins; 6. Force India 77 pts, 0 wins; 7. Sauber 57 pts, 0 wins; 8. Toro Rosso 33 pts, 0 wins; 9. Williams 5 pts, 0 wins; 10. Marussia 0 pts, 0 wins; 11. Caterham 0 pts, 0 wins.\"}, {\"title\":"
   }
  ],
- "input_tokens": 3890,
- "output_tokens": 221,
- "seconds": 2.7626424999907613,
+ "input_tokens": 9304,
+ "output_tokens": 247,
+ "seconds": 4.196164099994348,
  "error": null,
  "qid": "drivers_champion-05",
  "model": "claude-haiku-5-5",
- "cost_usd": 0.0004995,
+ "cost_usd": 0.0010539000000000002,
  "correct": true
 }

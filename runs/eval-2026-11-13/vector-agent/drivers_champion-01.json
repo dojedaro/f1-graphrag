@@ -1,22 +1,22 @@
 {
  "system": "vector-agent",
  "answer": "Michael Schumacher",
- "raw": "The 2001 Formula 1 drivers' championship was won by Michael Schumacher (Ferrari), who finished on 123 points with 9 wins. David Coulthard (McLaren) was second on 65 points, and Rubens Barrichello (Ferrari) was third on 56.\n\nANSWER: Michael Schumacher",
+ "raw": "The 2001 Formula 1 drivers' championship was won by Michael Schumacher (Ferrari), who finished on 123 points with 9 race wins. David Coulthard was second with 65 points, and Rubens Barrichello was third with 56.\n\nANSWER: Michael Schumacher",
  "trace": [
   {
    "tool": "vector_search",
    "input": {
-    "query": "2001 Formula 1 drivers' championship final standings world champion"
+    "query": "2001 Formula 1 drivers' championship standings champion"
    },
    "output": "{\"results\": [{\"title\": \"2001 season standings\", \"text\": \"2001 Formula 1 season final standings. Drivers: 1. Michael Schumacher (Ferrari) 123 pts, 9 wins; 2. David Coulthard (McLaren) 65 pts, 2 wins; 3. Rubens Barrichello (Ferrari) 56 pts, 0 wins; 4. Ralf Schumacher (Williams) 49 pts, 3 wins; 5. Mika Häkkinen (McLaren) 37 pts, 2 wins; 6. Juan Pablo Montoya (Williams) 31 pts, 1 wins; 7. Jacques Villeneuve (BAR) 12 pts, 0 wins; 8. Nick Heidfeld (Sauber) 12 pts, 0 wins; 9. Jarno Trulli (Jordan) 12 pts, 0 wins; 10. Kimi Räikkönen (Sauber) 9 pts, 0 wins; 11. Giancarlo Fisichella (Benetton) 8 pts, 0 wins; 12. Eddie Irvine (Jaguar) 6 pts, 0 wins; 13. Heinz-Harald Frentzen (Jordan, Prost) 6 pts, 0 wins; 14. Olivier Panis (BAR) 5 pts, 0 wins; 15. Jean Alesi (Prost, Jordan) 5 pts, 0 wins; 16. Pedro de la Rosa (Jaguar) 3 pts, 0 wins; 17. Jenson Button (Benetton) 2 pts, 0 wins; 18. Jos Verstappen (Arrows) 1 pts, 0 wins; 0. Ricardo Zonta (Jordan) 0 pts, 0 wins; 0. Luciano Burti (Jaguar, Prost) 0 pts, 0 wins; 0. Enrique Bernoldi (Arrows) 0 pts, 0 wins; 0. Tarso Marques (Minardi) 0 pts, 0 wins; 0. Fernando Alonso (Minardi) 0 pts, 0 wins; 0. Tomáš Enge (Prost) 0 pts, 0 wins; 0. Gastón Mazzacane (Prost) 0 pts, 0 wins; 0. Alex Yoong (Minardi) 0 pts, 0 wins. Constructors: 1. Ferrari 179 pts, 9 wins; 2. McLaren 102 pts, 4 wins; 3. Williams 80 pts, 4 wins; 4. Sauber 21 pts, 0 wins; 5. Jordan 19 pts, 0 wins; 6. BAR 17 pts, 0 wins; 7. Benetton 10 pts, 0 wins; 8. Jaguar 9 pts, 0 wins; 9. Prost 4 pts,"
   }
  ],
- "input_tokens": 3948,
- "output_tokens": 233,
- "seconds": 4.33414379999158,
+ "input_tokens": 7156,
+ "output_tokens": 203,
+ "seconds": 3.886915500013856,
  "error": null,
  "qid": "drivers_champion-01",
  "model": "claude-haiku-5-5",
- "cost_usd": 0.0005113,
+ "cost_usd": 0.0008171000000000001,
  "correct": true
 }

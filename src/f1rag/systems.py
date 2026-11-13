@@ -23,7 +23,7 @@ from f1rag.graph import GraphTools
 
 MODEL = os.environ.get("F1RAG_MODEL", "claude-haiku-5-5")
 PRICES = {"claude-haiku-5-5": (0.10, 0.50), "claude-sonnet-5-5": (2.0, 10.0), "claude-opus-5-5": (4.0, 20.0)}
-MAX_TURNS = 8
+MAX_TURNS = 16  # the graph agent never needed more than 8; the vector agent sometimes did
 
 ANSWER_RULES = (
     "Answer from the provided information only, not from memory. End with one line in the form "
@@ -196,6 +196,15 @@ VECTOR_TOOL = {
 }
 
 
+VECTOR_AGENT_TOOL = {
+    "name": "vector_search",
+    "description": "Semantic search over race reports (top 10 finishers per race) and season standings. "
+    "Returns the 8 most similar documents. Call it as many times as needed with focused queries.",
+    "input_schema": _schema({"query": {"type": "string"}}, ["query"]),
+    "strict": True,
+}
+
+
 class GraphAgent:
     name = "graph"
     system = (
@@ -203,6 +212,8 @@ class GraphAgent:
         "Plan the chain of lookups, resolve ambiguous names with find_entity, and compute counts from the "
         "tool results rather than guessing. " + ANSWER_RULES
     )
+
+    search_k = 4  # documents per vector_search call when vector search is a secondary tool (hybrid)
 
     def __init__(self, client, tools: GraphTools, index: VectorIndex | None = None):
         self.client, self.tools, self.index = client, tools, index
@@ -213,7 +224,8 @@ class GraphAgent:
             if name == "find_entity":
                 return self.tools.find(args["name"], args["kind"])
             if name == "vector_search":
-                return {"results": [{"title": d["title"], "text": d["text"]} for d, _ in self.index.search(args["query"], 4)]}
+                k = self.search_k
+                return {"results": [{"title": d["title"], "text": d["text"]} for d, _ in self.index.search(args["query"], k)]}
             return getattr(self.tools, name)(**args)
         except LookupError as e:
             return {"error": e.args[0]}
@@ -273,6 +285,8 @@ class VectorAgent(GraphAgent):
         "per season or race), and compute counts from what you retrieve rather than guessing. " + ANSWER_RULES
     )
 
+    search_k = 8  # the same k as plain vector RAG, so the only difference is the search loop
+
     def __init__(self, client, tools: GraphTools, index: VectorIndex):
         super().__init__(client, tools, index)
-        self.tool_defs = [VECTOR_TOOL]
+        self.tool_defs = [VECTOR_AGENT_TOOL]

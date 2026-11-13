@@ -20,6 +20,9 @@
   },
   "n_missing": 0,
   "cost_usd": 0.0542,
+  "models": [
+   "claude-haiku-5-5"
+  ],
   "mean_tool_calls": 6.05,
   "mean_seconds": 6.2
  },
@@ -44,6 +47,9 @@
   },
   "n_missing": 0,
   "cost_usd": 0.062,
+  "models": [
+   "claude-haiku-5-5"
+  ],
   "mean_tool_calls": 6.88,
   "mean_seconds": 6.5
  },
@@ -68,10 +74,40 @@
   },
   "n_missing": 0,
   "cost_usd": 0.0212,
+  "models": [
+   "claude-haiku-5-5"
+  ],
   "mean_tool_calls": 0.0,
   "mean_seconds": 2.9
  },
  "vector-agent": {
+  "held-out": {
+   "correct": 40,
+   "n": 40,
+   "accuracy": 1.0,
+   "ci": [
+    0.912,
+    1.0
+   ]
+  },
+  "all": {
+   "correct": 40,
+   "n": 40,
+   "accuracy": 1.0,
+   "ci": [
+    0.912,
+    1.0
+   ]
+  },
+  "n_missing": 0,
+  "cost_usd": 0.2164,
+  "models": [
+   "claude-haiku-5-5"
+  ],
+  "mean_tool_calls": 8.05,
+  "mean_seconds": 10.0
+ },
+ "vector-agent-k4-8turns": {
   "held-out": {
    "correct": 37,
    "n": 40,
@@ -92,6 +128,9 @@
   },
   "n_missing": 0,
   "cost_usd": 0.1887,
+  "models": [
+   "claude-haiku-5-5"
+  ],
   "mean_tool_calls": 10.22,
   "mean_seconds": 11.0
  }

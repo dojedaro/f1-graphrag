@@ -1,29 +1,29 @@
 {
  "system": "vector-agent",
  "answer": "7",
- "raw": "The 2025 drivers' champion was Lando Norris (McLaren), who finished on 423 points, two ahead of Max Verstappen. The 2025 season standings list Norris with **7 wins**.\n\nANSWER: 7",
+ "raw": "Lando Norris won the 2025 drivers' championship, and the 2025 season standings record him with 7 race wins. That fits the McLaren constructor total of 14 wins, which equals Norris's 7 plus Oscar Piastri's 7. I didn't enumerate every 2025 race report, so the count rests on the standings figure.\n\nANSWER: 7",
  "trace": [
   {
    "tool": "vector_search",
    "input": {
-    "query": "2025 Formula 1 drivers' champion final standings"
+    "query": "2025 drivers' championship final standings champion"
    },
-   "output": "{\"results\": [{\"title\": \"2025 season standings\", \"text\": \"2025 Formula 1 season final standings. Drivers: 1. Lando Norris (McLaren) 423 pts, 7 wins; 2. Max Verstappen (Red Bull) 421 pts, 8 wins; 3. Oscar Piastri (McLaren) 410 pts, 7 wins; 4. George Russell (Mercedes) 319 pts, 2 wins; 5. Charles Leclerc (Ferrari) 242 pts, 0 wins; 6. Lewis Hamilton (Ferrari) 156 pts, 0 wins; 7. Andrea Kimi Antonelli (Mercedes) 150 pts, 0 wins; 8. Alexander Albon (Williams) 73 pts, 0 wins; 9. Carlos Sainz (Williams) 64 pts, 0 wins; 10. Fernando Alonso (Aston Martin) 56 pts, 0 wins; 11. Nico Hülkenberg (Sauber) 51 pts, 0 wins; 12. Isack Hadjar (RB F1 Team) 51 pts, 0 wins; 13. Oliver Bearman (Haas F1 Team) 41 pts, 0 wins; 14. Liam Lawson (Red Bull, RB F1 Team) 38 pts, 0 wins; 15. Esteban Ocon (Haas F1 Team) 38 pts, 0 wins; 16. Lance Stroll (Aston Martin) 33 pts, 0 wins; 17. Yuki Tsunoda (RB F1 Team, Red Bull) 33 pts, 0 wins; 18. Pierre Gasly (Alpine F1 Team) 22 pts, 0 wins; 19. Gabriel Bortoleto (Sauber) 19 pts, 0 wins; 20. Franco Colapinto (Alpine F1 Team) 0 pts, 0 wins; 21. Jack Doohan (Alpine F1 Team) 0 pts, 0 wins. Constructors: 1. McLaren 833 pts, 14 wins; 2. Mercedes 469 pts, 2 wins; 3. Red Bull 451 pts, 8 wins; 4. Ferrari 398 pts, 0 wins; 5. Williams 137 pts, 0 wins; 6. RB F1 Team 92 pts, 0 wins; 7. Aston Martin 89 pts, 0 wins; 8. Haas F1 Team 79 pts, 0 wins; 9. Sauber 70 pts, 0 wins; 10. Alpine F1 Team 22 pts, 0 wins.\"}, {\"title\": \"2022 season standings\", \"text\": \"2022 Formula 1 season fina"
+   "output": "{\"results\": [{\"title\": \"2025 season standings\", \"text\": \"2025 Formula 1 season final standings. Drivers: 1. Lando Norris (McLaren) 423 pts, 7 wins; 2. Max Verstappen (Red Bull) 421 pts, 8 wins; 3. Oscar Piastri (McLaren) 410 pts, 7 wins; 4. George Russell (Mercedes) 319 pts, 2 wins; 5. Charles Leclerc (Ferrari) 242 pts, 0 wins; 6. Lewis Hamilton (Ferrari) 156 pts, 0 wins; 7. Andrea Kimi Antonelli (Mercedes) 150 pts, 0 wins; 8. Alexander Albon (Williams) 73 pts, 0 wins; 9. Carlos Sainz (Williams) 64 pts, 0 wins; 10. Fernando Alonso (Aston Martin) 56 pts, 0 wins; 11. Nico Hülkenberg (Sauber) 51 pts, 0 wins; 12. Isack Hadjar (RB F1 Team) 51 pts, 0 wins; 13. Oliver Bearman (Haas F1 Team) 41 pts, 0 wins; 14. Liam Lawson (Red Bull, RB F1 Team) 38 pts, 0 wins; 15. Esteban Ocon (Haas F1 Team) 38 pts, 0 wins; 16. Lance Stroll (Aston Martin) 33 pts, 0 wins; 17. Yuki Tsunoda (RB F1 Team, Red Bull) 33 pts, 0 wins; 18. Pierre Gasly (Alpine F1 Team) 22 pts, 0 wins; 19. Gabriel Bortoleto (Sauber) 19 pts, 0 wins; 20. Franco Colapinto (Alpine F1 Team) 0 pts, 0 wins; 21. Jack Doohan (Alpine F1 Team) 0 pts, 0 wins. Constructors: 1. McLaren 833 pts, 14 wins; 2. Mercedes 469 pts, 2 wins; 3. Red Bull 451 pts, 8 wins; 4. Ferrari 398 pts, 0 wins; 5. Williams 137 pts, 0 wins; 6. RB F1 Team 92 pts, 0 wins; 7. Aston Martin 89 pts, 0 wins; 8. Haas F1 Team 79 pts, 0 wins; 9. Sauber 70 pts, 0 wins; 10. Alpine F1 Team 22 pts, 0 wins.\"}, {\"title\": \"2025 British Grand Prix\", \"text\": \"2025 British Grand Prix,"
   },
   {
    "tool": "vector_search",
    "input": {
-    "query": "2025 season race winners wins total"
+    "query": "2025 season race winners Formula 1"
    },
-   "output": "{\"results\": [{\"title\": \"2025 United States Grand Prix\", \"text\": \"2025 United States Grand Prix, round 19 of the 2025 season, at Circuit of the Americas on 2025-10-19. Top 10: 1. Max Verstappen (Red Bull), started 1, Finished; 2. Lando Norris (McLaren), started 2, Finished; 3. Charles Leclerc (Ferrari), started 3, Finished; 4. Lewis Hamilton (Ferrari), started 5, Finished; 5. Oscar Piastri (McLaren), started 6, Finished; 6. George Russell (Mercedes), started 4, Finished; 7. Yuki Tsunoda (Red Bull), started 13, Finished; 8. Nico Hülkenberg (Sauber), started 11, Finished; 9. Oliver Bearman (Haas F1 Team), started 8, Finished; 10. Fernando Alonso (Aston Martin), started 10, Finished\"}, {\"title\": \"2025 season standings\", \"text\": \"2025 Formula 1 season final standings. Drivers: 1. Lando Norris (McLaren) 423 pts, 7 wins; 2. Max Verstappen (Red Bull) 421 pts, 8 wins; 3. Oscar Piastri (McLaren) 410 pts, 7 wins; 4. George Russell (Mercedes) 319 pts, 2 wins; 5. Charles Leclerc (Ferrari) 242 pts, 0 wins; 6. Lewis Hamilton (Ferrari) 156 pts, 0 wins; 7. Andrea Kimi Antonelli (Mercedes) 150 pts, 0 wins; 8. Alexander Albon (Williams) 73 pts, 0 wins; 9. Carlos Sainz (Williams) 64 pts, 0 wins; 10. Fernando Alonso (Aston Martin) 56 pts, 0 wins; 11. Nico Hülkenberg (Sauber) 51 pts, 0 wins; 12. Isack Hadjar (RB F1 Team) 51 pts, 0 wins; 13. Oliver Bearman (Haas F1 Team) 41 pts, 0 wins; 14. Liam Lawson (Red Bull, RB F1 Team) 38 pts, 0 wins; 15. Esteban Ocon (Haas F1 Team) 38 pts, 0 wins; 16. Lance "
+   "output": "{\"results\": [{\"title\": \"2025 season standings\", \"text\": \"2025 Formula 1 season final standings. Drivers: 1. Lando Norris (McLaren) 423 pts, 7 wins; 2. Max Verstappen (Red Bull) 421 pts, 8 wins; 3. Oscar Piastri (McLaren) 410 pts, 7 wins; 4. George Russell (Mercedes) 319 pts, 2 wins; 5. Charles Leclerc (Ferrari) 242 pts, 0 wins; 6. Lewis Hamilton (Ferrari) 156 pts, 0 wins; 7. Andrea Kimi Antonelli (Mercedes) 150 pts, 0 wins; 8. Alexander Albon (Williams) 73 pts, 0 wins; 9. Carlos Sainz (Williams) 64 pts, 0 wins; 10. Fernando Alonso (Aston Martin) 56 pts, 0 wins; 11. Nico Hülkenberg (Sauber) 51 pts, 0 wins; 12. Isack Hadjar (RB F1 Team) 51 pts, 0 wins; 13. Oliver Bearman (Haas F1 Team) 41 pts, 0 wins; 14. Liam Lawson (Red Bull, RB F1 Team) 38 pts, 0 wins; 15. Esteban Ocon (Haas F1 Team) 38 pts, 0 wins; 16. Lance Stroll (Aston Martin) 33 pts, 0 wins; 17. Yuki Tsunoda (RB F1 Team, Red Bull) 33 pts, 0 wins; 18. Pierre Gasly (Alpine F1 Team) 22 pts, 0 wins; 19. Gabriel Bortoleto (Sauber) 19 pts, 0 wins; 20. Franco Colapinto (Alpine F1 Team) 0 pts, 0 wins; 21. Jack Doohan (Alpine F1 Team) 0 pts, 0 wins. Constructors: 1. McLaren 833 pts, 14 wins; 2. Mercedes 469 pts, 2 wins; 3. Red Bull 451 pts, 8 wins; 4. Ferrari 398 pts, 0 wins; 5. Williams 137 pts, 0 wins; 6. RB F1 Team 92 pts, 0 wins; 7. Aston Martin 89 pts, 0 wins; 8. Haas F1 Team 79 pts, 0 wins; 9. Sauber 70 pts, 0 wins; 10. Alpine F1 Team 22 pts, 0 wins.\"}, {\"title\": \"2023 season standings\", \"text\": \"2023 Formula 1 season fina"
   }
  ],
- "input_tokens": 7056,
- "output_tokens": 370,
- "seconds": 4.889658500003861,
+ "input_tokens": 10998,
+ "output_tokens": 405,
+ "seconds": 3.6920947000035085,
  "error": null,
  "qid": "champion_wins-01",
  "model": "claude-haiku-5-5",
- "cost_usd": 0.0008906000000000001,
+ "cost_usd": 0.0013023,
  "correct": true
 }

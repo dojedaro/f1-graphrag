@@ -45,7 +45,11 @@
     1.0
    ]
   },
+  "n_missing": 0,
   "cost_usd": 0.0816,
+  "models": [
+   "claude-haiku-5-5"
+  ],
   "mean_tool_calls": 2.34,
   "mean_seconds": 3.9
  },
@@ -95,7 +99,11 @@
     1.0
    ]
   },
+  "n_missing": 0,
   "cost_usd": 0.0872,
+  "models": [
+   "claude-haiku-5-5"
+  ],
   "mean_tool_calls": 2.45,
   "mean_seconds": 4.0
  },
@@ -145,11 +153,69 @@
     0.258
    ]
   },
+  "n_missing": 0,
   "cost_usd": 0.0739,
+  "models": [
+   "claude-haiku-5-5"
+  ],
   "mean_tool_calls": 0.0,
   "mean_seconds": 3.5
  },
  "vector-agent": {
+  "3-hop": {
+   "correct": 22,
+   "n": 24,
+   "accuracy": 0.917,
+   "ci": [
+    0.742,
+    0.977
+   ]
+  },
+  "all": {
+   "correct": 111,
+   "n": 120,
+   "accuracy": 0.925,
+   "ci": [
+    0.864,
+    0.96
+   ]
+  },
+  "2-hop": {
+   "correct": 34,
+   "n": 36,
+   "accuracy": 0.944,
+   "ci": [
+    0.819,
+    0.985
+   ]
+  },
+  "1-hop": {
+   "correct": 34,
+   "n": 36,
+   "accuracy": 0.944,
+   "ci": [
+    0.819,
+    0.985
+   ]
+  },
+  "aggregation": {
+   "correct": 21,
+   "n": 24,
+   "accuracy": 0.875,
+   "ci": [
+    0.69,
+    0.957
+   ]
+  },
+  "n_missing": 0,
+  "cost_usd": 0.3242,
+  "models": [
+   "claude-haiku-5-5"
+  ],
+  "mean_tool_calls": 3.62,
+  "mean_seconds": 7.4
+ },
+ "vector-agent-k4-8turns": {
   "3-hop": {
    "correct": 20,
    "n": 24,
@@ -195,7 +261,11 @@
     0.88
    ]
   },
+  "n_missing": 0,
   "cost_usd": 0.2742,
+  "models": [
+   "claude-haiku-5-5"
+  ],
   "mean_tool_calls": 4.22,
   "mean_seconds": 8.0
  }

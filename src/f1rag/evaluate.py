@@ -73,6 +73,7 @@ def summary(out: Path) -> dict:
     questions = {q["qid"]: Question(**q) for q in json.loads((out / "questions.json").read_text(encoding="utf-8"))}
     rows: dict = defaultdict(lambda: defaultdict(lambda: [0, 0]))
     cost, calls, secs = defaultdict(float), defaultdict(int), defaultdict(float)
+    models: dict = defaultdict(set)
     for sys_dir in sorted(p for p in out.iterdir() if p.is_dir()):
         for f in sys_dir.glob("*.json"):
             rec = json.loads(f.read_text(encoding="utf-8"))
@@ -83,6 +84,7 @@ def summary(out: Path) -> dict:
             cost[sys_dir.name] += rec["cost_usd"]
             calls[sys_dir.name] += sum(1 for t in rec["trace"] if "tool" in t)
             secs[sys_dir.name] += rec["seconds"]
+            models[sys_dir.name].add(rec.get("model", ""))
     result = {}
     for system, by in rows.items():
         n = by["all"][1]
@@ -90,6 +92,7 @@ def summary(out: Path) -> dict:
             **{k: {"correct": c, "n": t, "accuracy": round(c / t, 3), "ci": wilson(c, t)} for k, (c, t) in by.items()},
             "n_missing": len(questions) - n,  # failed calls write nothing; never let them shrink the denominator silently
             "cost_usd": round(cost[system], 4),
+            "models": sorted(models[system]),  # more than one means costs and results mix models
             "mean_tool_calls": round(calls[system] / n, 2),
             "mean_seconds": round(secs[system] / n, 1),
         }
@@ -111,6 +114,9 @@ def main() -> None:
     if args.cmd == "run":
         run(args.per_template, args.out, args.heldout, args.systems.split(",") if args.systems else None)
     res = summary(args.out)
+    mixed = {k: v["models"] for k, v in res.items() if len(v["models"]) > 1}
+    if mixed:
+        print(f"WARNING: results from more than one model in a system: {mixed}")
     missing = {k: v["n_missing"] for k, v in res.items() if v["n_missing"]}
     if missing:
         print(f"WARNING: questions with no saved result: {missing}. Re-run to fill them before reporting.")

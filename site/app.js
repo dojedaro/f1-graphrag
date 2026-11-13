@@ -51,7 +51,7 @@ function renderHero() {
   $("#headline").innerHTML =
     `Plain vector search answers <b>${pct(all(v))}</b> of 160 Formula 1 questions. Letting it search repeatedly ` +
     `in an agent loop lifts that to <b>${pct(all(va))}</b>. A graph agent with typed tools answers <b>${pct(all(g))}</b>, ` +
-    `at about a third of the vector agent's cost` +
+    `at about 1/${Math.round(va ? va.cost_usd / S.graph.cost_usd : 1)} of the vector agent's cost` +
     (va ? ` ($${S.graph.cost_usd.toFixed(2)} vs $${va.cost_usd.toFixed(2)}).` : ".") +
     ` On structured questions, the graph's edge is reliability and efficiency more than capability.`;
   const stats = [

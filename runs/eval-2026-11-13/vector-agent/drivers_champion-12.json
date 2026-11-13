@@ -1,22 +1,22 @@
 {
  "system": "vector-agent",
  "answer": "Michael Schumacher",
- "raw": "Michael Schumacher won the 2004 Formula 1 drivers' championship with Ferrari. The final standings show him on 148 points with 13 wins, ahead of teammate Rubens Barrichello on 114 points.\n\nANSWER: Michael Schumacher",
+ "raw": "The 2004 Formula 1 drivers' championship was won by Michael Schumacher (Ferrari), who finished with 148 points and 13 wins. His Ferrari teammate Rubens Barrichello was second with 114 points.\n\nANSWER: Michael Schumacher",
  "trace": [
   {
    "tool": "vector_search",
    "input": {
-    "query": "2004 Formula 1 drivers' championship winner"
+    "query": "2004 Formula 1 drivers' championship final standings"
    },
    "output": "{\"results\": [{\"title\": \"2004 season standings\", \"text\": \"2004 Formula 1 season final standings. Drivers: 1. Michael Schumacher (Ferrari) 148 pts, 13 wins; 2. Rubens Barrichello (Ferrari) 114 pts, 2 wins; 3. Jenson Button (BAR) 85 pts, 0 wins; 4. Fernando Alonso (Renault) 59 pts, 0 wins; 5. Juan Pablo Montoya (Williams) 58 pts, 1 wins; 6. Jarno Trulli (Renault, Toyota) 46 pts, 1 wins; 7. Kimi Räikkönen (McLaren) 45 pts, 1 wins; 8. Takuma Sato (BAR) 34 pts, 0 wins; 9. Ralf Schumacher (Williams) 24 pts, 0 wins; 10. David Coulthard (McLaren) 24 pts, 0 wins; 11. Giancarlo Fisichella (Sauber) 22 pts, 0 wins; 12. Felipe Massa (Sauber) 12 pts, 0 wins; 13. Mark Webber (Jaguar) 7 pts, 0 wins; 14. Olivier Panis (Toyota) 6 pts, 0 wins; 15. Antônio Pizzonia (Williams) 6 pts, 0 wins; 16. Christian Klien (Jaguar) 3 pts, 0 wins; 17. Cristiano da Matta (Toyota) 3 pts, 0 wins; 18. Nick Heidfeld (Jordan) 3 pts, 0 wins; 19. Timo Glock (Jordan) 2 pts, 0 wins; 20. Zsolt Baumgartner (Minardi) 1 pts, 0 wins; 21. Jacques Villeneuve (Renault) 0 pts, 0 wins; 22. Ricardo Zonta (Toyota) 0 pts, 0 wins; 23. Marc Gené (Williams) 0 pts, 0 wins; 24. Giorgio Pantano (Jordan) 0 pts, 0 wins; 25. Gianmaria Bruni (Minardi) 0 pts, 0 wins. Constructors: 1. Ferrari 262 pts, 15 wins; 2. BAR 119 pts, 0 wins; 3. Renault 105 pts, 1 wins; 4. Williams 88 pts, 1 wins; 5. McLaren 69 pts, 1 wins; 6. Sauber 34 pts, 0 wins; 7. Jaguar 10 pts, 0 wins; 8. Toyota 9 pts, 0 wins; 9. Jordan 5 pts, 0 wins; 10. Minardi 1 pts, 0 wins.\"},"
   }
  ],
- "input_tokens": 4570,
- "output_tokens": 218,
- "seconds": 2.5588851000065915,
+ "input_tokens": 5917,
+ "output_tokens": 185,
+ "seconds": 2.5259630999935325,
  "error": null,
  "qid": "drivers_champion-12",
  "model": "claude-haiku-5-5",
- "cost_usd": 0.000566,
+ "cost_usd": 0.0006842,
  "correct": true
 }

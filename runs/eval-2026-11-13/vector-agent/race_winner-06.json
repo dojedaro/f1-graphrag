@@ -1,22 +1,22 @@
 {
  "system": "vector-agent",
  "answer": "Ralf Schumacher",
- "raw": "The 2001 Canadian Grand Prix (round 8, held at Circuit Gilles Villeneuve on 10 June 2001) was won by Ralf Schumacher driving for Williams. His teammate's brother, Michael Schumacher of Ferrari, finished second, and Mika Häkkinen was third.\n\nANSWER: Ralf Schumacher",
+ "raw": "The 2001 Canadian Grand Prix (round 8, Circuit Gilles Villeneuve, 10 June 2001) was won by Ralf Schumacher driving for Williams. He started 2nd. His teammate-rival Michael Schumacher of Ferrari, who started from pole, finished 2nd, and Mika Häkkinen was 3rd.\n\nANSWER: Ralf Schumacher",
  "trace": [
   {
    "tool": "vector_search",
    "input": {
-    "query": "2001 Canadian Grand Prix winner"
+    "query": "2001 Canadian Grand Prix race report winner"
    },
-   "output": "{\"results\": [{\"title\": \"2001 Canadian Grand Prix\", \"text\": \"2001 Canadian Grand Prix, round 8 of the 2001 season, at Circuit Gilles Villeneuve on 2001-06-10. Top 10: 1. Ralf Schumacher (Williams), started 2, Finished; 2. Michael Schumacher (Ferrari), started 1, Finished; 3. Mika Häkkinen (McLaren), started 8, Finished; 4. Kimi Räikkönen (Sauber), started 7, Finished; 5. Jean Alesi (Prost), started 16, Finished; 6. Pedro de la Rosa (Jaguar), started 14, +1 Lap; 7. Ricardo Zonta (Jordan), started 12, +1 Lap; 8. Luciano Burti (Prost), started 19, +1 Lap; 9. Tarso Marques (Minardi), started 21, +3 Laps; 10. Jos Verstappen (Arrows), started 13, Brakes\"}, {\"title\": \"2001 British Grand Prix\", \"text\": \"2001 British Grand Prix, round 11 of the 2001 season, at Silverstone Circuit on 2001-07-15. Top 10: 1. Mika Häkkinen (McLaren), started 2, Finished; 2. Michael Schumacher (Ferrari), started 1, Finished; 3. Rubens Barrichello (Ferrari), started 6, Finished; 4. Juan Pablo Montoya (Williams), started 8, Finished; 5. Kimi Räikkönen (Sauber), started 7, +1 Lap; 6. Nick Heidfeld (Sauber), started 9, +1 Lap; 7. Heinz-Harald Frentzen (Jordan), started 5, +1 Lap; 8. Jacques Villeneuve (BAR), started 12, +1 Lap; 9. Eddie Irvine (Jaguar), started 15, +1 Lap; 10. Jos Verstappen (Arrows), started 17, +2 Laps\"}, {\"title\": \"2001 Australian Grand Prix\", \"text\": \"2001 Australian Grand Prix, round 1 of the 2001 season, at Albert Park Grand Prix Circuit on 2001-03-04. Top 10: 1. Michael Schumacher (Ferra"
+   "output": "{\"results\": [{\"title\": \"2001 Canadian Grand Prix\", \"text\": \"2001 Canadian Grand Prix, round 8 of the 2001 season, at Circuit Gilles Villeneuve on 2001-06-10. Top 10: 1. Ralf Schumacher (Williams), started 2, Finished; 2. Michael Schumacher (Ferrari), started 1, Finished; 3. Mika Häkkinen (McLaren), started 8, Finished; 4. Kimi Räikkönen (Sauber), started 7, Finished; 5. Jean Alesi (Prost), started 16, Finished; 6. Pedro de la Rosa (Jaguar), started 14, +1 Lap; 7. Ricardo Zonta (Jordan), started 12, +1 Lap; 8. Luciano Burti (Prost), started 19, +1 Lap; 9. Tarso Marques (Minardi), started 21, +3 Laps; 10. Jos Verstappen (Arrows), started 13, Brakes\"}, {\"title\": \"2001 British Grand Prix\", \"text\": \"2001 British Grand Prix, round 11 of the 2001 season, at Silverstone Circuit on 2001-07-15. Top 10: 1. Mika Häkkinen (McLaren), started 2, Finished; 2. Michael Schumacher (Ferrari), started 1, Finished; 3. Rubens Barrichello (Ferrari), started 6, Finished; 4. Juan Pablo Montoya (Williams), started 8, Finished; 5. Kimi Räikkönen (Sauber), started 7, +1 Lap; 6. Nick Heidfeld (Sauber), started 9, +1 Lap; 7. Heinz-Harald Frentzen (Jordan), started 5, +1 Lap; 8. Jacques Villeneuve (BAR), started 12, +1 Lap; 9. Eddie Irvine (Jaguar), started 15, +1 Lap; 10. Jos Verstappen (Arrows), started 17, +2 Laps\"}, {\"title\": \"2001 French Grand Prix\", \"text\": \"2001 French Grand Prix, round 10 of the 2001 season, at Circuit de Nevers Magny-Cours on 2001-07-01. Top 10: 1. Michael Schumacher (Ferrari), sta"
   }
  ],
- "input_tokens": 2618,
- "output_tokens": 184,
- "seconds": 2.6604107999883126,
+ "input_tokens": 4118,
+ "output_tokens": 366,
+ "seconds": 3.479134900000645,
  "error": null,
  "qid": "race_winner-06",
  "model": "claude-haiku-5-5",
- "cost_usd": 0.00035380000000000003,
+ "cost_usd": 0.0005947999999999999,
  "correct": true
 }
