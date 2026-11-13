@@ -1,6 +1,6 @@
 # Graph RAG vs. Vector RAG on 26 Seasons of Formula 1
 
-**When does a knowledge graph beat vector search for question answering? Measured on 160 Formula 1 questions whose answers are computed from the data, broken down by how many facts each question chains together.**
+**When does a knowledge graph beat vector search for question answering over structured data? Measured on 160 Formula 1 questions whose answers are computable from the data, broken down by how many facts each question chains together.**
 
 **[Explore every question and trace →](https://dojedaro.github.io/f1-graphrag/)**
 
@@ -49,6 +49,12 @@ circuit, podiums without a win, and the runner-up's team). No single tool answer
 The graph agent still scored 40/40, but needed **6 tool calls per question instead of 2.3**: it composed
 the general tools. Vector search scored 16/40, and all 8 runner-up questions were among them: those are
 the only held-out questions answered inside a single document (the season standings).
+
+**The vector baseline is deliberately standard, not tuned:** top-8 retrieval with a small embedding model
+(MiniLM), race documents that list only the top 10 finishers, and a single model call. Stronger variants
+(more documents, BM25 or reranking, a retrieval loop) would close part of the gap on lookups; counting
+across seasons needs the complete set of records, which is the structural reason a graph or a database
+wins there. These are structured, computable questions, the home ground for a graph.
 
 **Limits:** one model, one run per question, 8–12 questions per type, so a 100% score has a 95%
 confidence interval reaching down to about 70–90% per type. And 100% on structured questions about one
