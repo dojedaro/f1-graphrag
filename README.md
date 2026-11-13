@@ -69,8 +69,8 @@ as much as the graph agent's, because it has to find each relevant record by sea
 database simply has them. These are structured, computable questions, the home
 ground for a graph; unstructured text would favour retrieval.
 
-**Limits:** one model, one run per question, 8–12 questions per type, so a 100% score has a 95%
-confidence interval reaching down to about 70–90% per type. And 100% on structured questions about one
+**Limits:** one model, one run per question, and 8–12 questions per template, so a 100% score has a 95%
+confidence interval reaching down to about 68–76% per template (about 86–91% per row of the table). And 100% on structured questions about one
 clean dataset is an upper bound: real questions arrive misspelled, ambiguous and about things the schema
 didn't anticipate.
 
@@ -118,8 +118,8 @@ python -m f1rag.evaluate run --heldout --per-template 8 --out runs/my-heldout
 python -m f1rag.site runs/my-run site/data/bundle.json runs/my-heldout   # rebuild the site data
 ```
 
-`F1RAG_MODEL` switches the model (for example `claude-opus-5-5`); the whole evaluation costs about
-$0.40 on Haiku 5.5. The site in `site/` is static and replays the saved runs in `runs/`.
+`F1RAG_MODEL` switches the model (for example `claude-opus-5-5`); the whole evaluation (all four
+systems, 160 questions) costs about $0.95 on Haiku 5.5. The site in `site/` is static and replays the saved runs in `runs/`.
 
 ## Stack
 
