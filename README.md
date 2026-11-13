@@ -16,7 +16,7 @@ Same model for every system (Claude Haiku 5.5), same data, exact scoring:
 | 2-hop (36) | Who was Fisichella's teammate for the whole 2004 season? | 58% | 94% | 100% | 100% |
 | 3-hop (24) | How many races did the team that won the 2010 Monaco GP win the next season? | 58% | 83% | 100% | 100% |
 | Aggregation (24) | How many Grands Prix did Räikkönen win driving for Lotus? | **8%** | 75% | 100% | 100% |
-| **Held-out (40)** | In how many 2016 races did the pole-sitter win? | **40%** | 92% | **100%** | **100%** |
+| **Held-out (40)** | In how many 2016 races did the pole-sitter win? | **40%** | 93% (37/40) | **100%** | **100%** |
 | **All 160** | | **88 (55%)** | **144 (90%)** | **160 (100%)** | **160 (100%)** |
 
 | | Vector RAG | Vector agent | Graph agent | Hybrid |
