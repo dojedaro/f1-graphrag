@@ -12,29 +12,31 @@ Same model for every system (Claude Haiku 5.5), same data, exact scoring:
 
 | Question type | Example | Vector RAG | Vector agent | Graph agent | Hybrid |
 |---|---|---|---|---|---|
-| 1-hop (36) | Who won the 2009 German Grand Prix? | 97% | 97% | 100% | 100% |
+| 1-hop (36) | Who won the 2009 German Grand Prix? | 97% | 94% | 100% | 100% |
 | 2-hop (36) | Who was Fisichella's teammate for the whole 2004 season? | 58% | 94% | 100% | 100% |
-| 3-hop (24) | How many races did the team that won the 2010 Monaco GP win the next season? | 58% | 83% | 100% | 100% |
-| Aggregation (24) | How many Grands Prix did Räikkönen win driving for Lotus? | **8%** | 75% | 100% | 100% |
-| **Held-out (40)** | In how many 2016 races did the pole-sitter win? | **40%** | 93% (37/40) | **100%** | **100%** |
-| **All 160** | | **88 (55%)** | **144 (90%)** | **160 (100%)** | **160 (100%)** |
+| 3-hop (24) | How many races did the team that won the 2010 Monaco GP win the next season? | 58% | 92% | 100% | 100% |
+| Aggregation (24) | How many Grands Prix did Räikkönen win driving for Lotus? | **8%** | 88% | 100% | 100% |
+| **Held-out (40)** | In how many 2016 races did the pole-sitter win? | **40%** | **100%** | **100%** | **100%** |
+| **All 160** | | **88 (55%)** | **151 (94%)** | **160 (100%)** | **160 (100%)** |
 
 | | Vector RAG | Vector agent | Graph agent | Hybrid |
 |---|---|---|---|---|
-| Tool calls per question | 0 | 5.7 | 3.3 | 3.6 |
-| Seconds per question | 3.4 | 8.8 | 4.5 | 4.6 |
-| Total cost, 160 questions | $0.10 | **$0.46** | $0.14 | $0.15 |
+| Tool calls per question | 0 | 4.7 | 3.3 | 3.6 |
+| Seconds per question | 3.4 | 8.1 | 4.5 | 4.6 |
+| Total cost, 160 questions | $0.10 | **$0.54** | $0.14 | $0.15 |
 
 **Vector RAG** retrieves the 8 most similar documents once. The **vector agent** is the stronger baseline: the
-same model with a `vector_search` tool it can call as often as it likes, writing its own queries, in the
-same tool loop and turn limit as the graph agent.
+same model with a `vector_search` tool (8 documents per call) it can call as often as it likes, writing its
+own queries, in the same tool loop as the graph agent with a 16-turn limit (the graph agent never needed
+more than 8). An earlier vector-agent run with 4 documents per call and 8 turns scored 144/160; it is kept
+in `runs/*/vector-agent-k4-8turns/`.
 
 **What the numbers say:**
 
-- **A search loop closes most of the gap.** Letting vector search run in an agent loop lifts it from 55% to
-  90%: it issues one query per season or race and assembles the pieces itself. On structured questions
-  the graph agent's edge is **reliability and efficiency**: it was right on all 160, with fewer tool calls,
-  in half the time and at about a third of the vector agent's cost.
+- **A search loop closes almost all of the gap.** Letting vector search run in an agent loop lifts it from 55%
+  to 94%, including all 40 held-out questions: it issues one query per season or race and assembles the
+  pieces itself. On structured questions the graph agent's edge is **reliability and efficiency**: right on
+  all 160, with fewer tool calls, in about half the time and at about a quarter of the vector agent's cost.
 
 - **Plain vector search is fine for single facts and collapses on counting.** It gets 97% of "who won race X",
   because one retrieved race report holds the answer. It gets 8% of counting questions ("how many races
@@ -61,9 +63,10 @@ the only held-out questions answered inside a single document (the season standi
 
 **About the baselines:** plain vector RAG is deliberately standard (top-8 retrieval with a small embedding
 model, MiniLM, race documents listing the top 10 finishers, one model call). The vector agent tests the
-obvious objection that a retrieval loop would fix it: it does close most of the gap (55% to 90%), but its
-remaining misses are counting and multi-season questions, where it must find every relevant record by
-search, and a graph or database simply has them. These are structured, computable questions, the home
+obvious objection that a retrieval loop would fix it: it closes almost all of the gap (55% to 94%). Its 9
+remaining misses are spread across question types, and every answer it gets right costs about four times
+as much as the graph agent's, because it has to find each relevant record by search while a graph or
+database simply has them. These are structured, computable questions, the home
 ground for a graph; unstructured text would favour retrieval.
 
 **Limits:** one model, one run per question, 8–12 questions per type, so a 100% score has a 95%

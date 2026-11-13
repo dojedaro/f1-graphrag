@@ -1,0 +1,22 @@
+{
+ "system": "vector-agent",
+ "answer": "Lewis Hamilton",
+ "raw": "Lewis Hamilton won the 2020 Formula 1 drivers' championship with Mercedes. The 2020 final standings show him on top with 347 points and 11 wins, ahead of teammate Valtteri Bottas (223 points) and Max Verstappen (214 points).\n\nANSWER: Lewis Hamilton",
+ "trace": [
+  {
+   "tool": "vector_search",
+   "input": {
+    "query": "2020 Formula 1 drivers' championship winner"
+   },
+   "output": "{\"results\": [{\"title\": \"2020 season standings\", \"text\": \"2020 Formula 1 season final standings. Drivers: 1. Lewis Hamilton (Mercedes) 347 pts, 11 wins; 2. Valtteri Bottas (Mercedes) 223 pts, 2 wins; 3. Max Verstappen (Red Bull) 214 pts, 2 wins; 4. Sergio Pérez (Racing Point) 125 pts, 1 wins; 5. Daniel Ricciardo (Renault) 119 pts, 0 wins; 6. Carlos Sainz (McLaren) 105 pts, 0 wins; 7. Alexander Albon (Red Bull) 105 pts, 0 wins; 8. Charles Leclerc (Ferrari) 98 pts, 0 wins; 9. Lando Norris (McLaren) 97 pts, 0 wins; 10. Pierre Gasly (AlphaTauri) 75 pts, 1 wins; 11. Lance Stroll (Racing Point) 75 pts, 0 wins; 12. Esteban Ocon (Renault) 62 pts, 0 wins; 13. Sebastian Vettel (Ferrari) 33 pts, 0 wins; 14. Daniil Kvyat (AlphaTauri) 32 pts, 0 wins; 15. Nico Hülkenberg (Racing Point) 10 pts, 0 wins; 16. Kimi Räikkönen (Alfa Romeo) 4 pts, 0 wins; 17. Antonio Giovinazzi (Alfa Romeo) 4 pts, 0 wins; 18. George Russell (Williams, Mercedes) 3 pts, 0 wins; 19. Romain Grosjean (Haas F1 Team) 2 pts, 0 wins; 20. Kevin Magnussen (Haas F1 Team) 1 pts, 0 wins; 21. Nicholas Latifi (Williams) 0 pts, 0 wins; 22. Jack Aitken (Williams) 0 pts, 0 wins; 23. Pietro Fittipaldi (Haas F1 Team) 0 pts, 0 wins. Constructors: 1. Mercedes 573 pts, 13 wins; 2. Red Bull 319 pts, 2 wins; 3. McLaren 202 pts, 0 wins; 4. Racing Point 195 pts, 1 wins; 5. Renault 181 pts, 0 wins; 6. Ferrari 131 pts, 0 wins; 7. AlphaTauri 107 pts, 1 wins; 8. Alfa Romeo 8 pts, 0 wins; 9. Haas F1 Team 3 pts, 0 wins; 10. Williams 0 pts, 0 wins.\""
+  }
+ ],
+ "input_tokens": 5019,
+ "output_tokens": 212,
+ "seconds": 2.5281650999968406,
+ "error": null,
+ "qid": "drivers_champion-10",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0006079000000000001,
+ "correct": true
+}

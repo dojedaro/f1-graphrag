@@ -1,22 +1,22 @@
 {
  "system": "vector-agent",
  "answer": "Nico Rosberg",
- "raw": "The 2016 final standings list Nico Rosberg (Mercedes) first with 385 points and 9 wins, ahead of teammate Lewis Hamilton on 380 points with 10 wins.\n\nANSWER: Nico Rosberg",
+ "raw": "The 2016 Formula 1 drivers' championship was won by Nico Rosberg (Mercedes), who finished with 385 points and 9 wins. His teammate Lewis Hamilton was second with 380 points and 10 wins, a 5-point margin.\n\nANSWER: Nico Rosberg",
  "trace": [
   {
    "tool": "vector_search",
    "input": {
-    "query": "2016 Formula 1 drivers' championship winner"
+    "query": "2016 Formula 1 drivers' championship standings final"
    },
    "output": "{\"results\": [{\"title\": \"2016 season standings\", \"text\": \"2016 Formula 1 season final standings. Drivers: 1. Nico Rosberg (Mercedes) 385 pts, 9 wins; 2. Lewis Hamilton (Mercedes) 380 pts, 10 wins; 3. Daniel Ricciardo (Red Bull) 256 pts, 1 wins; 4. Sebastian Vettel (Ferrari) 212 pts, 0 wins; 5. Max Verstappen (Toro Rosso, Red Bull) 204 pts, 1 wins; 6. Kimi Räikkönen (Ferrari) 186 pts, 0 wins; 7. Sergio Pérez (Force India) 101 pts, 0 wins; 8. Valtteri Bottas (Williams) 85 pts, 0 wins; 9. Nico Hülkenberg (Force India) 72 pts, 0 wins; 10. Fernando Alonso (McLaren) 54 pts, 0 wins; 11. Felipe Massa (Williams) 53 pts, 0 wins; 12. Carlos Sainz (Toro Rosso) 46 pts, 0 wins; 13. Romain Grosjean (Haas F1 Team) 29 pts, 0 wins; 14. Daniil Kvyat (Red Bull, Toro Rosso) 25 pts, 0 wins; 15. Jenson Button (McLaren) 21 pts, 0 wins; 16. Kevin Magnussen (Renault) 7 pts, 0 wins; 17. Felipe Nasr (Sauber) 2 pts, 0 wins; 18. Jolyon Palmer (Renault) 1 pts, 0 wins; 19. Pascal Wehrlein (Manor Marussia) 1 pts, 0 wins; 20. Stoffel Vandoorne (McLaren) 1 pts, 0 wins; 21. Esteban Gutiérrez (Haas F1 Team) 0 pts, 0 wins; 22. Marcus Ericsson (Sauber) 0 pts, 0 wins; 23. Esteban Ocon (Manor Marussia) 0 pts, 0 wins; 24. Rio Haryanto (Manor Marussia) 0 pts, 0 wins. Constructors: 1. Mercedes 765 pts, 19 wins; 2. Red Bull 468 pts, 2 wins; 3. Ferrari 398 pts, 0 wins; 4. Force India 173 pts, 0 wins; 5. Williams 138 pts, 0 wins; 6. McLaren 76 pts, 0 wins; 7. Toro Rosso 63 pts, 0 wins; 8. Haas F1 Team 29 pts, 0 wins; 9. Re"
   }
  ],
- "input_tokens": 5015,
- "output_tokens": 199,
- "seconds": 2.930110599991167,
+ "input_tokens": 6383,
+ "output_tokens": 167,
+ "seconds": 2.0757687999866903,
  "error": null,
  "qid": "drivers_champion-02",
  "model": "claude-haiku-5-5",
- "cost_usd": 0.000601,
+ "cost_usd": 0.0007218000000000001,
  "correct": true
 }

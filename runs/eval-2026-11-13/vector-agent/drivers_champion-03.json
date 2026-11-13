@@ -1,22 +1,22 @@
 {
  "system": "vector-agent",
  "answer": "Fernando Alonso",
- "raw": "The 2006 drivers' championship went to Fernando Alonso of Renault. The 2006 season standings show him first with 134 points and 7 wins, ahead of Michael Schumacher (Ferrari) on 121 points.\n\nANSWER: Fernando Alonso",
+ "raw": "The 2006 Formula 1 drivers' championship was won by Fernando Alonso (Renault), with 134 points and 7 wins. Michael Schumacher (Ferrari) finished second with 121 points, also on 7 wins. This comes from the 2006 season standings in the search results.\n\nANSWER: Fernando Alonso",
  "trace": [
   {
    "tool": "vector_search",
    "input": {
-    "query": "2006 Formula 1 drivers' championship final standings winner"
+    "query": "2006 Formula 1 drivers' championship final standings"
    },
    "output": "{\"results\": [{\"title\": \"2006 season standings\", \"text\": \"2006 Formula 1 season final standings. Drivers: 1. Fernando Alonso (Renault) 134 pts, 7 wins; 2. Michael Schumacher (Ferrari) 121 pts, 7 wins; 3. Felipe Massa (Ferrari) 80 pts, 2 wins; 4. Giancarlo Fisichella (Renault) 72 pts, 1 wins; 5. Kimi Räikkönen (McLaren) 65 pts, 0 wins; 6. Jenson Button (Honda) 56 pts, 1 wins; 7. Rubens Barrichello (Honda) 30 pts, 0 wins; 8. Juan Pablo Montoya (McLaren) 26 pts, 0 wins; 9. Nick Heidfeld (BMW Sauber) 23 pts, 0 wins; 10. Ralf Schumacher (Toyota) 20 pts, 0 wins; 11. Pedro de la Rosa (McLaren) 19 pts, 0 wins; 12. Jarno Trulli (Toyota) 15 pts, 0 wins; 13. David Coulthard (Red Bull) 14 pts, 0 wins; 14. Mark Webber (Williams) 7 pts, 0 wins; 15. Jacques Villeneuve (BMW Sauber) 7 pts, 0 wins; 16. Robert Kubica (BMW Sauber) 6 pts, 0 wins; 17. Nico Rosberg (Williams) 4 pts, 0 wins; 18. Christian Klien (Red Bull) 2 pts, 0 wins; 19. Vitantonio Liuzzi (Toro Rosso) 1 pts, 0 wins; 20. Scott Speed (Toro Rosso) 0 pts, 0 wins; 21. Tiago Monteiro (MF1, Spyker MF1) 0 pts, 0 wins; 22. Christijan Albers (MF1, Spyker MF1) 0 pts, 0 wins; 23. Takuma Sato (Super Aguri) 0 pts, 0 wins; 24. Robert Doornbos (Red Bull) 0 pts, 0 wins; 25. Yuji Ide (Super Aguri) 0 pts, 0 wins; 26. Sakon Yamamoto (Super Aguri) 0 pts, 0 wins; 27. Franck Montagny (Super Aguri) 0 pts, 0 wins. Constructors: 1. Renault 206 pts, 8 wins; 2. Ferrari 201 pts, 9 wins; 3. McLaren 110 pts, 0 wins; 4. Honda 86 pts, 1 wins; 5. BMW Sauber 36 pts"
   }
  ],
- "input_tokens": 5430,
- "output_tokens": 213,
- "seconds": 3.992107099998975,
+ "input_tokens": 8675,
+ "output_tokens": 224,
+ "seconds": 2.62116499998956,
  "error": null,
  "qid": "drivers_champion-03",
  "model": "claude-haiku-5-5",
- "cost_usd": 0.0006495,
+ "cost_usd": 0.0009795,
  "correct": true
 }

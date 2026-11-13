@@ -1,0 +1,29 @@
+{
+ "system": "vector-agent",
+ "answer": "Nico Rosberg",
+ "raw": "Michael Schumacher's teammates from 2000 to 2025 were:\n\n- **Ferrari, 2000–2006:** Eddie Irvine (2000), Rubens Barrichello (2000–2005), and Felipe Massa (2006).\n- **Mercedes, 2010–2012:** Nico Rosberg. The search results confirm that Rosberg and Schumacher raced together for Mercedes in 2010 and 2011.\n\nNone of Irvine, Barrichello or Massa won a drivers' championship. Rosberg did, and I recall him winning the 2016 title, but my searches did not return a source for that. It is from memory rather than the retrieved material, so treat that part as unverified.\n\nANSWER: Nico Rosberg",
+ "trace": [
+  {
+   "tool": "vector_search",
+   "input": {
+    "query": "Michael Schumacher teammate Mercedes 2010-2012 Nico Rosberg"
+   },
+   "output": "{\"results\": [{\"title\": \"2010 German Grand Prix\", \"text\": \"2010 German Grand Prix, round 11 of the 2010 season, at Hockenheimring on 2010-07-25. Top 10: 1. Fernando Alonso (Ferrari), started 2, Finished; 2. Felipe Massa (Ferrari), started 3, Finished; 3. Sebastian Vettel (Red Bull), started 1, Finished; 4. Lewis Hamilton (McLaren), started 6, Finished; 5. Jenson Button (McLaren), started 5, Finished; 6. Mark Webber (Red Bull), started 4, Finished; 7. Robert Kubica (Renault), started 7, +1 Lap; 8. Nico Rosberg (Mercedes), started 9, +1 Lap; 9. Michael Schumacher (Mercedes), started 11, +1 Lap; 10. Vitaly Petrov (Renault), started 13, +1 Lap\"}, {\"title\": \"2011 German Grand Prix\", \"text\": \"2011 German Grand Prix, round 10 of the 2011 season, at Nürburgring on 2011-07-24. Top 10: 1. Lewis Hamilton (McLaren), started 2, Finished; 2. Fernando Alonso (Ferrari), started 4, Finished; 3. Mark Webber (Red Bull), started 1, Finished; 4. Sebastian Vettel (Red Bull), started 3, Finished; 5. Felipe Massa (Ferrari), started 5, Finished; 6. Adrian Sutil (Force India), started 8, Finished; 7. Nico Rosberg (Mercedes), started 6, +1 Lap; 8. Michael Schumacher (Mercedes), started 10, +1 Lap; 9. Kamui Kobayashi (Sauber), started 17, +1 Lap; 10. Vitaly Petrov (Renault), started 9, +1 Lap\"}, {\"title\": \"2010 British Grand Prix\", \"text\": \"2010 British Grand Prix, round 10 of the 2010 season, at Silverstone Circuit on 2010-07-11. Top 10: 1. Mark Webber (Red Bull), started 2, Finished; 2. Lewis Hamilton "
+  },
+  {
+   "tool": "vector_search",
+   "input": {
+    "query": "Michael Schumacher Ferrari teammate Rubens Barrichello Felipe Massa Eddie Irvine"
+   },
+   "output": "{\"results\": [{\"title\": \"2006 Monaco Grand Prix\", \"text\": \"2006 Monaco Grand Prix, round 7 of the 2006 season, at Circuit de Monaco on 2006-05-28. Top 10: 1. Fernando Alonso (Renault), started 1, Finished; 2. Juan Pablo Montoya (McLaren), started 4, Finished; 3. David Coulthard (Red Bull), started 7, Finished; 4. Rubens Barrichello (Honda), started 5, Finished; 5. Michael Schumacher (Ferrari), started 22, Finished; 6. Giancarlo Fisichella (Renault), started 9, Finished; 7. Nick Heidfeld (BMW Sauber), started 15, +1 Lap; 8. Ralf Schumacher (Toyota), started 10, +1 Lap; 9. Felipe Massa (Ferrari), started 21, +1 Lap; 10. Vitantonio Liuzzi (Toro Rosso), started 12, +1 Lap\"}, {\"title\": \"2007 Spanish Grand Prix\", \"text\": \"2007 Spanish Grand Prix, round 4 of the 2007 season, at Circuit de Barcelona-Catalunya on 2007-05-13. Top 10: 1. Felipe Massa (Ferrari), started 1, Finished; 2. Lewis Hamilton (McLaren), started 4, Finished; 3. Fernando Alonso (McLaren), started 2, Finished; 4. Robert Kubica (BMW Sauber), started 5, Finished; 5. David Coulthard (Red Bull), started 9, Finished; 6. Nico Rosberg (Williams), started 11, Finished; 7. Heikki Kovalainen (Renault), started 8, Finished; 8. Takuma Sato (Super Aguri), started 13, +1 Lap; 9. Giancarlo Fisichella (Renault), started 10, +1 Lap; 10. Rubens Barrichello (Honda), started 12, +1 Lap\"}, {\"title\": \"2008 Monaco Grand Prix\", \"text\": \"2008 Monaco Grand Prix, round 6 of the 2008 season, at Circuit de Monaco on 2008-05-25. Top 10: 1. Lewis "
+  }
+ ],
+ "input_tokens": 4702,
+ "output_tokens": 1140,
+ "seconds": 6.755781100015156,
+ "error": null,
+ "qid": "champion_teammates-02",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0010402,
+ "correct": true
+}
