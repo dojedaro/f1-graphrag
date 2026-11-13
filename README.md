@@ -70,7 +70,7 @@ database simply has them. These are structured, computable questions, the home
 ground for a graph; unstructured text would favour retrieval.
 
 **Limits:** one model, one run per question, and 8–12 questions per template, so a 100% score has a 95%
-confidence interval reaching down to about 70–75% per template (about 86–91% per row of the table). And 100% on structured questions about one
+confidence interval reaching down to about 68–76% per template (about 86–91% per row of the table). And 100% on structured questions about one
 clean dataset is an upper bound: real questions arrive misspelled, ambiguous and about things the schema
 didn't anticipate.
 
