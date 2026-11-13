@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "Max Verstappen",
+ "raw": "Based on the provided documents, Max Verstappen won the most races at Circuit Park Zandvoort. He won the 2022 and 2023 Dutch Grands Prix. Norris (2024) and Piastri (2025) each won once. The documents contain no 2021 race, so that year is not counted here.\n\nANSWER: Max Verstappen",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2020 70th Anniversary Grand Prix",
+     "score": 0.604
+    },
+    {
+     "title": "2000 United States Grand Prix",
+     "score": 0.602
+    },
+    {
+     "title": "2022 Dutch Grand Prix",
+     "score": 0.602
+    },
+    {
+     "title": "2023 Dutch Grand Prix",
+     "score": 0.601
+    },
+    {
+     "title": "2024 Dutch Grand Prix",
+     "score": 0.591
+    },
+    {
+     "title": "2025 Dutch Grand Prix",
+     "score": 0.587
+    },
+    {
+     "title": "2025 Australian Grand Prix",
+     "score": 0.578
+    },
+    {
+     "title": "2023 Canadian Grand Prix",
+     "score": 0.574
+    }
+   ]
+  }
+ ],
+ "input_tokens": 2696,
+ "output_tokens": 418,
+ "seconds": 2.625114800001029,
+ "error": null,
+ "qid": "circuit_most_wins-05",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.00047860000000000003,
+ "correct": true
+}

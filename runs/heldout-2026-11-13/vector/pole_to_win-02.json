@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "3",
+ "raw": "**Answer: 3 races.** The pole-sitter (grid 1) won in Canada, Bahrain and Belgium.\n\n- **Canada [1]:** Hamilton started 1st and won.\n- **Bahrain [5]:** Hamilton started 1st and won.\n- **Belgium [7]:** Hamilton started 1st and won.\n\nIn the other races the winner did not start from grid 1:\n- **Russia [2]:** Hamilton won from grid 2.\n- **Japan [3]:** Hamilton won from grid 2.\n- **Hungary [4]:** Vettel won from grid 3.\n- **United States [6]:** Hamilton won from grid 2.\n- **Monaco [8]:** Rosberg won from grid 2.\n\nANSWER: 3",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2015 Canadian Grand Prix",
+     "score": 0.667
+    },
+    {
+     "title": "2015 Russian Grand Prix",
+     "score": 0.656
+    },
+    {
+     "title": "2015 Japanese Grand Prix",
+     "score": 0.647
+    },
+    {
+     "title": "2015 Hungarian Grand Prix",
+     "score": 0.646
+    },
+    {
+     "title": "2015 Bahrain Grand Prix",
+     "score": 0.643
+    },
+    {
+     "title": "2015 United States Grand Prix",
+     "score": 0.635
+    },
+    {
+     "title": "2015 Belgian Grand Prix",
+     "score": 0.628
+    },
+    {
+     "title": "2015 Monaco Grand Prix",
+     "score": 0.627
+    }
+   ]
+  }
+ ],
+ "input_tokens": 2710,
+ "output_tokens": 701,
+ "seconds": 3.5900090000068303,
+ "error": null,
+ "qid": "pole_to_win-02",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0006215,
+ "correct": false
+}

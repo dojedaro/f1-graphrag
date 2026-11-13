@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "1",
+ "raw": "Michael Schumacher appears in four of the documents, all driving for Ferrari: the 2000 United States Grand Prix [1], the 2000 Spanish Grand Prix [3], the 2000 Belgian Grand Prix [4], and the 2000 German Grand Prix [5]. Document [2] lists Mick Schumacher (Haas), a different driver, so it doesn't count. The documents only show top-10 finishers, so this covers only the races where he finished in the top 10.\n\nANSWER: 1",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2000 United States Grand Prix",
+     "score": 0.685
+    },
+    {
+     "title": "2022 British Grand Prix",
+     "score": 0.673
+    },
+    {
+     "title": "2000 Spanish Grand Prix",
+     "score": 0.67
+    },
+    {
+     "title": "2000 Belgian Grand Prix",
+     "score": 0.669
+    },
+    {
+     "title": "2000 German Grand Prix",
+     "score": 0.667
+    },
+    {
+     "title": "2025 Australian Grand Prix",
+     "score": 0.667
+    },
+    {
+     "title": "2024 Australian Grand Prix",
+     "score": 0.664
+    },
+    {
+     "title": "2024 Belgian Grand Prix",
+     "score": 0.663
+    }
+   ]
+  }
+ ],
+ "input_tokens": 2699,
+ "output_tokens": 344,
+ "seconds": 2.261223499997868,
+ "error": null,
+ "qid": "team_count-03",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0004419,
+ "correct": false
+}

@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "Michael Schumacher",
+ "raw": "Michael Schumacher won the 2004 Formula 1 drivers' championship. The 2004 final standings in document [1] list him first with 148 points and 13 wins, ahead of Rubens Barrichello on 114 points.\n\nANSWER: Michael Schumacher",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2004 season standings",
+     "score": 0.751
+    },
+    {
+     "title": "2005 season standings",
+     "score": 0.712
+    },
+    {
+     "title": "2006 season standings",
+     "score": 0.709
+    },
+    {
+     "title": "2003 season standings",
+     "score": 0.702
+    },
+    {
+     "title": "2007 season standings",
+     "score": 0.696
+    },
+    {
+     "title": "2004 United States Grand Prix",
+     "score": 0.685
+    },
+    {
+     "title": "2004 San Marino Grand Prix",
+     "score": 0.678
+    },
+    {
+     "title": "2004 Monaco Grand Prix",
+     "score": 0.668
+    }
+   ]
+  }
+ ],
+ "input_tokens": 6127,
+ "output_tokens": 129,
+ "seconds": 1.1230049000005238,
+ "error": null,
+ "qid": "drivers_champion-12",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0006772000000000001,
+ "correct": true
+}

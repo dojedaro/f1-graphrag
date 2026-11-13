@@ -1,0 +1,53 @@
+{
+ "system": "hybrid",
+ "answer": "Charles Pic",
+ "raw": "Timo Glock's teammate for the whole of 2012 was Charles Pic.\n\nIn 2012 Glock drove only for Marussia, and he started all 20 races that season. Pic was his Marussia teammate, and he also started all 20 races, so both were there for the full year.\n\nANSWER: Charles Pic",
+ "trace": [
+  {
+   "tool": "find_entity",
+   "input": {
+    "name": "Timo Glock",
+    "kind": "driver"
+   },
+   "output": "{\"id\": \"glock\", \"name\": \"Timo Glock\"}"
+  },
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Timo Glock",
+    "season": 2012
+   },
+   "output": "{\"driver\": \"Timo Glock\", \"season\": 2012, \"teams\": [\"Marussia\"], \"teammates\": [\"Charles Pic\"]}"
+  },
+  {
+   "tool": "team_season",
+   "input": {
+    "constructor": "Marussia",
+    "season": 2012
+   },
+   "output": "{\"team\": \"Marussia\", \"season\": 2012, \"drivers\": [\"Charles Pic\", \"Timo Glock\"], \"wins\": 0, \"championship_position\": 11, \"points\": 0.0}"
+  },
+  {
+   "tool": "driver_career",
+   "input": {
+    "driver": "Charles Pic"
+   },
+   "output": "{\"driver\": \"Charles Pic\", \"seasons\": [{\"season\": 2012, \"teams\": [\"Marussia\"], \"races\": 20, \"wins\": 0, \"podiums\": 0, \"championship_position\": 21}, {\"season\": 2013, \"teams\": [\"Caterham\"], \"races\": 19, \"wins\": 0, \"podiums\": 0, \"championship_position\": 20}]}"
+  },
+  {
+   "tool": "driver_career",
+   "input": {
+    "driver": "Timo Glock"
+   },
+   "output": "{\"driver\": \"Timo Glock\", \"seasons\": [{\"season\": 2004, \"teams\": [\"Jordan\"], \"races\": 4, \"wins\": 0, \"podiums\": 0, \"championship_position\": 19}, {\"season\": 2008, \"teams\": [\"Toyota\"], \"races\": 18, \"wins\": 0, \"podiums\": 1, \"championship_position\": 10}, {\"season\": 2009, \"teams\": [\"Toyota\"], \"races\": 15, \"wins\": 0, \"podiums\": 2, \"championship_position\": 10}, {\"season\": 2010, \"teams\": [\"Virgin\"], \"races\": 19, \"wins\": 0, \"podiums\": 0, \"championship_position\": 25}, {\"season\": 2011, \"teams\": [\"Virgin\"], \"races\": 19, \"wins\": 0, \"podiums\": 0, \"championship_position\": 25}, {\"season\": 2012, \"teams\": [\"Marussia\"], \"races\": 20, \"wins\": 0, \"podiums\": 0, \"championship_position\": 20}]}"
+  }
+ ],
+ "input_tokens": 8425,
+ "output_tokens": 617,
+ "seconds": 5.86360149999382,
+ "error": null,
+ "qid": "teammate-11",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.001151,
+ "correct": true
+}

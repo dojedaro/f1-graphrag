@@ -1,0 +1,22 @@
+{
+ "system": "graph",
+ "answer": "Sebastian Vettel",
+ "raw": "The 2012 Formula 1 drivers' champion was Sebastian Vettel, who finished on 281 points with 5 wins, ahead of Fernando Alonso (278 points, 3 wins). Red Bull also won the constructors' championship that year.\n\nANSWER: Sebastian Vettel",
+ "trace": [
+  {
+   "tool": "season_summary",
+   "input": {
+    "season": 2012
+   },
+   "output": "{\"season\": 2012, \"races\": 20, \"drivers_champion\": \"Sebastian Vettel\", \"constructors_champion\": \"Red Bull\", \"top_drivers\": [{\"position\": 1, \"driver\": \"Sebastian Vettel\", \"points\": 281.0, \"wins\": 5}, {\"position\": 2, \"driver\": \"Fernando Alonso\", \"points\": 278.0, \"wins\": 3}, {\"position\": 3, \"driver\": \"Kimi Räikkönen\", \"points\": 207.0, \"wins\": 1}, {\"position\": 4, \"driver\": \"Lewis Hamilton\", \"points\": 190.0, \"wins\": 4}, {\"position\": 5, \"driver\": \"Jenson Button\", \"points\": 188.0, \"wins\": 3}], \"top_constructors\": [{\"position\": 1, \"team\": \"Red Bull\", \"points\": 460.0, \"wins\": 7}, {\"position\": 2, \"team\": \"Ferrari\", \"points\": 400.0, \"wins\": 3}, {\"position\": 3, \"team\": \"McLaren\", \"points\": 378.0, \"wins\": 7}, {\"position\": 4, \"team\": \"Lotus F1\", \"points\": 303.0, \"wins\": 1}, {\"position\": 5, \"team\": \"Mercedes\", \"points\": 142.0, \"wins\": 1}]}"
+  }
+ ],
+ "input_tokens": 3331,
+ "output_tokens": 150,
+ "seconds": 3.2725799000036204,
+ "error": null,
+ "qid": "drivers_champion-11",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0004081,
+ "correct": true
+}

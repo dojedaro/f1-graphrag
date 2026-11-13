@@ -1,0 +1,30 @@
+{
+ "system": "hybrid",
+ "answer": "1",
+ "raw": "Jack Doohan's career record covers two seasons, and both list only one team:\n\n- **2024:** Alpine F1 Team (1 race)\n- **2025:** Alpine F1 Team (6 races)\n\nThat makes one distinct team, Alpine F1 Team.\n\nANSWER: 1",
+ "trace": [
+  {
+   "tool": "find_entity",
+   "input": {
+    "name": "Jack Doohan",
+    "kind": "driver"
+   },
+   "output": "{\"id\": \"doohan\", \"name\": \"Jack Doohan\"}"
+  },
+  {
+   "tool": "driver_career",
+   "input": {
+    "driver": "Jack Doohan"
+   },
+   "output": "{\"driver\": \"Jack Doohan\", \"seasons\": [{\"season\": 2024, \"teams\": [\"Alpine F1 Team\"], \"races\": 1, \"wins\": 0, \"podiums\": 0, \"championship_position\": 24}, {\"season\": 2025, \"teams\": [\"Alpine F1 Team\"], \"races\": 6, \"wins\": 0, \"podiums\": 0, \"championship_position\": 21}]}"
+  }
+ ],
+ "input_tokens": 3416,
+ "output_tokens": 359,
+ "seconds": 3.8883762000041315,
+ "error": null,
+ "qid": "team_count-12",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0005211,
+ "correct": true
+}

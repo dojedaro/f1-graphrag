@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "Lewis Hamilton",
+ "raw": "Lewis Hamilton won the 2017 Formula 1 drivers' championship. Document [1] lists him first with 363 points and 9 wins, 46 points ahead of Sebastian Vettel in second.\n\nANSWER: Lewis Hamilton",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2017 season standings",
+     "score": 0.773
+    },
+    {
+     "title": "2024 season standings",
+     "score": 0.713
+    },
+    {
+     "title": "2023 season standings",
+     "score": 0.713
+    },
+    {
+     "title": "2017 Monaco Grand Prix",
+     "score": 0.709
+    },
+    {
+     "title": "2016 season standings",
+     "score": 0.709
+    },
+    {
+     "title": "2018 season standings",
+     "score": 0.704
+    },
+    {
+     "title": "2021 season standings",
+     "score": 0.703
+    },
+    {
+     "title": "2014 season standings",
+     "score": 0.698
+    }
+   ]
+  }
+ ],
+ "input_tokens": 7058,
+ "output_tokens": 157,
+ "seconds": 1.3758455000061076,
+ "error": null,
+ "qid": "drivers_champion-07",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0007843,
+ "correct": true
+}

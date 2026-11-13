@@ -1,0 +1,22 @@
+{
+ "system": "graph",
+ "answer": "2",
+ "raw": "Michael Schumacher raced for two teams between 2000 and 2025: Ferrari (2000–2006) and Mercedes (2010–2012). His career record shows no other teams in those seasons, and he had no entries in 2007–2009 or 2013–2025.\n\nANSWER: 2",
+ "trace": [
+  {
+   "tool": "driver_career",
+   "input": {
+    "driver": "Michael Schumacher"
+   },
+   "output": "{\"driver\": \"Michael Schumacher\", \"seasons\": [{\"season\": 2000, \"teams\": [\"Ferrari\"], \"races\": 17, \"wins\": 9, \"podiums\": 12, \"championship_position\": 1}, {\"season\": 2001, \"teams\": [\"Ferrari\"], \"races\": 17, \"wins\": 9, \"podiums\": 14, \"championship_position\": 1}, {\"season\": 2002, \"teams\": [\"Ferrari\"], \"races\": 17, \"wins\": 11, \"podiums\": 17, \"championship_position\": 1}, {\"season\": 2003, \"teams\": [\"Ferrari\"], \"races\": 16, \"wins\": 6, \"podiums\": 8, \"championship_position\": 1}, {\"season\": 2004, \"teams\": [\"Ferrari\"], \"races\": 18, \"wins\": 13, \"podiums\": 15, \"championship_position\": 1}, {\"season\": 2005, \"teams\": [\"Ferrari\"], \"races\": 19, \"wins\": 1, \"podiums\": 5, \"championship_position\": 3}, {\"season\": 2006, \"teams\": [\"Ferrari\"], \"races\": 18, \"wins\": 7, \"podiums\": 12, \"championship_position\": 2}, {\"season\": 2010, \"teams\": [\"Mercedes\"], \"races\": 19, \"wins\": 0, \"podiums\": 0, \"championship_position\": 9}, {\"season\": 2011, \"teams\": [\"Mercedes\"], \"races\": 19, \"wins\": 0, \"podiums\": 0, \"championship_position\": 8}, {\"season\": 2012, \"teams\": [\"Mercedes\"], \"races\": 20, \"wins\": 0, \"podiums\": 1, \"championship_position\": 13}]}"
+  }
+ ],
+ "input_tokens": 3538,
+ "output_tokens": 263,
+ "seconds": 4.260340499997255,
+ "error": null,
+ "qid": "team_count-03",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.00048530000000000003,
+ "correct": true
+}

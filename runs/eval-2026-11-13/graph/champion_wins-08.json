@@ -1,0 +1,22 @@
+{
+ "system": "graph",
+ "answer": "6",
+ "raw": "The 2009 drivers' champion was Jenson Button, and the 2009 season summary credits him with 6 wins (out of 17 races).\n\nANSWER: 6",
+ "trace": [
+  {
+   "tool": "season_summary",
+   "input": {
+    "season": 2009
+   },
+   "output": "{\"season\": 2009, \"races\": 17, \"drivers_champion\": \"Jenson Button\", \"constructors_champion\": \"Brawn\", \"top_drivers\": [{\"position\": 1, \"driver\": \"Jenson Button\", \"points\": 95.0, \"wins\": 6}, {\"position\": 2, \"driver\": \"Sebastian Vettel\", \"points\": 84.0, \"wins\": 4}, {\"position\": 3, \"driver\": \"Rubens Barrichello\", \"points\": 77.0, \"wins\": 2}, {\"position\": 4, \"driver\": \"Mark Webber\", \"points\": 69.5, \"wins\": 2}, {\"position\": 5, \"driver\": \"Lewis Hamilton\", \"points\": 49.0, \"wins\": 2}], \"top_constructors\": [{\"position\": 1, \"team\": \"Brawn\", \"points\": 172.0, \"wins\": 8}, {\"position\": 2, \"team\": \"Red Bull\", \"points\": 153.5, \"wins\": 6}, {\"position\": 3, \"team\": \"McLaren\", \"points\": 71.0, \"wins\": 2}, {\"position\": 4, \"team\": \"Ferrari\", \"points\": 70.0, \"wins\": 1}, {\"position\": 5, \"team\": \"Toyota\", \"points\": 59.5, \"wins\": 0}]}"
+  }
+ ],
+ "input_tokens": 3420,
+ "output_tokens": 270,
+ "seconds": 2.7631525000033434,
+ "error": null,
+ "qid": "champion_wins-08",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.000477,
+ "correct": true
+}

@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "0",
+ "raw": "Across the four 2019 races in the documents, the pole-sitter never won:\n\n- **Australia [1]:** Pole (grid 1) was Lewis Hamilton, who finished 2nd. Valtteri Bottas (grid 2) won.\n- **Germany [2]:** Pole was Lewis Hamilton, who finished 9th. Max Verstappen (grid 2) won.\n- **Russia [3]:** Pole was Charles Leclerc, who finished 3rd. Lewis Hamilton (grid 2) won.\n- **Canada [4]:** Pole was Sebastian Vettel, who finished 2nd. Lewis Hamilton (grid 2) won.\n\nThe documents only cover these four 2019 races, so this count is based on them alone.\n\nANSWER: 0",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2019 Australian Grand Prix",
+     "score": 0.637
+    },
+    {
+     "title": "2019 German Grand Prix",
+     "score": 0.628
+    },
+    {
+     "title": "2019 Russian Grand Prix",
+     "score": 0.622
+    },
+    {
+     "title": "2019 Canadian Grand Prix",
+     "score": 0.621
+    },
+    {
+     "title": "2024 Canadian Grand Prix",
+     "score": 0.613
+    },
+    {
+     "title": "2023 Canadian Grand Prix",
+     "score": 0.613
+    },
+    {
+     "title": "2006 Canadian Grand Prix",
+     "score": 0.61
+    },
+    {
+     "title": "2020 70th Anniversary Grand Prix",
+     "score": 0.609
+    }
+   ]
+  }
+ ],
+ "input_tokens": 2749,
+ "output_tokens": 604,
+ "seconds": 2.974592800004757,
+ "error": null,
+ "qid": "pole_to_win-04",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0005769000000000001,
+ "correct": false
+}

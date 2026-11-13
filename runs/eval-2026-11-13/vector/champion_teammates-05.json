@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "Michael Schumacher, Jenson Button",
+ "raw": "The documents only directly show one of Barrichello's teammates: **Michael Schumacher**. Document [6] (2000 European Grand Prix) lists both of them at Ferrari, and Schumacher won the drivers' championship in 2000 and in the following years.\n\nOutside the provided documents, Jenson Button was also Barrichello's teammate at Honda (2006–2008) and Brawn (2009), and he won the 2009 title. The documents don't cover that, so it's from my own knowledge.\n\nANSWER: Michael Schumacher, Jenson Button",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2025 Canadian Grand Prix",
+     "score": 0.644
+    },
+    {
+     "title": "2022 Canadian Grand Prix",
+     "score": 0.636
+    },
+    {
+     "title": "2022 Emilia Romagna Grand Prix",
+     "score": 0.623
+    },
+    {
+     "title": "2025 Spanish Grand Prix",
+     "score": 0.623
+    },
+    {
+     "title": "2023 Monaco Grand Prix",
+     "score": 0.623
+    },
+    {
+     "title": "2000 European Grand Prix",
+     "score": 0.622
+    },
+    {
+     "title": "2023 Canadian Grand Prix",
+     "score": 0.62
+    },
+    {
+     "title": "2025 Belgian Grand Prix",
+     "score": 0.62
+    }
+   ]
+  }
+ ],
+ "input_tokens": 2748,
+ "output_tokens": 1357,
+ "seconds": 7.071970199991483,
+ "error": null,
+ "qid": "champion_teammates-05",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0009532999999999999,
+ "correct": true
+}

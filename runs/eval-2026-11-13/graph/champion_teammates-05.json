@@ -1,0 +1,123 @@
+{
+ "system": "graph",
+ "answer": "Michael Schumacher, Jenson Button",
+ "raw": "Barrichello's teammates who won a drivers' championship in 2000–2025 were Michael Schumacher and Jenson Button.\n\n- **Michael Schumacher** was his Ferrari teammate from 2000 to 2005, and won the 2000–2004 titles.\n- **Jenson Button** was his Honda teammate in 2006–2008 and his Brawn teammate in 2009, and won the 2009 title.\n- **Nico Hülkenberg** (Williams, 2010) and **Pastor Maldonado** (Williams, 2011) never won a title.\n\nThe teammate lookups list only one teammate per season, so I went by those results. For 2000 that means Eddie Irvine does not appear, which I can't check against any other source.\n\nANSWER: Michael Schumacher, Jenson Button",
+ "trace": [
+  {
+   "tool": "driver_career",
+   "input": {
+    "driver": "Rubens Barrichello"
+   },
+   "output": "{\"driver\": \"Rubens Barrichello\", \"seasons\": [{\"season\": 2000, \"teams\": [\"Ferrari\"], \"races\": 17, \"wins\": 1, \"podiums\": 9, \"championship_position\": 4}, {\"season\": 2001, \"teams\": [\"Ferrari\"], \"races\": 17, \"wins\": 0, \"podiums\": 10, \"championship_position\": 3}, {\"season\": 2002, \"teams\": [\"Ferrari\"], \"races\": 17, \"wins\": 4, \"podiums\": 10, \"championship_position\": 2}, {\"season\": 2003, \"teams\": [\"Ferrari\"], \"races\": 16, \"wins\": 2, \"podiums\": 8, \"championship_position\": 4}, {\"season\": 2004, \"teams\": [\"Ferrari\"], \"races\": 18, \"wins\": 2, \"podiums\": 14, \"championship_position\": 2}, {\"season\": 2005, \"teams\": [\"Ferrari\"], \"races\": 19, \"wins\": 0, \"podiums\": 4, \"championship_position\": 8}, {\"season\": 2006, \"teams\": [\"Honda\"], \"races\": 18, \"wins\": 0, \"podiums\": 0, \"championship_position\": 7}, {\"season\": 2007, \"teams\": [\"Honda\"], \"races\": 17, \"wins\": 0, \"podiums\": 0, \"championship_position\": 20}, {\"season\": 2008, \"teams\": [\"Honda\"], \"races\": 18, \"wins\": 0, \"podiums\": 1, \"championship_position\": 14}, {\"season\": 2009, \"teams\": [\"Brawn\"], \"races\": 17, \"wins\": 2, \"podiums\": 6, \"championship_position\": 3}, {\"season\": 2010, \"teams\": [\"Williams\"], \"races\": 19, \"wins\": 0, \"podiums\": 0, \"championship_position\": 10}, {\"season\": 2011, \"teams\": [\"Williams\"], \"races\": 19, \"wins\": 0, \"podiums\": 0, \"championship_position\": 17}]}"
+  },
+  {
+   "tool": "champions",
+   "input": {},
+   "output": "{\"seasons\": [{\"season\": 2000, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2001, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2002, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2003, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2004, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2005, \"drivers_champion\": \"Fernando Alonso\", \"constructors_champion\": \"Renault\"}, {\"season\": 2006, \"drivers_champion\": \"Fernando Alonso\", \"constructors_champion\": \"Renault\"}, {\"season\": 2007, \"drivers_champion\": \"Kimi Räikkönen\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2008, \"drivers_champion\": \"Lewis Hamilton\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2009, \"drivers_champion\": \"Jenson Button\", \"constructors_champion\": \"Brawn\"}, {\"season\": 2010, \"drivers_champion\": \"Sebastian Vettel\", \"constructors_champion\": \"Red Bull\"}, {\"season\": 2011, \"drivers_champion\": \"Sebastian Vettel\", \"constructors_champion\": \"Red Bull\"}, {\"season\": 2012, \"drivers_champion\": \"Sebastian Vettel\", \"constructors_champion\": \"Red Bull\"}, {\"season\": 2013, \"drivers_champion\": \"Sebastian Vettel\", \"constructors_champion\": \"Red Bull\"}, {\"season\": 2014, \"drivers_champion\": \"Lewis Hamilton\", \"constructors_champion\": \"Mercedes\"}, {\"season\": 2015, \"drivers_champion\": \"Lewis Hamilton\", \"constructors_champi"
+  },
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Rubens Barrichello",
+    "season": 2000
+   },
+   "output": "{\"driver\": \"Rubens Barrichello\", \"season\": 2000, \"teams\": [\"Ferrari\"], \"teammates\": [\"Michael Schumacher\"]}"
+  },
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Rubens Barrichello",
+    "season": 2001
+   },
+   "output": "{\"driver\": \"Rubens Barrichello\", \"season\": 2001, \"teams\": [\"Ferrari\"], \"teammates\": [\"Michael Schumacher\"]}"
+  },
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Rubens Barrichello",
+    "season": 2002
+   },
+   "output": "{\"driver\": \"Rubens Barrichello\", \"season\": 2002, \"teams\": [\"Ferrari\"], \"teammates\": [\"Michael Schumacher\"]}"
+  },
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Rubens Barrichello",
+    "season": 2003
+   },
+   "output": "{\"driver\": \"Rubens Barrichello\", \"season\": 2003, \"teams\": [\"Ferrari\"], \"teammates\": [\"Michael Schumacher\"]}"
+  },
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Rubens Barrichello",
+    "season": 2004
+   },
+   "output": "{\"driver\": \"Rubens Barrichello\", \"season\": 2004, \"teams\": [\"Ferrari\"], \"teammates\": [\"Michael Schumacher\"]}"
+  },
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Rubens Barrichello",
+    "season": 2005
+   },
+   "output": "{\"driver\": \"Rubens Barrichello\", \"season\": 2005, \"teams\": [\"Ferrari\"], \"teammates\": [\"Michael Schumacher\"]}"
+  },
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Rubens Barrichello",
+    "season": 2006
+   },
+   "output": "{\"driver\": \"Rubens Barrichello\", \"season\": 2006, \"teams\": [\"Honda\"], \"teammates\": [\"Jenson Button\"]}"
+  },
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Rubens Barrichello",
+    "season": 2007
+   },
+   "output": "{\"driver\": \"Rubens Barrichello\", \"season\": 2007, \"teams\": [\"Honda\"], \"teammates\": [\"Jenson Button\"]}"
+  },
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Rubens Barrichello",
+    "season": 2008
+   },
+   "output": "{\"driver\": \"Rubens Barrichello\", \"season\": 2008, \"teams\": [\"Honda\"], \"teammates\": [\"Jenson Button\"]}"
+  },
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Rubens Barrichello",
+    "season": 2009
+   },
+   "output": "{\"driver\": \"Rubens Barrichello\", \"season\": 2009, \"teams\": [\"Brawn\"], \"teammates\": [\"Jenson Button\"]}"
+  },
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Rubens Barrichello",
+    "season": 2010
+   },
+   "output": "{\"driver\": \"Rubens Barrichello\", \"season\": 2010, \"teams\": [\"Williams\"], \"teammates\": [\"Nico Hülkenberg\"]}"
+  },
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Rubens Barrichello",
+    "season": 2011
+   },
+   "output": "{\"driver\": \"Rubens Barrichello\", \"season\": 2011, \"teams\": [\"Williams\"], \"teammates\": [\"Pastor Maldonado\"]}"
+  }
+ ],
+ "input_tokens": 10509,
+ "output_tokens": 1855,
+ "seconds": 8.487443799996981,
+ "error": null,
+ "qid": "champion_teammates-05",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0019784,
+ "correct": true
+}

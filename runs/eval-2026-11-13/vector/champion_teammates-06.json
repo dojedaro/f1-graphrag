@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "Nico Rosberg, Sebastian Vettel",
+ "raw": "The documents don't list Mark Webber's full team history, so this answer relies on my own knowledge rather than the retrieved material. The only retrieved reference is document [4], which places Webber at Williams for the 2006 Spanish Grand Prix. From memory, his teammates who went on to win a drivers' championship were:\n\n- **Nico Rosberg**, his Williams teammate in 2006, who won the 2016 title.\n- **Sebastian Vettel**, his Red Bull teammate from 2009 to 2013, who won four titles (2010–2013).\n\nANSWER: Nico Rosberg, Sebastian Vettel",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2025 Las Vegas Grand Prix",
+     "score": 0.564
+    },
+    {
+     "title": "2025 Spanish Grand Prix",
+     "score": 0.558
+    },
+    {
+     "title": "2025 Canadian Grand Prix",
+     "score": 0.556
+    },
+    {
+     "title": "2006 Spanish Grand Prix",
+     "score": 0.555
+    },
+    {
+     "title": "2024 Las Vegas Grand Prix",
+     "score": 0.553
+    },
+    {
+     "title": "2000 Spanish Grand Prix",
+     "score": 0.551
+    },
+    {
+     "title": "2025 Miami Grand Prix",
+     "score": 0.55
+    },
+    {
+     "title": "2025 Australian Grand Prix",
+     "score": 0.546
+    }
+   ]
+  }
+ ],
+ "input_tokens": 2726,
+ "output_tokens": 945,
+ "seconds": 5.223696100001689,
+ "error": null,
+ "qid": "champion_teammates-06",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0007451000000000001,
+ "correct": true
+}

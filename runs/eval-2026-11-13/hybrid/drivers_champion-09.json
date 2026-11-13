@@ -1,0 +1,22 @@
+{
+ "system": "hybrid",
+ "answer": "Michael Schumacher",
+ "raw": "The 2003 Formula 1 drivers' championship was won by Michael Schumacher, driving for Ferrari. He finished with 93 points and 6 wins, ahead of Kimi Räikkönen (91 points) and Juan Pablo Montoya (82 points). Ferrari also took the constructors' title.\n\nANSWER: Michael Schumacher",
+ "trace": [
+  {
+   "tool": "season_summary",
+   "input": {
+    "season": 2003
+   },
+   "output": "{\"season\": 2003, \"races\": 16, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\", \"top_drivers\": [{\"position\": 1, \"driver\": \"Michael Schumacher\", \"points\": 93.0, \"wins\": 6}, {\"position\": 2, \"driver\": \"Kimi Räikkönen\", \"points\": 91.0, \"wins\": 1}, {\"position\": 3, \"driver\": \"Juan Pablo Montoya\", \"points\": 82.0, \"wins\": 2}, {\"position\": 4, \"driver\": \"Rubens Barrichello\", \"points\": 65.0, \"wins\": 2}, {\"position\": 5, \"driver\": \"Ralf Schumacher\", \"points\": 58.0, \"wins\": 2}], \"top_constructors\": [{\"position\": 1, \"team\": \"Ferrari\", \"points\": 158.0, \"wins\": 8}, {\"position\": 2, \"team\": \"Williams\", \"points\": 144.0, \"wins\": 4}, {\"position\": 3, \"team\": \"McLaren\", \"points\": 142.0, \"wins\": 2}, {\"position\": 4, \"team\": \"Renault\", \"points\": 88.0, \"wins\": 1}, {\"position\": 5, \"team\": \"BAR\", \"points\": 26.0, \"wins\": 0}]}"
+  }
+ ],
+ "input_tokens": 3530,
+ "output_tokens": 169,
+ "seconds": 3.908193700000993,
+ "error": null,
+ "qid": "drivers_champion-09",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0004375,
+ "correct": true
+}

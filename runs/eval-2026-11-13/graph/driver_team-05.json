@@ -1,0 +1,23 @@
+{
+ "system": "graph",
+ "answer": "McLaren",
+ "raw": "Juan Pablo Montoya drove for McLaren in 2005. The tool results list Alexander Wurz, Kimi Räikkönen and Pedro de la Rosa as his teammates that season.\n\nANSWER: McLaren",
+ "trace": [
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Juan Pablo Montoya",
+    "season": 2005
+   },
+   "output": "{\"driver\": \"Juan Pablo Montoya\", \"season\": 2005, \"teams\": [\"McLaren\"], \"teammates\": [\"Alexander Wurz\", \"Kimi Räikkönen\", \"Pedro de la Rosa\"]}"
+  }
+ ],
+ "input_tokens": 3028,
+ "output_tokens": 159,
+ "seconds": 2.2027455999923404,
+ "error": null,
+ "qid": "driver_team-05",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0003823,
+ "correct": true
+}

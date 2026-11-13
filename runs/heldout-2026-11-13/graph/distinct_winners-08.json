@@ -1,0 +1,22 @@
+{
+ "system": "graph",
+ "answer": "4",
+ "raw": "Four different drivers won at least one race in 2025.\n\nThe 2025 season had 24 races. The season summary lists the win totals for the top drivers: Verstappen 8, Norris 7, Piastri 7 and Russell 2, which add up to 24. Leclerc is listed with 0 wins. The constructor totals agree: McLaren 14 (Norris + Piastri), Red Bull 8 (Verstappen) and Mercedes 2 (Russell). Since those four drivers account for every race, no other driver won.\n\nThe summary only lists the top five drivers, so this relies on the win totals adding to the full 24 races rather than on a complete winner list.\n\nANSWER: 4",
+ "trace": [
+  {
+   "tool": "season_summary",
+   "input": {
+    "season": 2025
+   },
+   "output": "{\"season\": 2025, \"races\": 24, \"drivers_champion\": \"Lando Norris\", \"constructors_champion\": \"McLaren\", \"top_drivers\": [{\"position\": 1, \"driver\": \"Lando Norris\", \"points\": 423.0, \"wins\": 7}, {\"position\": 2, \"driver\": \"Max Verstappen\", \"points\": 421.0, \"wins\": 8}, {\"position\": 3, \"driver\": \"Oscar Piastri\", \"points\": 410.0, \"wins\": 7}, {\"position\": 4, \"driver\": \"George Russell\", \"points\": 319.0, \"wins\": 2}, {\"position\": 5, \"driver\": \"Charles Leclerc\", \"points\": 242.0, \"wins\": 0}], \"top_constructors\": [{\"position\": 1, \"team\": \"McLaren\", \"points\": 833.0, \"wins\": 14}, {\"position\": 2, \"team\": \"Mercedes\", \"points\": 469.0, \"wins\": 2}, {\"position\": 3, \"team\": \"Red Bull\", \"points\": 451.0, \"wins\": 8}, {\"position\": 4, \"team\": \"Ferrari\", \"points\": 398.0, \"wins\": 0}, {\"position\": 5, \"team\": \"Williams\", \"points\": 137.0, \"wins\": 0}]}"
+  }
+ ],
+ "input_tokens": 3311,
+ "output_tokens": 540,
+ "seconds": 5.61557600001106,
+ "error": null,
+ "qid": "distinct_winners-08",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0006011,
+ "correct": true
+}

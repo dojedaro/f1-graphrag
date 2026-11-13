@@ -1,0 +1,23 @@
+{
+ "system": "graph",
+ "answer": "Lance Stroll",
+ "raw": "Sergio Pérez drove the whole 2019 season for Racing Point, and his only teammate that year was Lance Stroll.\n\nANSWER: Lance Stroll",
+ "trace": [
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Sergio Pérez",
+    "season": 2019
+   },
+   "output": "{\"driver\": \"Sergio Pérez\", \"season\": 2019, \"teams\": [\"Racing Point\"], \"teammates\": [\"Lance Stroll\"]}"
+  }
+ ],
+ "input_tokens": 3002,
+ "output_tokens": 207,
+ "seconds": 2.558419299995876,
+ "error": null,
+ "qid": "teammate-09",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0004037,
+ "correct": true
+}

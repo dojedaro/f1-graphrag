@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "Michael Schumacher",
+ "raw": "The 2001 final standings in document [1] list Michael Schumacher (Ferrari) first with 123 points and 9 wins, ahead of David Coulthard on 65 points.\n\nANSWER: Michael Schumacher",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2001 season standings",
+     "score": 0.767
+    },
+    {
+     "title": "2002 season standings",
+     "score": 0.718
+    },
+    {
+     "title": "2004 season standings",
+     "score": 0.708
+    },
+    {
+     "title": "2003 season standings",
+     "score": 0.703
+    },
+    {
+     "title": "2000 season standings",
+     "score": 0.697
+    },
+    {
+     "title": "2001 European Grand Prix",
+     "score": 0.689
+    },
+    {
+     "title": "2001 Monaco Grand Prix",
+     "score": 0.685
+    },
+    {
+     "title": "2001 Austrian Grand Prix",
+     "score": 0.681
+    }
+   ]
+  }
+ ],
+ "input_tokens": 5826,
+ "output_tokens": 143,
+ "seconds": 1.2293807000096422,
+ "error": null,
+ "qid": "drivers_champion-01",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0006541,
+ "correct": true
+}

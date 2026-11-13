@@ -1,0 +1,23 @@
+{
+ "system": "graph",
+ "answer": "Williams",
+ "raw": "Mark Webber drove for Williams in 2006, with Nico Rosberg as his teammate.\n\nANSWER: Williams",
+ "trace": [
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Mark Webber",
+    "season": 2006
+   },
+   "output": "{\"driver\": \"Mark Webber\", \"season\": 2006, \"teams\": [\"Williams\"], \"teammates\": [\"Nico Rosberg\"]}"
+  }
+ ],
+ "input_tokens": 2983,
+ "output_tokens": 119,
+ "seconds": 2.668298499993398,
+ "error": null,
+ "qid": "driver_team-03",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0003578,
+ "correct": true
+}

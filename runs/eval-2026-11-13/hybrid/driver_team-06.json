@@ -1,0 +1,23 @@
+{
+ "system": "hybrid",
+ "answer": "Mercedes",
+ "raw": "Andrea Kimi Antonelli drove for Mercedes in 2025, alongside George Russell.\n\nANSWER: Mercedes",
+ "trace": [
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Andrea Kimi Antonelli",
+    "season": 2025
+   },
+   "output": "{\"driver\": \"Andrea Kimi Antonelli\", \"season\": 2025, \"teams\": [\"Mercedes\"], \"teammates\": [\"George Russell\"]}"
+  }
+ ],
+ "input_tokens": 3211,
+ "output_tokens": 130,
+ "seconds": 2.9672153999999864,
+ "error": null,
+ "qid": "driver_team-06",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0003861,
+ "correct": true
+}

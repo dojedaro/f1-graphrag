@@ -1,0 +1,115 @@
+{
+ "system": "hybrid",
+ "answer": "Nico Rosberg",
+ "raw": "Michael Schumacher's teammates in 2000–2025 were Rubens Barrichello (Ferrari, 2000–2005), Felipe Massa (Ferrari, 2006) and Nico Rosberg (Mercedes, 2010–2012). Of these, only Nico Rosberg won a drivers' championship in the 2000–2025 window, taking the 2016 title. The champions list shows no drivers' title for Barrichello or Massa.\n\nANSWER: Nico Rosberg",
+ "trace": [
+  {
+   "tool": "find_entity",
+   "input": {
+    "name": "Michael Schumacher",
+    "kind": "driver"
+   },
+   "output": "{\"id\": \"michael_schumacher\", \"name\": \"Michael Schumacher\"}"
+  },
+  {
+   "tool": "champions",
+   "input": {},
+   "output": "{\"seasons\": [{\"season\": 2000, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2001, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2002, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2003, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2004, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2005, \"drivers_champion\": \"Fernando Alonso\", \"constructors_champion\": \"Renault\"}, {\"season\": 2006, \"drivers_champion\": \"Fernando Alonso\", \"constructors_champion\": \"Renault\"}, {\"season\": 2007, \"drivers_champion\": \"Kimi Räikkönen\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2008, \"drivers_champion\": \"Lewis Hamilton\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2009, \"drivers_champion\": \"Jenson Button\", \"constructors_champion\": \"Brawn\"}, {\"season\": 2010, \"drivers_champion\": \"Sebastian Vettel\", \"constructors_champion\": \"Red Bull\"}, {\"season\": 2011, \"drivers_champion\": \"Sebastian Vettel\", \"constructors_champion\": \"Red Bull\"}, {\"season\": 2012, \"drivers_champion\": \"Sebastian Vettel\", \"constructors_champion\": \"Red Bull\"}, {\"season\": 2013, \"drivers_champion\": \"Sebastian Vettel\", \"constructors_champion\": \"Red Bull\"}, {\"season\": 2014, \"drivers_champion\": \"Lewis Hamilton\", \"constructors_champion\": \"Mercedes\"}, {\"season\": 2015, \"drivers_champion\": \"Lewis Hamilton\", \"constructors_champi"
+  },
+  {
+   "tool": "driver_career",
+   "input": {
+    "driver": "Michael Schumacher"
+   },
+   "output": "{\"driver\": \"Michael Schumacher\", \"seasons\": [{\"season\": 2000, \"teams\": [\"Ferrari\"], \"races\": 17, \"wins\": 9, \"podiums\": 12, \"championship_position\": 1}, {\"season\": 2001, \"teams\": [\"Ferrari\"], \"races\": 17, \"wins\": 9, \"podiums\": 14, \"championship_position\": 1}, {\"season\": 2002, \"teams\": [\"Ferrari\"], \"races\": 17, \"wins\": 11, \"podiums\": 17, \"championship_position\": 1}, {\"season\": 2003, \"teams\": [\"Ferrari\"], \"races\": 16, \"wins\": 6, \"podiums\": 8, \"championship_position\": 1}, {\"season\": 2004, \"teams\": [\"Ferrari\"], \"races\": 18, \"wins\": 13, \"podiums\": 15, \"championship_position\": 1}, {\"season\": 2005, \"teams\": [\"Ferrari\"], \"races\": 19, \"wins\": 1, \"podiums\": 5, \"championship_position\": 3}, {\"season\": 2006, \"teams\": [\"Ferrari\"], \"races\": 18, \"wins\": 7, \"podiums\": 12, \"championship_position\": 2}, {\"season\": 2010, \"teams\": [\"Mercedes\"], \"races\": 19, \"wins\": 0, \"podiums\": 0, \"championship_position\": 9}, {\"season\": 2011, \"teams\": [\"Mercedes\"], \"races\": 19, \"wins\": 0, \"podiums\": 0, \"championship_position\": 8}, {\"season\": 2012, \"teams\": [\"Mercedes\"], \"races\": 20, \"wins\": 0, \"podiums\": 1, \"championship_position\": 13}]}"
+  },
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Michael Schumacher",
+    "season": 2000
+   },
+   "output": "{\"driver\": \"Michael Schumacher\", \"season\": 2000, \"teams\": [\"Ferrari\"], \"teammates\": [\"Rubens Barrichello\"]}"
+  },
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Michael Schumacher",
+    "season": 2001
+   },
+   "output": "{\"driver\": \"Michael Schumacher\", \"season\": 2001, \"teams\": [\"Ferrari\"], \"teammates\": [\"Rubens Barrichello\"]}"
+  },
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Michael Schumacher",
+    "season": 2002
+   },
+   "output": "{\"driver\": \"Michael Schumacher\", \"season\": 2002, \"teams\": [\"Ferrari\"], \"teammates\": [\"Rubens Barrichello\"]}"
+  },
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Michael Schumacher",
+    "season": 2003
+   },
+   "output": "{\"driver\": \"Michael Schumacher\", \"season\": 2003, \"teams\": [\"Ferrari\"], \"teammates\": [\"Rubens Barrichello\"]}"
+  },
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Michael Schumacher",
+    "season": 2004
+   },
+   "output": "{\"driver\": \"Michael Schumacher\", \"season\": 2004, \"teams\": [\"Ferrari\"], \"teammates\": [\"Rubens Barrichello\"]}"
+  },
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Michael Schumacher",
+    "season": 2005
+   },
+   "output": "{\"driver\": \"Michael Schumacher\", \"season\": 2005, \"teams\": [\"Ferrari\"], \"teammates\": [\"Rubens Barrichello\"]}"
+  },
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Michael Schumacher",
+    "season": 2006
+   },
+   "output": "{\"driver\": \"Michael Schumacher\", \"season\": 2006, \"teams\": [\"Ferrari\"], \"teammates\": [\"Felipe Massa\"]}"
+  },
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Michael Schumacher",
+    "season": 2010
+   },
+   "output": "{\"driver\": \"Michael Schumacher\", \"season\": 2010, \"teams\": [\"Mercedes\"], \"teammates\": [\"Nico Rosberg\"]}"
+  },
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Michael Schumacher",
+    "season": 2011
+   },
+   "output": "{\"driver\": \"Michael Schumacher\", \"season\": 2011, \"teams\": [\"Mercedes\"], \"teammates\": [\"Nico Rosberg\"]}"
+  },
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Michael Schumacher",
+    "season": 2012
+   },
+   "output": "{\"driver\": \"Michael Schumacher\", \"season\": 2012, \"teams\": [\"Mercedes\"], \"teammates\": [\"Nico Rosberg\"]}"
+  }
+ ],
+ "input_tokens": 13133,
+ "output_tokens": 1277,
+ "seconds": 8.882418099994538,
+ "error": null,
+ "qid": "champion_teammates-02",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0019518000000000003,
+ "correct": true
+}

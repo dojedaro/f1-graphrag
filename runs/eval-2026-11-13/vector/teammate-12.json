@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "Heikki Kovalainen",
+ "raw": "The documents don't answer this. The only mention of Jarno Trulli is in [8], the 2009 Hungarian Grand Prix, where he finished 8th for Toyota. None of the 2010 race reports list him, so they don't show his team or teammate for 2010.\n\nThis is outside the provided material, but from general knowledge, Trulli drove for Lotus (Lotus Racing) in 2010, where his teammate was Heikki Kovalainen. Treat that as unverified against these documents.\n\nANSWER: Heikki Kovalainen",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2010 Turkish Grand Prix",
+     "score": 0.373
+    },
+    {
+     "title": "2010 Malaysian Grand Prix",
+     "score": 0.363
+    },
+    {
+     "title": "2010 Korean Grand Prix",
+     "score": 0.355
+    },
+    {
+     "title": "2010 Brazilian Grand Prix",
+     "score": 0.354
+    },
+    {
+     "title": "2010 Italian Grand Prix",
+     "score": 0.344
+    },
+    {
+     "title": "2010 Spanish Grand Prix",
+     "score": 0.339
+    },
+    {
+     "title": "2012 Italian Grand Prix",
+     "score": 0.339
+    },
+    {
+     "title": "2009 Hungarian Grand Prix",
+     "score": 0.339
+    }
+   ]
+  }
+ ],
+ "input_tokens": 2630,
+ "output_tokens": 589,
+ "seconds": 3.667924800000037,
+ "error": null,
+ "qid": "teammate-12",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0005575,
+ "correct": true
+}

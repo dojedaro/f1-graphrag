@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "McLaren",
+ "raw": "The documents don't cover Jenson Button's 2017 season. They only list his Formula 1 results from 2000, 2016, and earlier, with McLaren in 2016 and Williams in 2000. From memory, not the documents, he left Formula 1 after 2016 and in 2017 raced for McLaren's IndyCar and endurance programmes, including the Indianapolis 500, so McLaren is my best answer.\n\nANSWER: McLaren",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2016 German Grand Prix",
+     "score": 0.564
+    },
+    {
+     "title": "2016 Monaco Grand Prix",
+     "score": 0.554
+    },
+    {
+     "title": "2000 French Grand Prix",
+     "score": 0.547
+    },
+    {
+     "title": "2016 Russian Grand Prix",
+     "score": 0.545
+    },
+    {
+     "title": "2024 Dutch Grand Prix",
+     "score": 0.539
+    },
+    {
+     "title": "2025 Dutch Grand Prix",
+     "score": 0.538
+    },
+    {
+     "title": "2016 Malaysian Grand Prix",
+     "score": 0.537
+    },
+    {
+     "title": "2025 Chinese Grand Prix",
+     "score": 0.532
+    }
+   ]
+  }
+ ],
+ "input_tokens": 2675,
+ "output_tokens": 1269,
+ "seconds": 6.1511059000040404,
+ "error": null,
+ "qid": "driver_team-02",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.000902,
+ "correct": true
+}

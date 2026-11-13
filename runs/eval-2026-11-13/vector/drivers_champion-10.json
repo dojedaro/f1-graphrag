@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "Lewis Hamilton",
+ "raw": "Document [1], the 2020 Formula 1 season final standings, lists Lewis Hamilton (Mercedes) in first place with 347 points and 11 wins. Valtteri Bottas was second with 223 points.\n\nANSWER: Lewis Hamilton",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2020 season standings",
+     "score": 0.774
+    },
+    {
+     "title": "2021 season standings",
+     "score": 0.751
+    },
+    {
+     "title": "2022 season standings",
+     "score": 0.725
+    },
+    {
+     "title": "2023 season standings",
+     "score": 0.724
+    },
+    {
+     "title": "2024 season standings",
+     "score": 0.715
+    },
+    {
+     "title": "2019 season standings",
+     "score": 0.7
+    },
+    {
+     "title": "2014 season standings",
+     "score": 0.694
+    },
+    {
+     "title": "2018 season standings",
+     "score": 0.694
+    }
+   ]
+  }
+ ],
+ "input_tokens": 7465,
+ "output_tokens": 168,
+ "seconds": 1.3141140000079758,
+ "error": null,
+ "qid": "drivers_champion-10",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0008305,
+ "correct": true
+}

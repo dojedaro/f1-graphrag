@@ -1,0 +1,152 @@
+{
+ "graph": {
+  "3-hop": {
+   "correct": 24,
+   "n": 24,
+   "accuracy": 1.0,
+   "ci": [
+    0.862,
+    1.0
+   ]
+  },
+  "all": {
+   "correct": 120,
+   "n": 120,
+   "accuracy": 1.0,
+   "ci": [
+    0.969,
+    1.0
+   ]
+  },
+  "2-hop": {
+   "correct": 36,
+   "n": 36,
+   "accuracy": 1.0,
+   "ci": [
+    0.904,
+    1.0
+   ]
+  },
+  "1-hop": {
+   "correct": 36,
+   "n": 36,
+   "accuracy": 1.0,
+   "ci": [
+    0.904,
+    1.0
+   ]
+  },
+  "aggregation": {
+   "correct": 24,
+   "n": 24,
+   "accuracy": 1.0,
+   "ci": [
+    0.862,
+    1.0
+   ]
+  },
+  "cost_usd": 0.0816,
+  "mean_tool_calls": 2.34,
+  "mean_seconds": 3.9
+ },
+ "hybrid": {
+  "3-hop": {
+   "correct": 24,
+   "n": 24,
+   "accuracy": 1.0,
+   "ci": [
+    0.862,
+    1.0
+   ]
+  },
+  "all": {
+   "correct": 120,
+   "n": 120,
+   "accuracy": 1.0,
+   "ci": [
+    0.969,
+    1.0
+   ]
+  },
+  "2-hop": {
+   "correct": 36,
+   "n": 36,
+   "accuracy": 1.0,
+   "ci": [
+    0.904,
+    1.0
+   ]
+  },
+  "1-hop": {
+   "correct": 36,
+   "n": 36,
+   "accuracy": 1.0,
+   "ci": [
+    0.904,
+    1.0
+   ]
+  },
+  "aggregation": {
+   "correct": 24,
+   "n": 24,
+   "accuracy": 1.0,
+   "ci": [
+    0.862,
+    1.0
+   ]
+  },
+  "cost_usd": 0.0872,
+  "mean_tool_calls": 2.45,
+  "mean_seconds": 4.0
+ },
+ "vector": {
+  "3-hop": {
+   "correct": 14,
+   "n": 24,
+   "accuracy": 0.583,
+   "ci": [
+    0.388,
+    0.755
+   ]
+  },
+  "all": {
+   "correct": 72,
+   "n": 120,
+   "accuracy": 0.6,
+   "ci": [
+    0.511,
+    0.683
+   ]
+  },
+  "2-hop": {
+   "correct": 21,
+   "n": 36,
+   "accuracy": 0.583,
+   "ci": [
+    0.422,
+    0.729
+   ]
+  },
+  "1-hop": {
+   "correct": 35,
+   "n": 36,
+   "accuracy": 0.972,
+   "ci": [
+    0.858,
+    0.995
+   ]
+  },
+  "aggregation": {
+   "correct": 2,
+   "n": 24,
+   "accuracy": 0.083,
+   "ci": [
+    0.023,
+    0.258
+   ]
+  },
+  "cost_usd": 0.0739,
+  "mean_tool_calls": 0.0,
+  "mean_seconds": 3.5
+ }
+}

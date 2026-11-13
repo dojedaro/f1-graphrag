@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "none",
+ "raw": "The documents only cover Schumacher's Ferrari years (2000 and 2006), so his teammates there were Eddie Irvine (2000), Rubens Barrichello, and Felipe Massa (2006). None of them won a drivers' championship in 2000–2025, according to the documents. The 2000 final standings show Barrichello finishing 4th and the others lower, and the 2006 race results include Massa but no championship information.\n\nThe documents don't cover Schumacher's 2010–2012 comeback with Mercedes. From my own knowledge, not the documents, his teammate there, Nico Rosberg, won the 2016 championship, so the answer would be different if that period is included.\n\nANSWER: none",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2000 season standings",
+     "score": 0.66
+    },
+    {
+     "title": "2000 San Marino Grand Prix",
+     "score": 0.654
+    },
+    {
+     "title": "2000 European Grand Prix",
+     "score": 0.651
+    },
+    {
+     "title": "2000 Spanish Grand Prix",
+     "score": 0.651
+    },
+    {
+     "title": "2006 European Grand Prix",
+     "score": 0.65
+    },
+    {
+     "title": "2000 French Grand Prix",
+     "score": 0.643
+    },
+    {
+     "title": "2000 Italian Grand Prix",
+     "score": 0.643
+    },
+    {
+     "title": "2000 Hungarian Grand Prix",
+     "score": 0.642
+    }
+   ]
+  }
+ ],
+ "input_tokens": 3332,
+ "output_tokens": 1014,
+ "seconds": 5.539522599996417,
+ "error": null,
+ "qid": "champion_teammates-02",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0008402,
+ "correct": false
+}

@@ -1,0 +1,20 @@
+{
+ "system": "hybrid",
+ "answer": "Kimi Räikkönen",
+ "raw": "The 2007 Formula 1 drivers' championship was won by Kimi Räikkönen, driving for Ferrari (the constructors' title also went to Ferrari that year).\n\nANSWER: Kimi Räikkönen",
+ "trace": [
+  {
+   "tool": "champions",
+   "input": {},
+   "output": "{\"seasons\": [{\"season\": 2000, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2001, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2002, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2003, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2004, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2005, \"drivers_champion\": \"Fernando Alonso\", \"constructors_champion\": \"Renault\"}, {\"season\": 2006, \"drivers_champion\": \"Fernando Alonso\", \"constructors_champion\": \"Renault\"}, {\"season\": 2007, \"drivers_champion\": \"Kimi Räikkönen\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2008, \"drivers_champion\": \"Lewis Hamilton\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2009, \"drivers_champion\": \"Jenson Button\", \"constructors_champion\": \"Brawn\"}, {\"season\": 2010, \"drivers_champion\": \"Sebastian Vettel\", \"constructors_champion\": \"Red Bull\"}, {\"season\": 2011, \"drivers_champion\": \"Sebastian Vettel\", \"constructors_champion\": \"Red Bull\"}, {\"season\": 2012, \"drivers_champion\": \"Sebastian Vettel\", \"constructors_champion\": \"Red Bull\"}, {\"season\": 2013, \"drivers_champion\": \"Sebastian Vettel\", \"constructors_champion\": \"Red Bull\"}, {\"season\": 2014, \"drivers_champion\": \"Lewis Hamilton\", \"constructors_champion\": \"Mercedes\"}, {\"season\": 2015, \"drivers_champion\": \"Lewis Hamilton\", \"constructors_champi"
+  }
+ ],
+ "input_tokens": 4216,
+ "output_tokens": 101,
+ "seconds": 3.7812750000011874,
+ "error": null,
+ "qid": "drivers_champion-06",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.00047210000000000004,
+ "correct": true
+}

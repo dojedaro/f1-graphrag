@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "1",
+ "raw": "The documents don't answer this. None of the eight race results mention Sébastien Bourdais. They list only the top 10 finishers at a handful of Grands Prix (2022 Belgium, 2023 Belgium, 2022 France, 2022 Netherlands, 2024 Belgium, 2025 Netherlands, 2022 Canada, 2025 Belgium), so his race starts and teams can't be checked here.\n\nFrom memory, not from these documents, I believe he raced for Toro Rosso in Formula One, which would make the count one. That should be verified against a source covering his career.\n\nANSWER: 1",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2022 Belgian Grand Prix",
+     "score": 0.633
+    },
+    {
+     "title": "2023 Belgian Grand Prix",
+     "score": 0.632
+    },
+    {
+     "title": "2022 French Grand Prix",
+     "score": 0.621
+    },
+    {
+     "title": "2022 Dutch Grand Prix",
+     "score": 0.618
+    },
+    {
+     "title": "2024 Belgian Grand Prix",
+     "score": 0.617
+    },
+    {
+     "title": "2025 Dutch Grand Prix",
+     "score": 0.617
+    },
+    {
+     "title": "2022 Canadian Grand Prix",
+     "score": 0.609
+    },
+    {
+     "title": "2025 Belgian Grand Prix",
+     "score": 0.608
+    }
+   ]
+  }
+ ],
+ "input_tokens": 2715,
+ "output_tokens": 594,
+ "seconds": 3.8885929999960354,
+ "error": null,
+ "qid": "team_count-02",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0005685,
+ "correct": true
+}

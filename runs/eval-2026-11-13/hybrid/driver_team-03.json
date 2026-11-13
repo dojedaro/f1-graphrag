@@ -1,0 +1,23 @@
+{
+ "system": "hybrid",
+ "answer": "Williams",
+ "raw": "Mark Webber drove for Williams in 2006, partnered by Nico Rosberg.\n\nANSWER: Williams",
+ "trace": [
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Mark Webber",
+    "season": 2006
+   },
+   "output": "{\"driver\": \"Mark Webber\", \"season\": 2006, \"teams\": [\"Williams\"], \"teammates\": [\"Nico Rosberg\"]}"
+  }
+ ],
+ "input_tokens": 3185,
+ "output_tokens": 117,
+ "seconds": 2.7545034999930067,
+ "error": null,
+ "qid": "driver_team-03",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.000377,
+ "correct": true
+}

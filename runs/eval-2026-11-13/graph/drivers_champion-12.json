@@ -1,0 +1,22 @@
+{
+ "system": "graph",
+ "answer": "Michael Schumacher",
+ "raw": "The 2004 Formula 1 drivers' championship was won by Michael Schumacher, driving for Ferrari. He finished with 148 points and 13 wins, ahead of Rubens Barrichello (114 points) in second place. Ferrari also took the constructors' title that season.\n\nANSWER: Michael Schumacher",
+ "trace": [
+  {
+   "tool": "season_summary",
+   "input": {
+    "season": 2004
+   },
+   "output": "{\"season\": 2004, \"races\": 18, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\", \"top_drivers\": [{\"position\": 1, \"driver\": \"Michael Schumacher\", \"points\": 148.0, \"wins\": 13}, {\"position\": 2, \"driver\": \"Rubens Barrichello\", \"points\": 114.0, \"wins\": 2}, {\"position\": 3, \"driver\": \"Jenson Button\", \"points\": 85.0, \"wins\": 0}, {\"position\": 4, \"driver\": \"Fernando Alonso\", \"points\": 59.0, \"wins\": 0}, {\"position\": 5, \"driver\": \"Juan Pablo Montoya\", \"points\": 58.0, \"wins\": 1}], \"top_constructors\": [{\"position\": 1, \"team\": \"Ferrari\", \"points\": 262.0, \"wins\": 15}, {\"position\": 2, \"team\": \"BAR\", \"points\": 119.0, \"wins\": 0}, {\"position\": 3, \"team\": \"Renault\", \"points\": 105.0, \"wins\": 1}, {\"position\": 4, \"team\": \"Williams\", \"points\": 88.0, \"wins\": 1}, {\"position\": 5, \"team\": \"McLaren\", \"points\": 69.0, \"wins\": 1}]}"
+  }
+ ],
+ "input_tokens": 3323,
+ "output_tokens": 157,
+ "seconds": 3.1006640999985393,
+ "error": null,
+ "qid": "drivers_champion-12",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0004108,
+ "correct": true
+}

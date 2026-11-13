@@ -1,0 +1,434 @@
+[
+ {
+  "qid": "distinct_winners-01",
+  "template": "distinct_winners",
+  "hops": "held-out",
+  "question": "How many different drivers won at least one race in the 2014 season?",
+  "answer_type": "number",
+  "gold": 3,
+  "gold_text": "3",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "distinct_winners-02",
+  "template": "distinct_winners",
+  "hops": "held-out",
+  "question": "How many different drivers won at least one race in the 2017 season?",
+  "answer_type": "number",
+  "gold": 5,
+  "gold_text": "5",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "distinct_winners-03",
+  "template": "distinct_winners",
+  "hops": "held-out",
+  "question": "How many different drivers won at least one race in the 2024 season?",
+  "answer_type": "number",
+  "gold": 7,
+  "gold_text": "7",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "distinct_winners-04",
+  "template": "distinct_winners",
+  "hops": "held-out",
+  "question": "How many different drivers won at least one race in the 2016 season?",
+  "answer_type": "number",
+  "gold": 4,
+  "gold_text": "4",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "distinct_winners-05",
+  "template": "distinct_winners",
+  "hops": "held-out",
+  "question": "How many different drivers won at least one race in the 2018 season?",
+  "answer_type": "number",
+  "gold": 5,
+  "gold_text": "5",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "distinct_winners-06",
+  "template": "distinct_winners",
+  "hops": "held-out",
+  "question": "How many different drivers won at least one race in the 2006 season?",
+  "answer_type": "number",
+  "gold": 5,
+  "gold_text": "5",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "distinct_winners-07",
+  "template": "distinct_winners",
+  "hops": "held-out",
+  "question": "How many different drivers won at least one race in the 2005 season?",
+  "answer_type": "number",
+  "gold": 5,
+  "gold_text": "5",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "distinct_winners-08",
+  "template": "distinct_winners",
+  "hops": "held-out",
+  "question": "How many different drivers won at least one race in the 2025 season?",
+  "answer_type": "number",
+  "gold": 4,
+  "gold_text": "4",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "pole_to_win-01",
+  "template": "pole_to_win",
+  "hops": "held-out",
+  "question": "In how many races of the 2016 season did the driver who started from pole position (grid 1) win?",
+  "answer_type": "number",
+  "gold": 13,
+  "gold_text": "13",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "pole_to_win-02",
+  "template": "pole_to_win",
+  "hops": "held-out",
+  "question": "In how many races of the 2015 season did the driver who started from pole position (grid 1) win?",
+  "answer_type": "number",
+  "gold": 12,
+  "gold_text": "12",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "pole_to_win-03",
+  "template": "pole_to_win",
+  "hops": "held-out",
+  "question": "In how many races of the 2020 season did the driver who started from pole position (grid 1) win?",
+  "answer_type": "number",
+  "gold": 10,
+  "gold_text": "10",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "pole_to_win-04",
+  "template": "pole_to_win",
+  "hops": "held-out",
+  "question": "In how many races of the 2019 season did the driver who started from pole position (grid 1) win?",
+  "answer_type": "number",
+  "gold": 8,
+  "gold_text": "8",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "pole_to_win-05",
+  "template": "pole_to_win",
+  "hops": "held-out",
+  "question": "In how many races of the 2025 season did the driver who started from pole position (grid 1) win?",
+  "answer_type": "number",
+  "gold": 16,
+  "gold_text": "16",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "pole_to_win-06",
+  "template": "pole_to_win",
+  "hops": "held-out",
+  "question": "In how many races of the 2005 season did the driver who started from pole position (grid 1) win?",
+  "answer_type": "number",
+  "gold": 9,
+  "gold_text": "9",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "pole_to_win-07",
+  "template": "pole_to_win",
+  "hops": "held-out",
+  "question": "In how many races of the 2003 season did the driver who started from pole position (grid 1) win?",
+  "answer_type": "number",
+  "gold": 9,
+  "gold_text": "9",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "pole_to_win-08",
+  "template": "pole_to_win",
+  "hops": "held-out",
+  "question": "In how many races of the 2014 season did the driver who started from pole position (grid 1) win?",
+  "answer_type": "number",
+  "gold": 9,
+  "gold_text": "9",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "circuit_most_wins-01",
+  "template": "circuit_most_wins",
+  "hops": "held-out",
+  "question": "Which driver won the most races at Circuit de Nevers Magny-Cours between 2000 and 2025?",
+  "answer_type": "names",
+  "gold": [
+   "michael_schumacher"
+  ],
+  "gold_text": "Michael Schumacher",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "circuit_most_wins-02",
+  "template": "circuit_most_wins",
+  "hops": "held-out",
+  "question": "Which driver won the most races at Hungaroring between 2000 and 2025?",
+  "answer_type": "names",
+  "gold": [
+   "hamilton"
+  ],
+  "gold_text": "Lewis Hamilton",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "circuit_most_wins-03",
+  "template": "circuit_most_wins",
+  "hops": "held-out",
+  "question": "Which driver won the most races at Bahrain International Circuit between 2000 and 2025?",
+  "answer_type": "names",
+  "gold": [
+   "hamilton"
+  ],
+  "gold_text": "Lewis Hamilton",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "circuit_most_wins-04",
+  "template": "circuit_most_wins",
+  "hops": "held-out",
+  "question": "Which driver won the most races at Silverstone Circuit between 2000 and 2025?",
+  "answer_type": "names",
+  "gold": [
+   "hamilton"
+  ],
+  "gold_text": "Lewis Hamilton",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "circuit_most_wins-05",
+  "template": "circuit_most_wins",
+  "hops": "held-out",
+  "question": "Which driver won the most races at Circuit Park Zandvoort between 2000 and 2025?",
+  "answer_type": "names",
+  "gold": [
+   "max_verstappen"
+  ],
+  "gold_text": "Max Verstappen",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "circuit_most_wins-06",
+  "template": "circuit_most_wins",
+  "hops": "held-out",
+  "question": "Which driver won the most races at Valencia Street Circuit between 2000 and 2025?",
+  "answer_type": "names",
+  "gold": [
+   "vettel"
+  ],
+  "gold_text": "Sebastian Vettel",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "circuit_most_wins-07",
+  "template": "circuit_most_wins",
+  "hops": "held-out",
+  "question": "Which driver won the most races at Circuit of the Americas between 2000 and 2025?",
+  "answer_type": "names",
+  "gold": [
+   "hamilton"
+  ],
+  "gold_text": "Lewis Hamilton",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "circuit_most_wins-08",
+  "template": "circuit_most_wins",
+  "hops": "held-out",
+  "question": "Which driver won the most races at Circuit de Spa-Francorchamps between 2000 and 2025?",
+  "answer_type": "names",
+  "gold": [
+   "hamilton"
+  ],
+  "gold_text": "Lewis Hamilton",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "podiums_without_win-01",
+  "template": "podiums_without_win",
+  "hops": "held-out",
+  "question": "How many times did Daniil Kvyat finish second or third in a race in 2015?",
+  "answer_type": "number",
+  "gold": 1,
+  "gold_text": "1",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "podiums_without_win-02",
+  "template": "podiums_without_win",
+  "hops": "held-out",
+  "question": "How many times did Felipe Massa finish second or third in a race in 2010?",
+  "answer_type": "number",
+  "gold": 5,
+  "gold_text": "5",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "podiums_without_win-03",
+  "template": "podiums_without_win",
+  "hops": "held-out",
+  "question": "How many times did Oscar Piastri finish second or third in a race in 2025?",
+  "answer_type": "number",
+  "gold": 9,
+  "gold_text": "9",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "podiums_without_win-04",
+  "template": "podiums_without_win",
+  "hops": "held-out",
+  "question": "How many times did Ralf Schumacher finish second or third in a race in 2006?",
+  "answer_type": "number",
+  "gold": 1,
+  "gold_text": "1",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "podiums_without_win-05",
+  "template": "podiums_without_win",
+  "hops": "held-out",
+  "question": "How many times did Sergio Pérez finish second or third in a race in 2016?",
+  "answer_type": "number",
+  "gold": 2,
+  "gold_text": "2",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "podiums_without_win-06",
+  "template": "podiums_without_win",
+  "hops": "held-out",
+  "question": "How many times did Oscar Piastri finish second or third in a race in 2024?",
+  "answer_type": "number",
+  "gold": 6,
+  "gold_text": "6",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "podiums_without_win-07",
+  "template": "podiums_without_win",
+  "hops": "held-out",
+  "question": "How many times did David Coulthard finish second or third in a race in 2000?",
+  "answer_type": "number",
+  "gold": 8,
+  "gold_text": "8",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "podiums_without_win-08",
+  "template": "podiums_without_win",
+  "hops": "held-out",
+  "question": "How many times did Sergio Pérez finish second or third in a race in 2020?",
+  "answer_type": "number",
+  "gold": 1,
+  "gold_text": "1",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "runner_up_team-01",
+  "template": "runner_up_team",
+  "hops": "held-out",
+  "question": "Which team did the runner-up of the 2000 drivers' championship drive for?",
+  "answer_type": "names",
+  "gold": [
+   "mclaren"
+  ],
+  "gold_text": "McLaren",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "runner_up_team-02",
+  "template": "runner_up_team",
+  "hops": "held-out",
+  "question": "Which team did the runner-up of the 2016 drivers' championship drive for?",
+  "answer_type": "names",
+  "gold": [
+   "mercedes"
+  ],
+  "gold_text": "Mercedes",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "runner_up_team-03",
+  "template": "runner_up_team",
+  "hops": "held-out",
+  "question": "Which team did the runner-up of the 2002 drivers' championship drive for?",
+  "answer_type": "names",
+  "gold": [
+   "ferrari"
+  ],
+  "gold_text": "Ferrari",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "runner_up_team-04",
+  "template": "runner_up_team",
+  "hops": "held-out",
+  "question": "Which team did the runner-up of the 2001 drivers' championship drive for?",
+  "answer_type": "names",
+  "gold": [
+   "mclaren"
+  ],
+  "gold_text": "McLaren",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "runner_up_team-05",
+  "template": "runner_up_team",
+  "hops": "held-out",
+  "question": "Which team did the runner-up of the 2006 drivers' championship drive for?",
+  "answer_type": "names",
+  "gold": [
+   "ferrari"
+  ],
+  "gold_text": "Ferrari",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "runner_up_team-06",
+  "template": "runner_up_team",
+  "hops": "held-out",
+  "question": "Which team did the runner-up of the 2007 drivers' championship drive for?",
+  "answer_type": "names",
+  "gold": [
+   "mclaren"
+  ],
+  "gold_text": "McLaren",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "runner_up_team-07",
+  "template": "runner_up_team",
+  "hops": "held-out",
+  "question": "Which team did the runner-up of the 2019 drivers' championship drive for?",
+  "answer_type": "names",
+  "gold": [
+   "mercedes"
+  ],
+  "gold_text": "Mercedes",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "runner_up_team-08",
+  "template": "runner_up_team",
+  "hops": "held-out",
+  "question": "Which team did the runner-up of the 2024 drivers' championship drive for?",
+  "answer_type": "names",
+  "gold": [
+   "mclaren"
+  ],
+  "gold_text": "McLaren",
+  "entity_kind": "constructor"
+ }
+]

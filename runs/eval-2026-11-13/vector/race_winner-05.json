@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "Lewis Hamilton",
+ "raw": "Document [1] covers the 2018 Azerbaijan Grand Prix (round 4, Baku City Circuit, 2018-04-29). Its top 10 lists Lewis Hamilton (Mercedes) in first place, having started from 2nd on the grid.\n\nANSWER: Lewis Hamilton",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2018 Azerbaijan Grand Prix",
+     "score": 0.752
+    },
+    {
+     "title": "2019 Azerbaijan Grand Prix",
+     "score": 0.749
+    },
+    {
+     "title": "2017 Azerbaijan Grand Prix",
+     "score": 0.718
+    },
+    {
+     "title": "2024 Azerbaijan Grand Prix",
+     "score": 0.7
+    },
+    {
+     "title": "2021 Azerbaijan Grand Prix",
+     "score": 0.685
+    },
+    {
+     "title": "2025 Azerbaijan Grand Prix",
+     "score": 0.682
+    },
+    {
+     "title": "2023 Azerbaijan Grand Prix",
+     "score": 0.672
+    },
+    {
+     "title": "2022 Azerbaijan Grand Prix",
+     "score": 0.668
+    }
+   ]
+  }
+ ],
+ "input_tokens": 2686,
+ "output_tokens": 105,
+ "seconds": 1.0112618999992264,
+ "error": null,
+ "qid": "race_winner-05",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0003211,
+ "correct": true
+}

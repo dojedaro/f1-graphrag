@@ -1,0 +1,20 @@
+{
+ "system": "hybrid",
+ "answer": "Michael Schumacher",
+ "raw": "The 2004 Formula 1 drivers' championship was won by Michael Schumacher, driving for Ferrari (Ferrari also took the constructors' title that year).\n\nANSWER: Michael Schumacher",
+ "trace": [
+  {
+   "tool": "champions",
+   "input": {},
+   "output": "{\"seasons\": [{\"season\": 2000, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2001, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2002, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2003, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2004, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2005, \"drivers_champion\": \"Fernando Alonso\", \"constructors_champion\": \"Renault\"}, {\"season\": 2006, \"drivers_champion\": \"Fernando Alonso\", \"constructors_champion\": \"Renault\"}, {\"season\": 2007, \"drivers_champion\": \"Kimi Räikkönen\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2008, \"drivers_champion\": \"Lewis Hamilton\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2009, \"drivers_champion\": \"Jenson Button\", \"constructors_champion\": \"Brawn\"}, {\"season\": 2010, \"drivers_champion\": \"Sebastian Vettel\", \"constructors_champion\": \"Red Bull\"}, {\"season\": 2011, \"drivers_champion\": \"Sebastian Vettel\", \"constructors_champion\": \"Red Bull\"}, {\"season\": 2012, \"drivers_champion\": \"Sebastian Vettel\", \"constructors_champion\": \"Red Bull\"}, {\"season\": 2013, \"drivers_champion\": \"Sebastian Vettel\", \"constructors_champion\": \"Red Bull\"}, {\"season\": 2014, \"drivers_champion\": \"Lewis Hamilton\", \"constructors_champion\": \"Mercedes\"}, {\"season\": 2015, \"drivers_champion\": \"Lewis Hamilton\", \"constructors_champi"
+  }
+ ],
+ "input_tokens": 4216,
+ "output_tokens": 96,
+ "seconds": 2.800416400001268,
+ "error": null,
+ "qid": "drivers_champion-12",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.00046960000000000003,
+ "correct": true
+}

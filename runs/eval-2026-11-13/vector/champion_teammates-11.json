@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "Max Verstappen",
+ "raw": "The documents don't mention Liam Lawson or any drivers' championship, so this answer relies on general knowledge rather than the provided material. Lawson's 2025 Red Bull teammate was Max Verstappen, who won the drivers' championship in 2021, 2022, 2023 and 2024. Lawson's other teammates, Yuki Tsunoda and Isack Hadjar, have not won a championship.\n\nANSWER: Max Verstappen",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2025 Canadian Grand Prix",
+     "score": 0.525
+    },
+    {
+     "title": "2025 British Grand Prix",
+     "score": 0.521
+    },
+    {
+     "title": "2025 Abu Dhabi Grand Prix",
+     "score": 0.512
+    },
+    {
+     "title": "2024 British Grand Prix",
+     "score": 0.511
+    },
+    {
+     "title": "2022 Bahrain Grand Prix",
+     "score": 0.51
+    },
+    {
+     "title": "2022 Canadian Grand Prix",
+     "score": 0.506
+    },
+    {
+     "title": "2023 Bahrain Grand Prix",
+     "score": 0.504
+    },
+    {
+     "title": "2024 Canadian Grand Prix",
+     "score": 0.503
+    }
+   ]
+  }
+ ],
+ "input_tokens": 2722,
+ "output_tokens": 672,
+ "seconds": 3.856177800000296,
+ "error": null,
+ "qid": "champion_teammates-11",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0006082,
+ "correct": true
+}

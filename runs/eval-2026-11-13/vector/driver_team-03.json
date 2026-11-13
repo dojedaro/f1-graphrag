@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "Williams",
+ "raw": "Mark Webber drove for Williams in 2006. Both 2006 races in the documents list him for that team: 2006 Spanish Grand Prix (ninth place, Williams) and 2006 Bahrain Grand Prix (sixth place, Williams).\n\nANSWER: Williams",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2006 Spanish Grand Prix",
+     "score": 0.441
+    },
+    {
+     "title": "2005 Spanish Grand Prix",
+     "score": 0.424
+    },
+    {
+     "title": "2007 United States Grand Prix",
+     "score": 0.396
+    },
+    {
+     "title": "2008 Spanish Grand Prix",
+     "score": 0.394
+    },
+    {
+     "title": "2025 Las Vegas Grand Prix",
+     "score": 0.387
+    },
+    {
+     "title": "2006 Bahrain Grand Prix",
+     "score": 0.384
+    },
+    {
+     "title": "2024 Las Vegas Grand Prix",
+     "score": 0.383
+    },
+    {
+     "title": "2009 Spanish Grand Prix",
+     "score": 0.383
+    }
+   ]
+  }
+ ],
+ "input_tokens": 2703,
+ "output_tokens": 156,
+ "seconds": 1.205473099995288,
+ "error": null,
+ "qid": "driver_team-03",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0003483,
+ "correct": true
+}

@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "Kimi Räikkönen",
+ "raw": "Kimi Räikkönen won the 2007 Formula 1 drivers' championship. The 2007 final standings in document [1] list him first with 110 points and 6 wins, ahead of Lewis Hamilton and Fernando Alonso, who each finished with 109 points.\n\nANSWER: Kimi Räikkönen",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2007 season standings",
+     "score": 0.779
+    },
+    {
+     "title": "2006 season standings",
+     "score": 0.743
+    },
+    {
+     "title": "2008 season standings",
+     "score": 0.741
+    },
+    {
+     "title": "2007 Australian Grand Prix",
+     "score": 0.717
+    },
+    {
+     "title": "2009 season standings",
+     "score": 0.713
+    },
+    {
+     "title": "2007 Monaco Grand Prix",
+     "score": 0.712
+    },
+    {
+     "title": "2007 United States Grand Prix",
+     "score": 0.71
+    },
+    {
+     "title": "2005 season standings",
+     "score": 0.702
+    }
+   ]
+  }
+ ],
+ "input_tokens": 6162,
+ "output_tokens": 179,
+ "seconds": 1.5460622999962652,
+ "error": null,
+ "qid": "drivers_champion-06",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0007057000000000001,
+ "correct": true
+}

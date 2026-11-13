@@ -1,0 +1,1351 @@
+[
+ {
+  "qid": "race_winner-01",
+  "template": "race_winner",
+  "hops": "1-hop",
+  "question": "Who won the 2009 German Grand Prix?",
+  "answer_type": "names",
+  "gold": [
+   "webber"
+  ],
+  "gold_text": "Mark Webber",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "race_winner-02",
+  "template": "race_winner",
+  "hops": "1-hop",
+  "question": "Who won the 2025 Emilia Romagna Grand Prix?",
+  "answer_type": "names",
+  "gold": [
+   "max_verstappen"
+  ],
+  "gold_text": "Max Verstappen",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "race_winner-03",
+  "template": "race_winner",
+  "hops": "1-hop",
+  "question": "Who won the 2004 British Grand Prix?",
+  "answer_type": "names",
+  "gold": [
+   "michael_schumacher"
+  ],
+  "gold_text": "Michael Schumacher",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "race_winner-04",
+  "template": "race_winner",
+  "hops": "1-hop",
+  "question": "Who won the 2011 German Grand Prix?",
+  "answer_type": "names",
+  "gold": [
+   "hamilton"
+  ],
+  "gold_text": "Lewis Hamilton",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "race_winner-05",
+  "template": "race_winner",
+  "hops": "1-hop",
+  "question": "Who won the 2018 Azerbaijan Grand Prix?",
+  "answer_type": "names",
+  "gold": [
+   "hamilton"
+  ],
+  "gold_text": "Lewis Hamilton",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "race_winner-06",
+  "template": "race_winner",
+  "hops": "1-hop",
+  "question": "Who won the 2001 Canadian Grand Prix?",
+  "answer_type": "names",
+  "gold": [
+   "ralf_schumacher"
+  ],
+  "gold_text": "Ralf Schumacher",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "race_winner-07",
+  "template": "race_winner",
+  "hops": "1-hop",
+  "question": "Who won the 2002 San Marino Grand Prix?",
+  "answer_type": "names",
+  "gold": [
+   "michael_schumacher"
+  ],
+  "gold_text": "Michael Schumacher",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "race_winner-08",
+  "template": "race_winner",
+  "hops": "1-hop",
+  "question": "Who won the 2022 British Grand Prix?",
+  "answer_type": "names",
+  "gold": [
+   "sainz"
+  ],
+  "gold_text": "Carlos Sainz",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "race_winner-09",
+  "template": "race_winner",
+  "hops": "1-hop",
+  "question": "Who won the 2015 Spanish Grand Prix?",
+  "answer_type": "names",
+  "gold": [
+   "rosberg"
+  ],
+  "gold_text": "Nico Rosberg",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "race_winner-10",
+  "template": "race_winner",
+  "hops": "1-hop",
+  "question": "Who won the 2002 Italian Grand Prix?",
+  "answer_type": "names",
+  "gold": [
+   "barrichello"
+  ],
+  "gold_text": "Rubens Barrichello",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "race_winner-11",
+  "template": "race_winner",
+  "hops": "1-hop",
+  "question": "Who won the 2010 Italian Grand Prix?",
+  "answer_type": "names",
+  "gold": [
+   "alonso"
+  ],
+  "gold_text": "Fernando Alonso",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "race_winner-12",
+  "template": "race_winner",
+  "hops": "1-hop",
+  "question": "Who won the 2016 British Grand Prix?",
+  "answer_type": "names",
+  "gold": [
+   "hamilton"
+  ],
+  "gold_text": "Lewis Hamilton",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "drivers_champion-01",
+  "template": "drivers_champion",
+  "hops": "1-hop",
+  "question": "Who won the 2001 Formula 1 drivers' championship?",
+  "answer_type": "names",
+  "gold": [
+   "michael_schumacher"
+  ],
+  "gold_text": "Michael Schumacher",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "drivers_champion-02",
+  "template": "drivers_champion",
+  "hops": "1-hop",
+  "question": "Who won the 2016 Formula 1 drivers' championship?",
+  "answer_type": "names",
+  "gold": [
+   "rosberg"
+  ],
+  "gold_text": "Nico Rosberg",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "drivers_champion-03",
+  "template": "drivers_champion",
+  "hops": "1-hop",
+  "question": "Who won the 2006 Formula 1 drivers' championship?",
+  "answer_type": "names",
+  "gold": [
+   "alonso"
+  ],
+  "gold_text": "Fernando Alonso",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "drivers_champion-04",
+  "template": "drivers_champion",
+  "hops": "1-hop",
+  "question": "Who won the 2002 Formula 1 drivers' championship?",
+  "answer_type": "names",
+  "gold": [
+   "michael_schumacher"
+  ],
+  "gold_text": "Michael Schumacher",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "drivers_champion-05",
+  "template": "drivers_champion",
+  "hops": "1-hop",
+  "question": "Who won the 2013 Formula 1 drivers' championship?",
+  "answer_type": "names",
+  "gold": [
+   "vettel"
+  ],
+  "gold_text": "Sebastian Vettel",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "drivers_champion-06",
+  "template": "drivers_champion",
+  "hops": "1-hop",
+  "question": "Who won the 2007 Formula 1 drivers' championship?",
+  "answer_type": "names",
+  "gold": [
+   "raikkonen"
+  ],
+  "gold_text": "Kimi Räikkönen",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "drivers_champion-07",
+  "template": "drivers_champion",
+  "hops": "1-hop",
+  "question": "Who won the 2017 Formula 1 drivers' championship?",
+  "answer_type": "names",
+  "gold": [
+   "hamilton"
+  ],
+  "gold_text": "Lewis Hamilton",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "drivers_champion-08",
+  "template": "drivers_champion",
+  "hops": "1-hop",
+  "question": "Who won the 2018 Formula 1 drivers' championship?",
+  "answer_type": "names",
+  "gold": [
+   "hamilton"
+  ],
+  "gold_text": "Lewis Hamilton",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "drivers_champion-09",
+  "template": "drivers_champion",
+  "hops": "1-hop",
+  "question": "Who won the 2003 Formula 1 drivers' championship?",
+  "answer_type": "names",
+  "gold": [
+   "michael_schumacher"
+  ],
+  "gold_text": "Michael Schumacher",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "drivers_champion-10",
+  "template": "drivers_champion",
+  "hops": "1-hop",
+  "question": "Who won the 2020 Formula 1 drivers' championship?",
+  "answer_type": "names",
+  "gold": [
+   "hamilton"
+  ],
+  "gold_text": "Lewis Hamilton",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "drivers_champion-11",
+  "template": "drivers_champion",
+  "hops": "1-hop",
+  "question": "Who won the 2012 Formula 1 drivers' championship?",
+  "answer_type": "names",
+  "gold": [
+   "vettel"
+  ],
+  "gold_text": "Sebastian Vettel",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "drivers_champion-12",
+  "template": "drivers_champion",
+  "hops": "1-hop",
+  "question": "Who won the 2004 Formula 1 drivers' championship?",
+  "answer_type": "names",
+  "gold": [
+   "michael_schumacher"
+  ],
+  "gold_text": "Michael Schumacher",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "driver_team-01",
+  "template": "driver_team",
+  "hops": "1-hop",
+  "question": "Which team did Mark Webber drive for in 2012?",
+  "answer_type": "names",
+  "gold": [
+   "red_bull"
+  ],
+  "gold_text": "Red Bull",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "driver_team-02",
+  "template": "driver_team",
+  "hops": "1-hop",
+  "question": "Which team did Jenson Button drive for in 2017?",
+  "answer_type": "names",
+  "gold": [
+   "mclaren"
+  ],
+  "gold_text": "McLaren",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "driver_team-03",
+  "template": "driver_team",
+  "hops": "1-hop",
+  "question": "Which team did Mark Webber drive for in 2006?",
+  "answer_type": "names",
+  "gold": [
+   "williams"
+  ],
+  "gold_text": "Williams",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "driver_team-04",
+  "template": "driver_team",
+  "hops": "1-hop",
+  "question": "Which team did Esteban Ocon drive for in 2023?",
+  "answer_type": "names",
+  "gold": [
+   "alpine"
+  ],
+  "gold_text": "Alpine F1 Team",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "driver_team-05",
+  "template": "driver_team",
+  "hops": "1-hop",
+  "question": "Which team did Juan Pablo Montoya drive for in 2005?",
+  "answer_type": "names",
+  "gold": [
+   "mclaren"
+  ],
+  "gold_text": "McLaren",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "driver_team-06",
+  "template": "driver_team",
+  "hops": "1-hop",
+  "question": "Which team did Andrea Kimi Antonelli drive for in 2025?",
+  "answer_type": "names",
+  "gold": [
+   "mercedes"
+  ],
+  "gold_text": "Mercedes",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "driver_team-07",
+  "template": "driver_team",
+  "hops": "1-hop",
+  "question": "Which team did Narain Karthikeyan drive for in 2012?",
+  "answer_type": "names",
+  "gold": [
+   "hrt"
+  ],
+  "gold_text": "HRT",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "driver_team-08",
+  "template": "driver_team",
+  "hops": "1-hop",
+  "question": "Which team did Nico Hülkenberg drive for in 2024?",
+  "answer_type": "names",
+  "gold": [
+   "haas"
+  ],
+  "gold_text": "Haas F1 Team",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "driver_team-09",
+  "template": "driver_team",
+  "hops": "1-hop",
+  "question": "Which team did David Coulthard drive for in 2007?",
+  "answer_type": "names",
+  "gold": [
+   "red_bull"
+  ],
+  "gold_text": "Red Bull",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "driver_team-10",
+  "template": "driver_team",
+  "hops": "1-hop",
+  "question": "Which team did Nick Heidfeld drive for in 2004?",
+  "answer_type": "names",
+  "gold": [
+   "jordan"
+  ],
+  "gold_text": "Jordan",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "driver_team-11",
+  "template": "driver_team",
+  "hops": "1-hop",
+  "question": "Which team did Fernando Alonso drive for in 2025?",
+  "answer_type": "names",
+  "gold": [
+   "aston_martin"
+  ],
+  "gold_text": "Aston Martin",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "driver_team-12",
+  "template": "driver_team",
+  "hops": "1-hop",
+  "question": "Which team did Lewis Hamilton drive for in 2008?",
+  "answer_type": "names",
+  "gold": [
+   "mclaren"
+  ],
+  "gold_text": "McLaren",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "teammate-01",
+  "template": "teammate",
+  "hops": "2-hop",
+  "question": "Who was Giancarlo Fisichella's teammate for the whole 2004 season?",
+  "answer_type": "names",
+  "gold": [
+   "massa"
+  ],
+  "gold_text": "Felipe Massa",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "teammate-02",
+  "template": "teammate",
+  "hops": "2-hop",
+  "question": "Who was Jenson Button's teammate for the whole 2002 season?",
+  "answer_type": "names",
+  "gold": [
+   "trulli"
+  ],
+  "gold_text": "Jarno Trulli",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "teammate-03",
+  "template": "teammate",
+  "hops": "2-hop",
+  "question": "Who was Giancarlo Fisichella's teammate for the whole 2002 season?",
+  "answer_type": "names",
+  "gold": [
+   "sato"
+  ],
+  "gold_text": "Takuma Sato",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "teammate-04",
+  "template": "teammate",
+  "hops": "2-hop",
+  "question": "Who was Anthony Davidson's teammate for the whole 2008 season?",
+  "answer_type": "names",
+  "gold": [
+   "sato"
+  ],
+  "gold_text": "Takuma Sato",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "teammate-05",
+  "template": "teammate",
+  "hops": "2-hop",
+  "question": "Who was Mick Schumacher's teammate for the whole 2021 season?",
+  "answer_type": "names",
+  "gold": [
+   "mazepin"
+  ],
+  "gold_text": "Nikita Mazepin",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "teammate-06",
+  "template": "teammate",
+  "hops": "2-hop",
+  "question": "Who was Pierre Gasly's teammate for the whole 2023 season?",
+  "answer_type": "names",
+  "gold": [
+   "ocon"
+  ],
+  "gold_text": "Esteban Ocon",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "teammate-07",
+  "template": "teammate",
+  "hops": "2-hop",
+  "question": "Who was Fernando Alonso's teammate for the whole 2018 season?",
+  "answer_type": "names",
+  "gold": [
+   "vandoorne"
+  ],
+  "gold_text": "Stoffel Vandoorne",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "teammate-08",
+  "template": "teammate",
+  "hops": "2-hop",
+  "question": "Who was Felipe Massa's teammate for the whole 2013 season?",
+  "answer_type": "names",
+  "gold": [
+   "alonso"
+  ],
+  "gold_text": "Fernando Alonso",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "teammate-09",
+  "template": "teammate",
+  "hops": "2-hop",
+  "question": "Who was Sergio Pérez's teammate for the whole 2019 season?",
+  "answer_type": "names",
+  "gold": [
+   "stroll"
+  ],
+  "gold_text": "Lance Stroll",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "teammate-10",
+  "template": "teammate",
+  "hops": "2-hop",
+  "question": "Who was Daniel Ricciardo's teammate for the whole 2015 season?",
+  "answer_type": "names",
+  "gold": [
+   "kvyat"
+  ],
+  "gold_text": "Daniil Kvyat",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "teammate-11",
+  "template": "teammate",
+  "hops": "2-hop",
+  "question": "Who was Timo Glock's teammate for the whole 2012 season?",
+  "answer_type": "names",
+  "gold": [
+   "pic"
+  ],
+  "gold_text": "Charles Pic",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "teammate-12",
+  "template": "teammate",
+  "hops": "2-hop",
+  "question": "Who was Jarno Trulli's teammate for the whole 2010 season?",
+  "answer_type": "names",
+  "gold": [
+   "kovalainen"
+  ],
+  "gold_text": "Heikki Kovalainen",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "champion_wins-01",
+  "template": "champion_wins",
+  "hops": "2-hop",
+  "question": "How many races did the 2025 drivers' champion win that season?",
+  "answer_type": "number",
+  "gold": 7,
+  "gold_text": "7",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "champion_wins-02",
+  "template": "champion_wins",
+  "hops": "2-hop",
+  "question": "How many races did the 2005 drivers' champion win that season?",
+  "answer_type": "number",
+  "gold": 7,
+  "gold_text": "7",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "champion_wins-03",
+  "template": "champion_wins",
+  "hops": "2-hop",
+  "question": "How many races did the 2022 drivers' champion win that season?",
+  "answer_type": "number",
+  "gold": 15,
+  "gold_text": "15",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "champion_wins-04",
+  "template": "champion_wins",
+  "hops": "2-hop",
+  "question": "How many races did the 2024 drivers' champion win that season?",
+  "answer_type": "number",
+  "gold": 9,
+  "gold_text": "9",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "champion_wins-05",
+  "template": "champion_wins",
+  "hops": "2-hop",
+  "question": "How many races did the 2007 drivers' champion win that season?",
+  "answer_type": "number",
+  "gold": 6,
+  "gold_text": "6",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "champion_wins-06",
+  "template": "champion_wins",
+  "hops": "2-hop",
+  "question": "How many races did the 2002 drivers' champion win that season?",
+  "answer_type": "number",
+  "gold": 11,
+  "gold_text": "11",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "champion_wins-07",
+  "template": "champion_wins",
+  "hops": "2-hop",
+  "question": "How many races did the 2018 drivers' champion win that season?",
+  "answer_type": "number",
+  "gold": 11,
+  "gold_text": "11",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "champion_wins-08",
+  "template": "champion_wins",
+  "hops": "2-hop",
+  "question": "How many races did the 2009 drivers' champion win that season?",
+  "answer_type": "number",
+  "gold": 6,
+  "gold_text": "6",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "champion_wins-09",
+  "template": "champion_wins",
+  "hops": "2-hop",
+  "question": "How many races did the 2016 drivers' champion win that season?",
+  "answer_type": "number",
+  "gold": 9,
+  "gold_text": "9",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "champion_wins-10",
+  "template": "champion_wins",
+  "hops": "2-hop",
+  "question": "How many races did the 2015 drivers' champion win that season?",
+  "answer_type": "number",
+  "gold": 10,
+  "gold_text": "10",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "champion_wins-11",
+  "template": "champion_wins",
+  "hops": "2-hop",
+  "question": "How many races did the 2010 drivers' champion win that season?",
+  "answer_type": "number",
+  "gold": 5,
+  "gold_text": "5",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "champion_wins-12",
+  "template": "champion_wins",
+  "hops": "2-hop",
+  "question": "How many races did the 2023 drivers' champion win that season?",
+  "answer_type": "number",
+  "gold": 19,
+  "gold_text": "19",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "constructors_champion_at_first_win-01",
+  "template": "constructors_champion_at_first_win",
+  "hops": "2-hop",
+  "question": "Which team won the constructors' championship in the season Max Verstappen won a Grand Prix for the first time (counting from 2000)?",
+  "answer_type": "names",
+  "gold": [
+   "mercedes"
+  ],
+  "gold_text": "Mercedes",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "constructors_champion_at_first_win-02",
+  "template": "constructors_champion_at_first_win",
+  "hops": "2-hop",
+  "question": "Which team won the constructors' championship in the season Heikki Kovalainen won a Grand Prix for the first time (counting from 2000)?",
+  "answer_type": "names",
+  "gold": [
+   "ferrari"
+  ],
+  "gold_text": "Ferrari",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "constructors_champion_at_first_win-03",
+  "template": "constructors_champion_at_first_win",
+  "hops": "2-hop",
+  "question": "Which team won the constructors' championship in the season Sergio Pérez won a Grand Prix for the first time (counting from 2000)?",
+  "answer_type": "names",
+  "gold": [
+   "mercedes"
+  ],
+  "gold_text": "Mercedes",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "constructors_champion_at_first_win-04",
+  "template": "constructors_champion_at_first_win",
+  "hops": "2-hop",
+  "question": "Which team won the constructors' championship in the season Valtteri Bottas won a Grand Prix for the first time (counting from 2000)?",
+  "answer_type": "names",
+  "gold": [
+   "mercedes"
+  ],
+  "gold_text": "Mercedes",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "constructors_champion_at_first_win-05",
+  "template": "constructors_champion_at_first_win",
+  "hops": "2-hop",
+  "question": "Which team won the constructors' championship in the season Jenson Button won a Grand Prix for the first time (counting from 2000)?",
+  "answer_type": "names",
+  "gold": [
+   "renault"
+  ],
+  "gold_text": "Renault",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "constructors_champion_at_first_win-06",
+  "template": "constructors_champion_at_first_win",
+  "hops": "2-hop",
+  "question": "Which team won the constructors' championship in the season Juan Pablo Montoya won a Grand Prix for the first time (counting from 2000)?",
+  "answer_type": "names",
+  "gold": [
+   "ferrari"
+  ],
+  "gold_text": "Ferrari",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "constructors_champion_at_first_win-07",
+  "template": "constructors_champion_at_first_win",
+  "hops": "2-hop",
+  "question": "Which team won the constructors' championship in the season Felipe Massa won a Grand Prix for the first time (counting from 2000)?",
+  "answer_type": "names",
+  "gold": [
+   "renault"
+  ],
+  "gold_text": "Renault",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "constructors_champion_at_first_win-08",
+  "template": "constructors_champion_at_first_win",
+  "hops": "2-hop",
+  "question": "Which team won the constructors' championship in the season Giancarlo Fisichella won a Grand Prix for the first time (counting from 2000)?",
+  "answer_type": "names",
+  "gold": [
+   "ferrari"
+  ],
+  "gold_text": "Ferrari",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "constructors_champion_at_first_win-09",
+  "template": "constructors_champion_at_first_win",
+  "hops": "2-hop",
+  "question": "Which team won the constructors' championship in the season Nico Rosberg won a Grand Prix for the first time (counting from 2000)?",
+  "answer_type": "names",
+  "gold": [
+   "red_bull"
+  ],
+  "gold_text": "Red Bull",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "constructors_champion_at_first_win-10",
+  "template": "constructors_champion_at_first_win",
+  "hops": "2-hop",
+  "question": "Which team won the constructors' championship in the season Robert Kubica won a Grand Prix for the first time (counting from 2000)?",
+  "answer_type": "names",
+  "gold": [
+   "ferrari"
+  ],
+  "gold_text": "Ferrari",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "constructors_champion_at_first_win-11",
+  "template": "constructors_champion_at_first_win",
+  "hops": "2-hop",
+  "question": "Which team won the constructors' championship in the season David Coulthard won a Grand Prix for the first time (counting from 2000)?",
+  "answer_type": "names",
+  "gold": [
+   "ferrari"
+  ],
+  "gold_text": "Ferrari",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "constructors_champion_at_first_win-12",
+  "template": "constructors_champion_at_first_win",
+  "hops": "2-hop",
+  "question": "Which team won the constructors' championship in the season Mark Webber won a Grand Prix for the first time (counting from 2000)?",
+  "answer_type": "names",
+  "gold": [
+   "brawn"
+  ],
+  "gold_text": "Brawn",
+  "entity_kind": "constructor"
+ },
+ {
+  "qid": "champion_teammates-01",
+  "template": "champion_teammates",
+  "hops": "3-hop",
+  "question": "Which of Oscar Piastri's teammates (2000-2025) won a drivers' championship in 2000-2025?",
+  "answer_type": "names",
+  "gold": [
+   "norris"
+  ],
+  "gold_text": "Lando Norris",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "champion_teammates-02",
+  "template": "champion_teammates",
+  "hops": "3-hop",
+  "question": "Which of Michael Schumacher's teammates (2000-2025) won a drivers' championship in 2000-2025?",
+  "answer_type": "names",
+  "gold": [
+   "rosberg"
+  ],
+  "gold_text": "Nico Rosberg",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "champion_teammates-03",
+  "template": "champion_teammates",
+  "hops": "3-hop",
+  "question": "Which of Jérôme d'Ambrosio's teammates (2000-2025) won a drivers' championship in 2000-2025?",
+  "answer_type": "names",
+  "gold": [
+   "raikkonen"
+  ],
+  "gold_text": "Kimi Räikkönen",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "champion_teammates-04",
+  "template": "champion_teammates",
+  "hops": "3-hop",
+  "question": "Which of Lance Stroll's teammates (2000-2025) won a drivers' championship in 2000-2025?",
+  "answer_type": "names",
+  "gold": [
+   "alonso",
+   "vettel"
+  ],
+  "gold_text": "Fernando Alonso, Sebastian Vettel",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "champion_teammates-05",
+  "template": "champion_teammates",
+  "hops": "3-hop",
+  "question": "Which of Rubens Barrichello's teammates (2000-2025) won a drivers' championship in 2000-2025?",
+  "answer_type": "names",
+  "gold": [
+   "button",
+   "michael_schumacher"
+  ],
+  "gold_text": "Jenson Button, Michael Schumacher",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "champion_teammates-06",
+  "template": "champion_teammates",
+  "hops": "3-hop",
+  "question": "Which of Mark Webber's teammates (2000-2025) won a drivers' championship in 2000-2025?",
+  "answer_type": "names",
+  "gold": [
+   "rosberg",
+   "vettel"
+  ],
+  "gold_text": "Nico Rosberg, Sebastian Vettel",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "champion_teammates-07",
+  "template": "champion_teammates",
+  "hops": "3-hop",
+  "question": "Which of Daniel Ricciardo's teammates (2000-2025) won a drivers' championship in 2000-2025?",
+  "answer_type": "names",
+  "gold": [
+   "max_verstappen",
+   "norris",
+   "vettel"
+  ],
+  "gold_text": "Lando Norris, Max Verstappen, Sebastian Vettel",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "champion_teammates-08",
+  "template": "champion_teammates",
+  "hops": "3-hop",
+  "question": "Which of Pedro de la Rosa's teammates (2000-2025) won a drivers' championship in 2000-2025?",
+  "answer_type": "names",
+  "gold": [
+   "raikkonen"
+  ],
+  "gold_text": "Kimi Räikkönen",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "champion_teammates-09",
+  "template": "champion_teammates",
+  "hops": "3-hop",
+  "question": "Which of Alex Yoong's teammates (2000-2025) won a drivers' championship in 2000-2025?",
+  "answer_type": "names",
+  "gold": [
+   "alonso"
+  ],
+  "gold_text": "Fernando Alonso",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "champion_teammates-10",
+  "template": "champion_teammates",
+  "hops": "3-hop",
+  "question": "Which of Daniil Kvyat's teammates (2000-2025) won a drivers' championship in 2000-2025?",
+  "answer_type": "names",
+  "gold": [
+   "max_verstappen"
+  ],
+  "gold_text": "Max Verstappen",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "champion_teammates-11",
+  "template": "champion_teammates",
+  "hops": "3-hop",
+  "question": "Which of Liam Lawson's teammates (2000-2025) won a drivers' championship in 2000-2025?",
+  "answer_type": "names",
+  "gold": [
+   "max_verstappen"
+  ],
+  "gold_text": "Max Verstappen",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "champion_teammates-12",
+  "template": "champion_teammates",
+  "hops": "3-hop",
+  "question": "Which of Yuki Tsunoda's teammates (2000-2025) won a drivers' championship in 2000-2025?",
+  "answer_type": "names",
+  "gold": [
+   "max_verstappen"
+  ],
+  "gold_text": "Max Verstappen",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "winner_team_next_season-01",
+  "template": "winner_team_next_season",
+  "hops": "3-hop",
+  "question": "How many races did the team that won the 2010 Monaco Grand Prix win in the following season?",
+  "answer_type": "number",
+  "gold": 12,
+  "gold_text": "12",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "winner_team_next_season-02",
+  "template": "winner_team_next_season",
+  "hops": "3-hop",
+  "question": "How many races did the team that won the 2016 Malaysian Grand Prix win in the following season?",
+  "answer_type": "number",
+  "gold": 3,
+  "gold_text": "3",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "winner_team_next_season-03",
+  "template": "winner_team_next_season",
+  "hops": "3-hop",
+  "question": "How many races did the team that won the 2014 Chinese Grand Prix win in the following season?",
+  "answer_type": "number",
+  "gold": 16,
+  "gold_text": "16",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "winner_team_next_season-04",
+  "template": "winner_team_next_season",
+  "hops": "3-hop",
+  "question": "How many races did the team that won the 2016 European Grand Prix win in the following season?",
+  "answer_type": "number",
+  "gold": 12,
+  "gold_text": "12",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "winner_team_next_season-05",
+  "template": "winner_team_next_season",
+  "hops": "3-hop",
+  "question": "How many races did the team that won the 2021 Qatar Grand Prix win in the following season?",
+  "answer_type": "number",
+  "gold": 1,
+  "gold_text": "1",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "winner_team_next_season-06",
+  "template": "winner_team_next_season",
+  "hops": "3-hop",
+  "question": "How many races did the team that won the 2013 Malaysian Grand Prix win in the following season?",
+  "answer_type": "number",
+  "gold": 3,
+  "gold_text": "3",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "winner_team_next_season-07",
+  "template": "winner_team_next_season",
+  "hops": "3-hop",
+  "question": "How many races did the team that won the 2002 Malaysian Grand Prix win in the following season?",
+  "answer_type": "number",
+  "gold": 4,
+  "gold_text": "4",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "winner_team_next_season-08",
+  "template": "winner_team_next_season",
+  "hops": "3-hop",
+  "question": "How many races did the team that won the 2022 Mexico City Grand Prix win in the following season?",
+  "answer_type": "number",
+  "gold": 21,
+  "gold_text": "21",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "winner_team_next_season-09",
+  "template": "winner_team_next_season",
+  "hops": "3-hop",
+  "question": "How many races did the team that won the 2002 Belgian Grand Prix win in the following season?",
+  "answer_type": "number",
+  "gold": 8,
+  "gold_text": "8",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "winner_team_next_season-10",
+  "template": "winner_team_next_season",
+  "hops": "3-hop",
+  "question": "How many races did the team that won the 2007 Brazilian Grand Prix win in the following season?",
+  "answer_type": "number",
+  "gold": 8,
+  "gold_text": "8",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "winner_team_next_season-11",
+  "template": "winner_team_next_season",
+  "hops": "3-hop",
+  "question": "How many races did the team that won the 2013 Belgian Grand Prix win in the following season?",
+  "answer_type": "number",
+  "gold": 3,
+  "gold_text": "3",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "winner_team_next_season-12",
+  "template": "winner_team_next_season",
+  "hops": "3-hop",
+  "question": "How many races did the team that won the 2019 Monaco Grand Prix win in the following season?",
+  "answer_type": "number",
+  "gold": 13,
+  "gold_text": "13",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "team_count-01",
+  "template": "team_count",
+  "hops": "aggregation",
+  "question": "For how many different teams did Brendon Hartley start a race between 2000 and 2025?",
+  "answer_type": "number",
+  "gold": 1,
+  "gold_text": "1",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "team_count-02",
+  "template": "team_count",
+  "hops": "aggregation",
+  "question": "For how many different teams did Sébastien Bourdais start a race between 2000 and 2025?",
+  "answer_type": "number",
+  "gold": 1,
+  "gold_text": "1",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "team_count-03",
+  "template": "team_count",
+  "hops": "aggregation",
+  "question": "For how many different teams did Michael Schumacher start a race between 2000 and 2025?",
+  "answer_type": "number",
+  "gold": 2,
+  "gold_text": "2",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "team_count-04",
+  "template": "team_count",
+  "hops": "aggregation",
+  "question": "For how many different teams did Jarno Trulli start a race between 2000 and 2025?",
+  "answer_type": "number",
+  "gold": 4,
+  "gold_text": "4",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "team_count-05",
+  "template": "team_count",
+  "hops": "aggregation",
+  "question": "For how many different teams did Felipe Massa start a race between 2000 and 2025?",
+  "answer_type": "number",
+  "gold": 3,
+  "gold_text": "3",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "team_count-06",
+  "template": "team_count",
+  "hops": "aggregation",
+  "question": "For how many different teams did Ralf Schumacher start a race between 2000 and 2025?",
+  "answer_type": "number",
+  "gold": 2,
+  "gold_text": "2",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "team_count-07",
+  "template": "team_count",
+  "hops": "aggregation",
+  "question": "For how many different teams did Olivier Panis start a race between 2000 and 2025?",
+  "answer_type": "number",
+  "gold": 2,
+  "gold_text": "2",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "team_count-08",
+  "template": "team_count",
+  "hops": "aggregation",
+  "question": "For how many different teams did Fernando Alonso start a race between 2000 and 2025?",
+  "answer_type": "number",
+  "gold": 6,
+  "gold_text": "6",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "team_count-09",
+  "template": "team_count",
+  "hops": "aggregation",
+  "question": "For how many different teams did Jos Verstappen start a race between 2000 and 2025?",
+  "answer_type": "number",
+  "gold": 2,
+  "gold_text": "2",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "team_count-10",
+  "template": "team_count",
+  "hops": "aggregation",
+  "question": "For how many different teams did Sergio Pérez start a race between 2000 and 2025?",
+  "answer_type": "number",
+  "gold": 5,
+  "gold_text": "5",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "team_count-11",
+  "template": "team_count",
+  "hops": "aggregation",
+  "question": "For how many different teams did Romain Grosjean start a race between 2000 and 2025?",
+  "answer_type": "number",
+  "gold": 3,
+  "gold_text": "3",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "team_count-12",
+  "template": "team_count",
+  "hops": "aggregation",
+  "question": "For how many different teams did Jack Doohan start a race between 2000 and 2025?",
+  "answer_type": "number",
+  "gold": 1,
+  "gold_text": "1",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "wins_with_team-01",
+  "template": "wins_with_team",
+  "hops": "aggregation",
+  "question": "How many Grands Prix did Kimi Räikkönen win driving for Lotus F1 between 2000 and 2025?",
+  "answer_type": "number",
+  "gold": 2,
+  "gold_text": "2",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "wins_with_team-02",
+  "template": "wins_with_team",
+  "hops": "aggregation",
+  "question": "How many Grands Prix did Rubens Barrichello win driving for Brawn between 2000 and 2025?",
+  "answer_type": "number",
+  "gold": 2,
+  "gold_text": "2",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "wins_with_team-03",
+  "template": "wins_with_team",
+  "hops": "aggregation",
+  "question": "How many Grands Prix did Mika Häkkinen win driving for McLaren between 2000 and 2025?",
+  "answer_type": "number",
+  "gold": 6,
+  "gold_text": "6",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "wins_with_team-04",
+  "template": "wins_with_team",
+  "hops": "aggregation",
+  "question": "How many Grands Prix did Charles Leclerc win driving for Ferrari between 2000 and 2025?",
+  "answer_type": "number",
+  "gold": 8,
+  "gold_text": "8",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "wins_with_team-05",
+  "template": "wins_with_team",
+  "hops": "aggregation",
+  "question": "How many Grands Prix did Jenson Button win driving for McLaren between 2000 and 2025?",
+  "answer_type": "number",
+  "gold": 8,
+  "gold_text": "8",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "wins_with_team-06",
+  "template": "wins_with_team",
+  "hops": "aggregation",
+  "question": "How many Grands Prix did Lewis Hamilton win driving for Mercedes between 2000 and 2025?",
+  "answer_type": "number",
+  "gold": 84,
+  "gold_text": "84",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "wins_with_team-07",
+  "template": "wins_with_team",
+  "hops": "aggregation",
+  "question": "How many Grands Prix did Lando Norris win driving for McLaren between 2000 and 2025?",
+  "answer_type": "number",
+  "gold": 11,
+  "gold_text": "11",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "wins_with_team-08",
+  "template": "wins_with_team",
+  "hops": "aggregation",
+  "question": "How many Grands Prix did Valtteri Bottas win driving for Mercedes between 2000 and 2025?",
+  "answer_type": "number",
+  "gold": 10,
+  "gold_text": "10",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "wins_with_team-09",
+  "template": "wins_with_team",
+  "hops": "aggregation",
+  "question": "How many Grands Prix did Giancarlo Fisichella win driving for Jordan between 2000 and 2025?",
+  "answer_type": "number",
+  "gold": 1,
+  "gold_text": "1",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "wins_with_team-10",
+  "template": "wins_with_team",
+  "hops": "aggregation",
+  "question": "How many Grands Prix did Sergio Pérez win driving for Red Bull between 2000 and 2025?",
+  "answer_type": "number",
+  "gold": 5,
+  "gold_text": "5",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "wins_with_team-11",
+  "template": "wins_with_team",
+  "hops": "aggregation",
+  "question": "How many Grands Prix did Daniel Ricciardo win driving for Red Bull between 2000 and 2025?",
+  "answer_type": "number",
+  "gold": 7,
+  "gold_text": "7",
+  "entity_kind": "driver"
+ },
+ {
+  "qid": "wins_with_team-12",
+  "template": "wins_with_team",
+  "hops": "aggregation",
+  "question": "How many Grands Prix did Robert Kubica win driving for BMW Sauber between 2000 and 2025?",
+  "answer_type": "number",
+  "gold": 1,
+  "gold_text": "1",
+  "entity_kind": "driver"
+ }
+]

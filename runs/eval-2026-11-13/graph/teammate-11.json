@@ -1,0 +1,31 @@
+{
+ "system": "graph",
+ "answer": "Charles Pic",
+ "raw": "Timo Glock drove only for Marussia in 2012, and his only teammate that season was Charles Pic. Since Glock was with one team all year and no other driver shared that seat, Pic is the teammate for the whole season.\n\nANSWER: Charles Pic",
+ "trace": [
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Timo Glock",
+    "season": 2012
+   },
+   "output": "{\"driver\": \"Timo Glock\", \"season\": 2012, \"teams\": [\"Marussia\"], \"teammates\": [\"Charles Pic\"]}"
+  },
+  {
+   "tool": "find_entity",
+   "input": {
+    "name": "Timo Glock",
+    "kind": "driver"
+   },
+   "output": "{\"id\": \"glock\", \"name\": \"Timo Glock\"}"
+  }
+ ],
+ "input_tokens": 3137,
+ "output_tokens": 373,
+ "seconds": 3.3906726999994135,
+ "error": null,
+ "qid": "teammate-11",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0005002,
+ "correct": true
+}

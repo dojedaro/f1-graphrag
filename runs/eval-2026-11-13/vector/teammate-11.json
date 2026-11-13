@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "none",
+ "raw": "The provided documents don't mention Timo Glock, Marussia, or Charles Pic. They cover only ten 2012 Grand Prix top-10 results (Australia, Malaysia, Korea, Hungary, Japan, Italy, India, and the United States), and none of them list Glock or his teammate. I can't determine the answer from these documents.\n\nFrom outside knowledge, Glock drove for Marussia in 2012 alongside Charles Pic, but that doesn't come from the provided information, so I'm not relying on it here.\n\nANSWER: none",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2012 United States Grand Prix",
+     "score": 0.373
+    },
+    {
+     "title": "2012 Italian Grand Prix",
+     "score": 0.371
+    },
+    {
+     "title": "2012 Korean Grand Prix",
+     "score": 0.369
+    },
+    {
+     "title": "2012 Malaysian Grand Prix",
+     "score": 0.367
+    },
+    {
+     "title": "2012 Hungarian Grand Prix",
+     "score": 0.364
+    },
+    {
+     "title": "2012 Japanese Grand Prix",
+     "score": 0.363
+    },
+    {
+     "title": "2012 Australian Grand Prix",
+     "score": 0.357
+    },
+    {
+     "title": "2012 Indian Grand Prix",
+     "score": 0.351
+    }
+   ]
+  }
+ ],
+ "input_tokens": 2650,
+ "output_tokens": 471,
+ "seconds": 2.7495751999958884,
+ "error": null,
+ "qid": "teammate-11",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0005005,
+ "correct": false
+}

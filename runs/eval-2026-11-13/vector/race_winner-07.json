@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "Michael Schumacher",
+ "raw": "The 2002 San Marino Grand Prix was round 4 of the 2002 season, held at Autodromo Enzo e Dino Ferrari on 2002-04-14. Document [1] lists Michael Schumacher (Ferrari) in first place, starting from pole.\n\nANSWER: Michael Schumacher",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2002 San Marino Grand Prix",
+     "score": 0.703
+    },
+    {
+     "title": "2001 San Marino Grand Prix",
+     "score": 0.685
+    },
+    {
+     "title": "2003 San Marino Grand Prix",
+     "score": 0.66
+    },
+    {
+     "title": "2000 San Marino Grand Prix",
+     "score": 0.65
+    },
+    {
+     "title": "2004 San Marino Grand Prix",
+     "score": 0.64
+    },
+    {
+     "title": "2002 Monaco Grand Prix",
+     "score": 0.636
+    },
+    {
+     "title": "2002 United States Grand Prix",
+     "score": 0.632
+    },
+    {
+     "title": "2002 French Grand Prix",
+     "score": 0.617
+    }
+   ]
+  }
+ ],
+ "input_tokens": 2763,
+ "output_tokens": 187,
+ "seconds": 1.2164253999944776,
+ "error": null,
+ "qid": "race_winner-07",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0003698,
+ "correct": true
+}

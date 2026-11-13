@@ -1,0 +1,183 @@
+{
+ "system": "graph",
+ "answer": "13",
+ "raw": "In 13 of the 2016 races, the driver who started from pole (grid 1) also won.\n\nI checked each of the 21 rounds using the grid position and finishing position in the results:\n\n- **Pole converted to a win (13):** China, Russia, Canada, Europe, Austria, Britain, Belgium, Singapore, Japan, United States, Mexico, Brazil, Abu Dhabi.\n- **Pole did not win (8):** Australia, Bahrain, Monaco, Hungary, Germany, Italy, Malaysia and Spain.\n\nIn Spain and Malaysia the pole-sitter is not among the top 10 finishers, so the tool does not show who started from pole there. Both winners started from grid 4, so the pole-sitter could not have won in either race.\n\nANSWER: 13",
+ "trace": [
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2016,
+    "race": "1"
+   },
+   "output": "{\"race\": \"2016 Australian Grand Prix\", \"round\": 1, \"circuit\": \"Albert Park Grand Prix Circuit\", \"date\": \"2016-03-20\", \"results\": [{\"position\": \"1\", \"driver\": \"Nico Rosberg\", \"team\": \"Mercedes\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Lewis Hamilton\", \"team\": \"Mercedes\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Sebastian Vettel\", \"team\": \"Ferrari\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Daniel Ricciardo\", \"team\": \"Red Bull\", \"grid\": 8, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Felipe Massa\", \"team\": \"Williams\", \"grid\": 6, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Romain Grosjean\", \"team\": \"Haas F1 Team\", \"grid\": 19, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Nico Hülkenberg\", \"team\": \"Force India\", \"grid\": 10, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Valtteri Bottas\", \"team\": \"Williams\", \"grid\": 16, \"status\": \"Finished\"}, {\"position\": \"9\", \"driver\": \"Carlos Sainz\", \"team\": \"Toro Rosso\", \"grid\": 7, \"status\": \"Finished\"}, {\"position\": \"10\", \"driver\": \"Max Verstappen\", \"team\": \"Toro Rosso\", \"grid\": 5, \"status\": \"Finished\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2016,
+    "race": "2"
+   },
+   "output": "{\"race\": \"2016 Bahrain Grand Prix\", \"round\": 2, \"circuit\": \"Bahrain International Circuit\", \"date\": \"2016-04-03\", \"results\": [{\"position\": \"1\", \"driver\": \"Nico Rosberg\", \"team\": \"Mercedes\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Kimi Räikkönen\", \"team\": \"Ferrari\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Lewis Hamilton\", \"team\": \"Mercedes\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Daniel Ricciardo\", \"team\": \"Red Bull\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Romain Grosjean\", \"team\": \"Haas F1 Team\", \"grid\": 9, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Max Verstappen\", \"team\": \"Toro Rosso\", \"grid\": 10, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Daniil Kvyat\", \"team\": \"Red Bull\", \"grid\": 15, \"status\": \"+1 Lap\"}, {\"position\": \"8\", \"driver\": \"Felipe Massa\", \"team\": \"Williams\", \"grid\": 7, \"status\": \"+1 Lap\"}, {\"position\": \"9\", \"driver\": \"Valtteri Bottas\", \"team\": \"Williams\", \"grid\": 6, \"status\": \"+1 Lap\"}, {\"position\": \"10\", \"driver\": \"Stoffel Vandoorne\", \"team\": \"McLaren\", \"grid\": 12, \"status\": \"+1 Lap\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2016,
+    "race": "3"
+   },
+   "output": "{\"race\": \"2016 Chinese Grand Prix\", \"round\": 3, \"circuit\": \"Shanghai International Circuit\", \"date\": \"2016-04-17\", \"results\": [{\"position\": \"1\", \"driver\": \"Nico Rosberg\", \"team\": \"Mercedes\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Sebastian Vettel\", \"team\": \"Ferrari\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Daniil Kvyat\", \"team\": \"Red Bull\", \"grid\": 6, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Daniel Ricciardo\", \"team\": \"Red Bull\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Kimi Räikkönen\", \"team\": \"Ferrari\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Felipe Massa\", \"team\": \"Williams\", \"grid\": 10, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Lewis Hamilton\", \"team\": \"Mercedes\", \"grid\": 22, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Max Verstappen\", \"team\": \"Toro Rosso\", \"grid\": 9, \"status\": \"Finished\"}, {\"position\": \"9\", \"driver\": \"Carlos Sainz\", \"team\": \"Toro Rosso\", \"grid\": 8, \"status\": \"Finished\"}, {\"position\": \"10\", \"driver\": \"Valtteri Bottas\", \"team\": \"Williams\", \"grid\": 5, \"status\": \"Finished\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2016,
+    "race": "4"
+   },
+   "output": "{\"race\": \"2016 Russian Grand Prix\", \"round\": 4, \"circuit\": \"Sochi Autodrom\", \"date\": \"2016-05-01\", \"results\": [{\"position\": \"1\", \"driver\": \"Nico Rosberg\", \"team\": \"Mercedes\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Lewis Hamilton\", \"team\": \"Mercedes\", \"grid\": 10, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Kimi Räikkönen\", \"team\": \"Ferrari\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Valtteri Bottas\", \"team\": \"Williams\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Felipe Massa\", \"team\": \"Williams\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Fernando Alonso\", \"team\": \"McLaren\", \"grid\": 14, \"status\": \"+1 Lap\"}, {\"position\": \"7\", \"driver\": \"Kevin Magnussen\", \"team\": \"Renault\", \"grid\": 17, \"status\": \"+1 Lap\"}, {\"position\": \"8\", \"driver\": \"Romain Grosjean\", \"team\": \"Haas F1 Team\", \"grid\": 15, \"status\": \"+1 Lap\"}, {\"position\": \"9\", \"driver\": \"Sergio Pérez\", \"team\": \"Force India\", \"grid\": 6, \"status\": \"+1 Lap\"}, {\"position\": \"10\", \"driver\": \"Jenson Button\", \"team\": \"McLaren\", \"grid\": 12, \"status\": \"+1 Lap\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2016,
+    "race": "5"
+   },
+   "output": "{\"race\": \"2016 Spanish Grand Prix\", \"round\": 5, \"circuit\": \"Circuit de Barcelona-Catalunya\", \"date\": \"2016-05-15\", \"results\": [{\"position\": \"1\", \"driver\": \"Max Verstappen\", \"team\": \"Red Bull\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Kimi Räikkönen\", \"team\": \"Ferrari\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Sebastian Vettel\", \"team\": \"Ferrari\", \"grid\": 6, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Daniel Ricciardo\", \"team\": \"Red Bull\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Valtteri Bottas\", \"team\": \"Williams\", \"grid\": 7, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Carlos Sainz\", \"team\": \"Toro Rosso\", \"grid\": 8, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Sergio Pérez\", \"team\": \"Force India\", \"grid\": 9, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Felipe Massa\", \"team\": \"Williams\", \"grid\": 18, \"status\": \"Finished\"}, {\"position\": \"9\", \"driver\": \"Jenson Button\", \"team\": \"McLaren\", \"grid\": 12, \"status\": \"+1 Lap\"}, {\"position\": \"10\", \"driver\": \"Daniil Kvyat\", \"team\": \"Toro Rosso\", \"grid\": 13, \"status\": \"+1 Lap\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2016,
+    "race": "6"
+   },
+   "output": "{\"race\": \"2016 Monaco Grand Prix\", \"round\": 6, \"circuit\": \"Circuit de Monaco\", \"date\": \"2016-05-29\", \"results\": [{\"position\": \"1\", \"driver\": \"Lewis Hamilton\", \"team\": \"Mercedes\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Daniel Ricciardo\", \"team\": \"Red Bull\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Sergio Pérez\", \"team\": \"Force India\", \"grid\": 7, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Sebastian Vettel\", \"team\": \"Ferrari\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Fernando Alonso\", \"team\": \"McLaren\", \"grid\": 9, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Nico Hülkenberg\", \"team\": \"Force India\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Nico Rosberg\", \"team\": \"Mercedes\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Carlos Sainz\", \"team\": \"Toro Rosso\", \"grid\": 6, \"status\": \"+1 Lap\"}, {\"position\": \"9\", \"driver\": \"Jenson Button\", \"team\": \"McLaren\", \"grid\": 13, \"status\": \"+1 Lap\"}, {\"position\": \"10\", \"driver\": \"Felipe Massa\", \"team\": \"Williams\", \"grid\": 14, \"status\": \"+1 Lap\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2016,
+    "race": "7"
+   },
+   "output": "{\"race\": \"2016 Canadian Grand Prix\", \"round\": 7, \"circuit\": \"Circuit Gilles Villeneuve\", \"date\": \"2016-06-12\", \"results\": [{\"position\": \"1\", \"driver\": \"Lewis Hamilton\", \"team\": \"Mercedes\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Sebastian Vettel\", \"team\": \"Ferrari\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Valtteri Bottas\", \"team\": \"Williams\", \"grid\": 7, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Max Verstappen\", \"team\": \"Red Bull\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Nico Rosberg\", \"team\": \"Mercedes\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Kimi Räikkönen\", \"team\": \"Ferrari\", \"grid\": 6, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Daniel Ricciardo\", \"team\": \"Red Bull\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Nico Hülkenberg\", \"team\": \"Force India\", \"grid\": 9, \"status\": \"+1 Lap\"}, {\"position\": \"9\", \"driver\": \"Carlos Sainz\", \"team\": \"Toro Rosso\", \"grid\": 20, \"status\": \"+1 Lap\"}, {\"position\": \"10\", \"driver\": \"Sergio Pérez\", \"team\": \"Force India\", \"grid\": 11, \"status\": \"+1 Lap\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2016,
+    "race": "8"
+   },
+   "output": "{\"race\": \"2016 European Grand Prix\", \"round\": 8, \"circuit\": \"Baku City Circuit\", \"date\": \"2016-06-19\", \"results\": [{\"position\": \"1\", \"driver\": \"Nico Rosberg\", \"team\": \"Mercedes\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Sebastian Vettel\", \"team\": \"Ferrari\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Sergio Pérez\", \"team\": \"Force India\", \"grid\": 7, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Kimi Räikkönen\", \"team\": \"Ferrari\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Lewis Hamilton\", \"team\": \"Mercedes\", \"grid\": 10, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Valtteri Bottas\", \"team\": \"Williams\", \"grid\": 8, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Daniel Ricciardo\", \"team\": \"Red Bull\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Max Verstappen\", \"team\": \"Red Bull\", \"grid\": 9, \"status\": \"Finished\"}, {\"position\": \"9\", \"driver\": \"Nico Hülkenberg\", \"team\": \"Force India\", \"grid\": 12, \"status\": \"Finished\"}, {\"position\": \"10\", \"driver\": \"Felipe Massa\", \"team\": \"Williams\", \"grid\": 5, \"status\": \"Finished\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2016,
+    "race": "9"
+   },
+   "output": "{\"race\": \"2016 Austrian Grand Prix\", \"round\": 9, \"circuit\": \"Red Bull Ring\", \"date\": \"2016-07-03\", \"results\": [{\"position\": \"1\", \"driver\": \"Lewis Hamilton\", \"team\": \"Mercedes\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Max Verstappen\", \"team\": \"Red Bull\", \"grid\": 8, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Kimi Räikkönen\", \"team\": \"Ferrari\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Nico Rosberg\", \"team\": \"Mercedes\", \"grid\": 6, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Daniel Ricciardo\", \"team\": \"Red Bull\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Jenson Button\", \"team\": \"McLaren\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Romain Grosjean\", \"team\": \"Haas F1 Team\", \"grid\": 13, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Carlos Sainz\", \"team\": \"Toro Rosso\", \"grid\": 15, \"status\": \"Finished\"}, {\"position\": \"9\", \"driver\": \"Valtteri Bottas\", \"team\": \"Williams\", \"grid\": 7, \"status\": \"+1 Lap\"}, {\"position\": \"10\", \"driver\": \"Pascal Wehrlein\", \"team\": \"Manor Marussia\", \"grid\": 12, \"status\": \"+1 Lap\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2016,
+    "race": "10"
+   },
+   "output": "{\"race\": \"2016 British Grand Prix\", \"round\": 10, \"circuit\": \"Silverstone Circuit\", \"date\": \"2016-07-10\", \"results\": [{\"position\": \"1\", \"driver\": \"Lewis Hamilton\", \"team\": \"Mercedes\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Max Verstappen\", \"team\": \"Red Bull\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Nico Rosberg\", \"team\": \"Mercedes\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Daniel Ricciardo\", \"team\": \"Red Bull\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Kimi Räikkönen\", \"team\": \"Ferrari\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Sergio Pérez\", \"team\": \"Force India\", \"grid\": 10, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Nico Hülkenberg\", \"team\": \"Force India\", \"grid\": 8, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Carlos Sainz\", \"team\": \"Toro Rosso\", \"grid\": 7, \"status\": \"Finished\"}, {\"position\": \"9\", \"driver\": \"Sebastian Vettel\", \"team\": \"Ferrari\", \"grid\": 11, \"status\": \"Finished\"}, {\"position\": \"10\", \"driver\": \"Daniil Kvyat\", \"team\": \"Toro Rosso\", \"grid\": 15, \"status\": \"Finished\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2016,
+    "race": "11"
+   },
+   "output": "{\"race\": \"2016 Hungarian Grand Prix\", \"round\": 11, \"circuit\": \"Hungaroring\", \"date\": \"2016-07-24\", \"results\": [{\"position\": \"1\", \"driver\": \"Lewis Hamilton\", \"team\": \"Mercedes\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Nico Rosberg\", \"team\": \"Mercedes\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Daniel Ricciardo\", \"team\": \"Red Bull\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Sebastian Vettel\", \"team\": \"Ferrari\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Max Verstappen\", \"team\": \"Red Bull\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Kimi Räikkönen\", \"team\": \"Ferrari\", \"grid\": 14, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Fernando Alonso\", \"team\": \"McLaren\", \"grid\": 7, \"status\": \"+1 Lap\"}, {\"position\": \"8\", \"driver\": \"Carlos Sainz\", \"team\": \"Toro Rosso\", \"grid\": 6, \"status\": \"+1 Lap\"}, {\"position\": \"9\", \"driver\": \"Valtteri Bottas\", \"team\": \"Williams\", \"grid\": 10, \"status\": \"+1 Lap\"}, {\"position\": \"10\", \"driver\": \"Nico Hülkenberg\", \"team\": \"Force India\", \"grid\": 9, \"status\": \"+1 Lap\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2016,
+    "race": "12"
+   },
+   "output": "{\"race\": \"2016 German Grand Prix\", \"round\": 12, \"circuit\": \"Hockenheimring\", \"date\": \"2016-07-31\", \"results\": [{\"position\": \"1\", \"driver\": \"Lewis Hamilton\", \"team\": \"Mercedes\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Daniel Ricciardo\", \"team\": \"Red Bull\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Max Verstappen\", \"team\": \"Red Bull\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Nico Rosberg\", \"team\": \"Mercedes\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Sebastian Vettel\", \"team\": \"Ferrari\", \"grid\": 6, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Kimi Räikkönen\", \"team\": \"Ferrari\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Nico Hülkenberg\", \"team\": \"Force India\", \"grid\": 8, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Jenson Button\", \"team\": \"McLaren\", \"grid\": 12, \"status\": \"+1 Lap\"}, {\"position\": \"9\", \"driver\": \"Valtteri Bottas\", \"team\": \"Williams\", \"grid\": 7, \"status\": \"+1 Lap\"}, {\"position\": \"10\", \"driver\": \"Sergio Pérez\", \"team\": \"Force India\", \"grid\": 9, \"status\": \"+1 Lap\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2016,
+    "race": "13"
+   },
+   "output": "{\"race\": \"2016 Belgian Grand Prix\", \"round\": 13, \"circuit\": \"Circuit de Spa-Francorchamps\", \"date\": \"2016-08-28\", \"results\": [{\"position\": \"1\", \"driver\": \"Nico Rosberg\", \"team\": \"Mercedes\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Daniel Ricciardo\", \"team\": \"Red Bull\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Lewis Hamilton\", \"team\": \"Mercedes\", \"grid\": 21, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Nico Hülkenberg\", \"team\": \"Force India\", \"grid\": 7, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Sergio Pérez\", \"team\": \"Force India\", \"grid\": 6, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Sebastian Vettel\", \"team\": \"Ferrari\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Fernando Alonso\", \"team\": \"McLaren\", \"grid\": 22, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Valtteri Bottas\", \"team\": \"Williams\", \"grid\": 8, \"status\": \"Finished\"}, {\"position\": \"9\", \"driver\": \"Kimi Räikkönen\", \"team\": \"Ferrari\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"10\", \"driver\": \"Felipe Massa\", \"team\": \"Williams\", \"grid\": 10, \"status\": \"Finished\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2016,
+    "race": "14"
+   },
+   "output": "{\"race\": \"2016 Italian Grand Prix\", \"round\": 14, \"circuit\": \"Autodromo Nazionale di Monza\", \"date\": \"2016-09-04\", \"results\": [{\"position\": \"1\", \"driver\": \"Nico Rosberg\", \"team\": \"Mercedes\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Lewis Hamilton\", \"team\": \"Mercedes\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Sebastian Vettel\", \"team\": \"Ferrari\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Kimi Räikkönen\", \"team\": \"Ferrari\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Daniel Ricciardo\", \"team\": \"Red Bull\", \"grid\": 6, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Valtteri Bottas\", \"team\": \"Williams\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Max Verstappen\", \"team\": \"Red Bull\", \"grid\": 7, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Sergio Pérez\", \"team\": \"Force India\", \"grid\": 8, \"status\": \"Finished\"}, {\"position\": \"9\", \"driver\": \"Felipe Massa\", \"team\": \"Williams\", \"grid\": 11, \"status\": \"Finished\"}, {\"position\": \"10\", \"driver\": \"Nico Hülkenberg\", \"team\": \"Force India\", \"grid\": 9, \"status\": \"Finished\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2016,
+    "race": "15"
+   },
+   "output": "{\"race\": \"2016 Singapore Grand Prix\", \"round\": 15, \"circuit\": \"Marina Bay Street Circuit\", \"date\": \"2016-09-18\", \"results\": [{\"position\": \"1\", \"driver\": \"Nico Rosberg\", \"team\": \"Mercedes\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Daniel Ricciardo\", \"team\": \"Red Bull\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Lewis Hamilton\", \"team\": \"Mercedes\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Kimi Räikkönen\", \"team\": \"Ferrari\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Sebastian Vettel\", \"team\": \"Ferrari\", \"grid\": 22, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Max Verstappen\", \"team\": \"Red Bull\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Fernando Alonso\", \"team\": \"McLaren\", \"grid\": 9, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Sergio Pérez\", \"team\": \"Force India\", \"grid\": 17, \"status\": \"Finished\"}, {\"position\": \"9\", \"driver\": \"Daniil Kvyat\", \"team\": \"Toro Rosso\", \"grid\": 7, \"status\": \"Finished\"}, {\"position\": \"10\", \"driver\": \"Kevin Magnussen\", \"team\": \"Renault\", \"grid\": 15, \"status\": \"Finished\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2016,
+    "race": "16"
+   },
+   "output": "{\"race\": \"2016 Malaysian Grand Prix\", \"round\": 16, \"circuit\": \"Sepang International Circuit\", \"date\": \"2016-10-02\", \"results\": [{\"position\": \"1\", \"driver\": \"Daniel Ricciardo\", \"team\": \"Red Bull\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Max Verstappen\", \"team\": \"Red Bull\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Nico Rosberg\", \"team\": \"Mercedes\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Kimi Räikkönen\", \"team\": \"Ferrari\", \"grid\": 6, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Valtteri Bottas\", \"team\": \"Williams\", \"grid\": 11, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Sergio Pérez\", \"team\": \"Force India\", \"grid\": 7, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Fernando Alonso\", \"team\": \"McLaren\", \"grid\": 22, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Nico Hülkenberg\", \"team\": \"Force India\", \"grid\": 8, \"status\": \"Finished\"}, {\"position\": \"9\", \"driver\": \"Jenson Button\", \"team\": \"McLaren\", \"grid\": 9, \"status\": \"Finished\"}, {\"position\": \"10\", \"driver\": \"Jolyon Palmer\", \"team\": \"Renault\", \"grid\": 19, \"status\": \"Finished\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2016,
+    "race": "17"
+   },
+   "output": "{\"race\": \"2016 Japanese Grand Prix\", \"round\": 17, \"circuit\": \"Suzuka Circuit\", \"date\": \"2016-10-09\", \"results\": [{\"position\": \"1\", \"driver\": \"Nico Rosberg\", \"team\": \"Mercedes\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Max Verstappen\", \"team\": \"Red Bull\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Lewis Hamilton\", \"team\": \"Mercedes\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Sebastian Vettel\", \"team\": \"Ferrari\", \"grid\": 6, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Kimi Räikkönen\", \"team\": \"Ferrari\", \"grid\": 8, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Daniel Ricciardo\", \"team\": \"Red Bull\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Sergio Pérez\", \"team\": \"Force India\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Nico Hülkenberg\", \"team\": \"Force India\", \"grid\": 9, \"status\": \"Finished\"}, {\"position\": \"9\", \"driver\": \"Felipe Massa\", \"team\": \"Williams\", \"grid\": 12, \"status\": \"Finished\"}, {\"position\": \"10\", \"driver\": \"Valtteri Bottas\", \"team\": \"Williams\", \"grid\": 11, \"status\": \"Finished\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2016,
+    "race": "18"
+   },
+   "output": "{\"race\": \"2016 United States Grand Prix\", \"round\": 18, \"circuit\": \"Circuit of the Americas\", \"date\": \"2016-10-23\", \"results\": [{\"position\": \"1\", \"driver\": \"Lewis Hamilton\", \"team\": \"Mercedes\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Nico Rosberg\", \"team\": \"Mercedes\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Daniel Ricciardo\", \"team\": \"Red Bull\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Sebastian Vettel\", \"team\": \"Ferrari\", \"grid\": 6, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Fernando Alonso\", \"team\": \"McLaren\", \"grid\": 12, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Carlos Sainz\", \"team\": \"Toro Rosso\", \"grid\": 10, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Felipe Massa\", \"team\": \"Williams\", \"grid\": 9, \"status\": \"+1 Lap\"}, {\"position\": \"8\", \"driver\": \"Sergio Pérez\", \"team\": \"Force India\", \"grid\": 11, \"status\": \"+1 Lap\"}, {\"position\": \"9\", \"driver\": \"Jenson Button\", \"team\": \"McLaren\", \"grid\": 19, \"status\": \"+1 Lap\"}, {\"position\": \"10\", \"driver\": \"Romain Grosjean\", \"team\": \"Haas F1 Team\", \"grid\": 17, \"status\": \"+1 Lap\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2016,
+    "race": "19"
+   },
+   "output": "{\"race\": \"2016 Mexican Grand Prix\", \"round\": 19, \"circuit\": \"Autódromo Hermanos Rodríguez\", \"date\": \"2016-10-30\", \"results\": [{\"position\": \"1\", \"driver\": \"Lewis Hamilton\", \"team\": \"Mercedes\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Nico Rosberg\", \"team\": \"Mercedes\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Daniel Ricciardo\", \"team\": \"Red Bull\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Max Verstappen\", \"team\": \"Red Bull\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Sebastian Vettel\", \"team\": \"Ferrari\", \"grid\": 7, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Kimi Räikkönen\", \"team\": \"Ferrari\", \"grid\": 6, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Nico Hülkenberg\", \"team\": \"Force India\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Valtteri Bottas\", \"team\": \"Williams\", \"grid\": 8, \"status\": \"Finished\"}, {\"position\": \"9\", \"driver\": \"Felipe Massa\", \"team\": \"Williams\", \"grid\": 9, \"status\": \"Finished\"}, {\"position\": \"10\", \"driver\": \"Sergio Pérez\", \"team\": \"Force India\", \"grid\": 12, \"status\": \"Finished\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2016,
+    "race": "20"
+   },
+   "output": "{\"race\": \"2016 Brazilian Grand Prix\", \"round\": 20, \"circuit\": \"Autódromo José Carlos Pace\", \"date\": \"2016-11-13\", \"results\": [{\"position\": \"1\", \"driver\": \"Lewis Hamilton\", \"team\": \"Mercedes\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Nico Rosberg\", \"team\": \"Mercedes\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Max Verstappen\", \"team\": \"Red Bull\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Sergio Pérez\", \"team\": \"Force India\", \"grid\": 9, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Sebastian Vettel\", \"team\": \"Ferrari\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Carlos Sainz\", \"team\": \"Toro Rosso\", \"grid\": 15, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Nico Hülkenberg\", \"team\": \"Force India\", \"grid\": 8, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Daniel Ricciardo\", \"team\": \"Red Bull\", \"grid\": 6, \"status\": \"Finished\"}, {\"position\": \"9\", \"driver\": \"Felipe Nasr\", \"team\": \"Sauber\", \"grid\": 21, \"status\": \"Finished\"}, {\"position\": \"10\", \"driver\": \"Fernando Alonso\", \"team\": \"McLaren\", \"grid\": 10, \"status\": \"Finished\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2016,
+    "race": "21"
+   },
+   "output": "{\"race\": \"2016 Abu Dhabi Grand Prix\", \"round\": 21, \"circuit\": \"Yas Marina Circuit\", \"date\": \"2016-11-27\", \"results\": [{\"position\": \"1\", \"driver\": \"Lewis Hamilton\", \"team\": \"Mercedes\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Nico Rosberg\", \"team\": \"Mercedes\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Sebastian Vettel\", \"team\": \"Ferrari\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Max Verstappen\", \"team\": \"Red Bull\", \"grid\": 6, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Daniel Ricciardo\", \"team\": \"Red Bull\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Kimi Räikkönen\", \"team\": \"Ferrari\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Nico Hülkenberg\", \"team\": \"Force India\", \"grid\": 7, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Sergio Pérez\", \"team\": \"Force India\", \"grid\": 8, \"status\": \"Finished\"}, {\"position\": \"9\", \"driver\": \"Felipe Massa\", \"team\": \"Williams\", \"grid\": 10, \"status\": \"Finished\"}, {\"position\": \"10\", \"driver\": \"Fernando Alonso\", \"team\": \"McLaren\", \"grid\": 9, \"status\": \"Finished\"}]}"
+  }
+ ],
+ "input_tokens": 16445,
+ "output_tokens": 3349,
+ "seconds": 13.667292699989048,
+ "error": null,
+ "qid": "pole_to_win-01",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.003319,
+ "correct": true
+}

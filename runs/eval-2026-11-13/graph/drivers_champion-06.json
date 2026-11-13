@@ -1,0 +1,27 @@
+{
+ "system": "graph",
+ "answer": "Kimi Räikkönen",
+ "raw": "The 2007 Formula 1 drivers' champion was Kimi Räikkönen, driving for Ferrari. He finished on 110 points, one ahead of Lewis Hamilton and Fernando Alonso, who both scored 109 points. Räikkönen won 6 races that season.\n\nANSWER: Kimi Räikkönen",
+ "trace": [
+  {
+   "tool": "champions",
+   "input": {},
+   "output": "{\"seasons\": [{\"season\": 2000, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2001, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2002, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2003, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2004, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2005, \"drivers_champion\": \"Fernando Alonso\", \"constructors_champion\": \"Renault\"}, {\"season\": 2006, \"drivers_champion\": \"Fernando Alonso\", \"constructors_champion\": \"Renault\"}, {\"season\": 2007, \"drivers_champion\": \"Kimi Räikkönen\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2008, \"drivers_champion\": \"Lewis Hamilton\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2009, \"drivers_champion\": \"Jenson Button\", \"constructors_champion\": \"Brawn\"}, {\"season\": 2010, \"drivers_champion\": \"Sebastian Vettel\", \"constructors_champion\": \"Red Bull\"}, {\"season\": 2011, \"drivers_champion\": \"Sebastian Vettel\", \"constructors_champion\": \"Red Bull\"}, {\"season\": 2012, \"drivers_champion\": \"Sebastian Vettel\", \"constructors_champion\": \"Red Bull\"}, {\"season\": 2013, \"drivers_champion\": \"Sebastian Vettel\", \"constructors_champion\": \"Red Bull\"}, {\"season\": 2014, \"drivers_champion\": \"Lewis Hamilton\", \"constructors_champion\": \"Mercedes\"}, {\"season\": 2015, \"drivers_champion\": \"Lewis Hamilton\", \"constructors_champi"
+  },
+  {
+   "tool": "season_summary",
+   "input": {
+    "season": 2007
+   },
+   "output": "{\"season\": 2007, \"races\": 17, \"drivers_champion\": \"Kimi Räikkönen\", \"constructors_champion\": \"Ferrari\", \"top_drivers\": [{\"position\": 1, \"driver\": \"Kimi Räikkönen\", \"points\": 110.0, \"wins\": 6}, {\"position\": 2, \"driver\": \"Lewis Hamilton\", \"points\": 109.0, \"wins\": 4}, {\"position\": 3, \"driver\": \"Fernando Alonso\", \"points\": 109.0, \"wins\": 4}, {\"position\": 4, \"driver\": \"Felipe Massa\", \"points\": 94.0, \"wins\": 3}, {\"position\": 5, \"driver\": \"Nick Heidfeld\", \"points\": 61.0, \"wins\": 0}], \"top_constructors\": [{\"position\": 1, \"team\": \"Ferrari\", \"points\": 204.0, \"wins\": 9}, {\"position\": 2, \"team\": \"BMW Sauber\", \"points\": 101.0, \"wins\": 0}, {\"position\": 3, \"team\": \"Renault\", \"points\": 51.0, \"wins\": 0}, {\"position\": 4, \"team\": \"Williams\", \"points\": 33.0, \"wins\": 0}, {\"position\": 5, \"team\": \"Red Bull\", \"points\": 24.0, \"wins\": 0}]}"
+  }
+ ],
+ "input_tokens": 4528,
+ "output_tokens": 184,
+ "seconds": 3.205126700006076,
+ "error": null,
+ "qid": "drivers_champion-06",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0005447999999999999,
+ "correct": true
+}

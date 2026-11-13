@@ -1,0 +1,22 @@
+{
+ "system": "hybrid",
+ "answer": "Michael Schumacher",
+ "raw": "The 2001 Formula 1 drivers' championship was won by Michael Schumacher, driving for Ferrari. He finished with 123 points and 9 wins, ahead of David Coulthard (65 points) in second place.\n\nANSWER: Michael Schumacher",
+ "trace": [
+  {
+   "tool": "season_summary",
+   "input": {
+    "season": 2001
+   },
+   "output": "{\"season\": 2001, \"races\": 17, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\", \"top_drivers\": [{\"position\": 1, \"driver\": \"Michael Schumacher\", \"points\": 123.0, \"wins\": 9}, {\"position\": 2, \"driver\": \"David Coulthard\", \"points\": 65.0, \"wins\": 2}, {\"position\": 3, \"driver\": \"Rubens Barrichello\", \"points\": 56.0, \"wins\": 0}, {\"position\": 4, \"driver\": \"Ralf Schumacher\", \"points\": 49.0, \"wins\": 3}, {\"position\": 5, \"driver\": \"Mika Häkkinen\", \"points\": 37.0, \"wins\": 2}], \"top_constructors\": [{\"position\": 1, \"team\": \"Ferrari\", \"points\": 179.0, \"wins\": 9}, {\"position\": 2, \"team\": \"McLaren\", \"points\": 102.0, \"wins\": 4}, {\"position\": 3, \"team\": \"Williams\", \"points\": 80.0, \"wins\": 4}, {\"position\": 4, \"team\": \"Sauber\", \"points\": 21.0, \"wins\": 0}, {\"position\": 5, \"team\": \"Jordan\", \"points\": 19.0, \"wins\": 0}]}"
+  }
+ ],
+ "input_tokens": 3526,
+ "output_tokens": 138,
+ "seconds": 2.0420408000063617,
+ "error": null,
+ "qid": "drivers_champion-01",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0004216,
+ "correct": true
+}

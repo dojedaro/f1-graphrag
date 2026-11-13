@@ -1,0 +1,23 @@
+{
+ "system": "graph",
+ "answer": "Heikki Kovalainen",
+ "raw": "Jarno Trulli drove for Lotus in 2010, and his only teammate that season was Heikki Kovalainen.\n\nANSWER: Heikki Kovalainen",
+ "trace": [
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Jarno Trulli",
+    "season": 2010
+   },
+   "output": "{\"driver\": \"Jarno Trulli\", \"season\": 2010, \"teams\": [\"Lotus\"], \"teammates\": [\"Heikki Kovalainen\"]}"
+  }
+ ],
+ "input_tokens": 3004,
+ "output_tokens": 263,
+ "seconds": 3.266436399993836,
+ "error": null,
+ "qid": "teammate-12",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.00043190000000000004,
+ "correct": true
+}

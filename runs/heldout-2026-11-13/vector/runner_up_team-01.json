@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "McLaren",
+ "raw": "The runner-up in the 2000 drivers' championship was Mika Häkkinen with 89 points, and the final standings list him driving for McLaren [8].\n\nANSWER: McLaren",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2000 United States Grand Prix",
+     "score": 0.641
+    },
+    {
+     "title": "2000 Monaco Grand Prix",
+     "score": 0.581
+    },
+    {
+     "title": "2000 French Grand Prix",
+     "score": 0.574
+    },
+    {
+     "title": "2000 British Grand Prix",
+     "score": 0.574
+    },
+    {
+     "title": "2000 San Marino Grand Prix",
+     "score": 0.573
+    },
+    {
+     "title": "2001 United States Grand Prix",
+     "score": 0.567
+    },
+    {
+     "title": "2000 Austrian Grand Prix",
+     "score": 0.566
+    },
+    {
+     "title": "2000 season standings",
+     "score": 0.564
+    }
+   ]
+  }
+ ],
+ "input_tokens": 3314,
+ "output_tokens": 111,
+ "seconds": 1.3187040000048,
+ "error": null,
+ "qid": "runner_up_team-01",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0003869,
+ "correct": true
+}

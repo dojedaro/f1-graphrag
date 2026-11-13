@@ -1,0 +1,30 @@
+{
+ "system": "graph",
+ "answer": "Max Verstappen",
+ "raw": "Max Verstappen won three of the five races held at Circuit Park Zandvoort between 2000 and 2025 (2021, 2022, and 2023). Lando Norris won in 2024 and Oscar Piastri in 2025, so no one else has more than one win there.\n\nANSWER: Max Verstappen",
+ "trace": [
+  {
+   "tool": "find_entity",
+   "input": {
+    "name": "Circuit Park Zandvoort",
+    "kind": "circuit"
+   },
+   "output": "{\"id\": \"zandvoort\", \"name\": \"Circuit Park Zandvoort\"}"
+  },
+  {
+   "tool": "circuit_history",
+   "input": {
+    "circuit": "Circuit Park Zandvoort"
+   },
+   "output": "{\"circuit\": \"Circuit Park Zandvoort\", \"races\": [{\"season\": 2021, \"race\": \"Dutch Grand Prix\", \"winner\": \"Max Verstappen\"}, {\"season\": 2022, \"race\": \"Dutch Grand Prix\", \"winner\": \"Max Verstappen\"}, {\"season\": 2023, \"race\": \"Dutch Grand Prix\", \"winner\": \"Max Verstappen\"}, {\"season\": 2024, \"race\": \"Dutch Grand Prix\", \"winner\": \"Lando Norris\"}, {\"season\": 2025, \"race\": \"Dutch Grand Prix\", \"winner\": \"Oscar Piastri\"}]}"
+  }
+ ],
+ "input_tokens": 4836,
+ "output_tokens": 248,
+ "seconds": 6.279274599990458,
+ "error": null,
+ "qid": "circuit_most_wins-05",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0006076,
+ "correct": true
+}

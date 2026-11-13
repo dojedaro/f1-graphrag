@@ -1,0 +1,71 @@
+{
+ "graph": {
+  "held-out": {
+   "correct": 40,
+   "n": 40,
+   "accuracy": 1.0,
+   "ci": [
+    0.912,
+    1.0
+   ]
+  },
+  "all": {
+   "correct": 40,
+   "n": 40,
+   "accuracy": 1.0,
+   "ci": [
+    0.912,
+    1.0
+   ]
+  },
+  "cost_usd": 0.0542,
+  "mean_tool_calls": 6.05,
+  "mean_seconds": 6.2
+ },
+ "hybrid": {
+  "held-out": {
+   "correct": 40,
+   "n": 40,
+   "accuracy": 1.0,
+   "ci": [
+    0.912,
+    1.0
+   ]
+  },
+  "all": {
+   "correct": 40,
+   "n": 40,
+   "accuracy": 1.0,
+   "ci": [
+    0.912,
+    1.0
+   ]
+  },
+  "cost_usd": 0.062,
+  "mean_tool_calls": 6.88,
+  "mean_seconds": 6.5
+ },
+ "vector": {
+  "held-out": {
+   "correct": 16,
+   "n": 40,
+   "accuracy": 0.4,
+   "ci": [
+    0.263,
+    0.554
+   ]
+  },
+  "all": {
+   "correct": 16,
+   "n": 40,
+   "accuracy": 0.4,
+   "ci": [
+    0.263,
+    0.554
+   ]
+  },
+  "cost_usd": 0.0212,
+  "mean_tool_calls": 0.0,
+  "mean_seconds": 2.9
+ }
+}

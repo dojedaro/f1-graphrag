@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "Fernando Alonso",
+ "raw": "Fernando Alonso won the 2006 Formula 1 drivers' championship. The 2006 final standings in document [1] list him first with 134 points and 7 wins, ahead of Michael Schumacher on 121 points.\n\nANSWER: Fernando Alonso",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2006 season standings",
+     "score": 0.754
+    },
+    {
+     "title": "2007 season standings",
+     "score": 0.726
+    },
+    {
+     "title": "2005 season standings",
+     "score": 0.707
+    },
+    {
+     "title": "2023 season standings",
+     "score": 0.704
+    },
+    {
+     "title": "2024 season standings",
+     "score": 0.701
+    },
+    {
+     "title": "2006 United States Grand Prix",
+     "score": 0.696
+    },
+    {
+     "title": "2004 season standings",
+     "score": 0.694
+    },
+    {
+     "title": "2022 season standings",
+     "score": 0.693
+    }
+   ]
+  }
+ ],
+ "input_tokens": 7371,
+ "output_tokens": 196,
+ "seconds": 1.461288800011971,
+ "error": null,
+ "qid": "drivers_champion-03",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0008351,
+ "correct": true
+}

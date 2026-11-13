@@ -1,0 +1,22 @@
+{
+ "system": "hybrid",
+ "answer": "2",
+ "raw": "Ralf Schumacher raced for **2 different teams** between 2000 and 2025:\n\n- **Williams**, 2000–2004 (17, 17, 17, 15 and 12 races a season)\n- **Toyota**, 2005–2007 (18, 18 and 17 races a season)\n\nHis career record shows no other teams in those seasons.\n\nANSWER: 2",
+ "trace": [
+  {
+   "tool": "driver_career",
+   "input": {
+    "driver": "Ralf Schumacher"
+   },
+   "output": "{\"driver\": \"Ralf Schumacher\", \"seasons\": [{\"season\": 2000, \"teams\": [\"Williams\"], \"races\": 17, \"wins\": 0, \"podiums\": 3, \"championship_position\": 5}, {\"season\": 2001, \"teams\": [\"Williams\"], \"races\": 17, \"wins\": 3, \"podiums\": 5, \"championship_position\": 4}, {\"season\": 2002, \"teams\": [\"Williams\"], \"races\": 17, \"wins\": 1, \"podiums\": 6, \"championship_position\": 4}, {\"season\": 2003, \"teams\": [\"Williams\"], \"races\": 15, \"wins\": 2, \"podiums\": 3, \"championship_position\": 5}, {\"season\": 2004, \"teams\": [\"Williams\"], \"races\": 12, \"wins\": 0, \"podiums\": 1, \"championship_position\": 9}, {\"season\": 2005, \"teams\": [\"Toyota\"], \"races\": 18, \"wins\": 0, \"podiums\": 2, \"championship_position\": 6}, {\"season\": 2006, \"teams\": [\"Toyota\"], \"races\": 18, \"wins\": 0, \"podiums\": 1, \"championship_position\": 10}, {\"season\": 2007, \"teams\": [\"Toyota\"], \"races\": 17, \"wins\": 0, \"podiums\": 0, \"championship_position\": 16}]}"
+  }
+ ],
+ "input_tokens": 3661,
+ "output_tokens": 354,
+ "seconds": 3.1817379999993136,
+ "error": null,
+ "qid": "team_count-06",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0005431,
+ "correct": true
+}

@@ -1,0 +1,22 @@
+{
+ "system": "hybrid",
+ "answer": "Sebastian Vettel",
+ "raw": "The 2013 Formula 1 World Drivers' Championship was won by Sebastian Vettel, who finished on 397 points with 13 wins. Fernando Alonso was second with 242 points, and Red Bull also took the constructors' title.\n\nANSWER: Sebastian Vettel",
+ "trace": [
+  {
+   "tool": "season_summary",
+   "input": {
+    "season": 2013
+   },
+   "output": "{\"season\": 2013, \"races\": 19, \"drivers_champion\": \"Sebastian Vettel\", \"constructors_champion\": \"Red Bull\", \"top_drivers\": [{\"position\": 1, \"driver\": \"Sebastian Vettel\", \"points\": 397.0, \"wins\": 13}, {\"position\": 2, \"driver\": \"Fernando Alonso\", \"points\": 242.0, \"wins\": 2}, {\"position\": 3, \"driver\": \"Mark Webber\", \"points\": 199.0, \"wins\": 0}, {\"position\": 4, \"driver\": \"Lewis Hamilton\", \"points\": 189.0, \"wins\": 1}, {\"position\": 5, \"driver\": \"Kimi Räikkönen\", \"points\": 183.0, \"wins\": 1}], \"top_constructors\": [{\"position\": 1, \"team\": \"Red Bull\", \"points\": 596.0, \"wins\": 13}, {\"position\": 2, \"team\": \"Mercedes\", \"points\": 360.0, \"wins\": 3}, {\"position\": 3, \"team\": \"Ferrari\", \"points\": 354.0, \"wins\": 2}, {\"position\": 4, \"team\": \"Lotus F1\", \"points\": 315.0, \"wins\": 1}, {\"position\": 5, \"team\": \"McLaren\", \"points\": 122.0, \"wins\": 0}]}"
+  }
+ ],
+ "input_tokens": 3533,
+ "output_tokens": 146,
+ "seconds": 1.9819798999960767,
+ "error": null,
+ "qid": "drivers_champion-05",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0004263,
+ "correct": true
+}

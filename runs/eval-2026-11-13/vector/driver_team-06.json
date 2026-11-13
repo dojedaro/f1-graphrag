@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "Mercedes",
+ "raw": "Andrea Kimi Antonelli is listed for Mercedes in three 2025 races: the Italian Grand Prix (round 16), the Mexico City Grand Prix (round 20), and the Hungarian Grand Prix (round 14).\n\nANSWER: Mercedes",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2025 Italian Grand Prix",
+     "score": 0.542
+    },
+    {
+     "title": "2020 Emilia Romagna Grand Prix",
+     "score": 0.505
+    },
+    {
+     "title": "2025 Mexico City Grand Prix",
+     "score": 0.501
+    },
+    {
+     "title": "2025 Hungarian Grand Prix",
+     "score": 0.498
+    },
+    {
+     "title": "2024 Italian Grand Prix",
+     "score": 0.49
+    },
+    {
+     "title": "2025 Emilia Romagna Grand Prix",
+     "score": 0.489
+    },
+    {
+     "title": "2022 Emilia Romagna Grand Prix",
+     "score": 0.486
+    },
+    {
+     "title": "2023 Italian Grand Prix",
+     "score": 0.482
+    }
+   ]
+  }
+ ],
+ "input_tokens": 2713,
+ "output_tokens": 168,
+ "seconds": 1.3278961000032723,
+ "error": null,
+ "qid": "driver_team-06",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0003553,
+ "correct": true
+}

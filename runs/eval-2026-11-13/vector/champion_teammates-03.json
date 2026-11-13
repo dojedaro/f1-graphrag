@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "none",
+ "raw": "The documents don't mention Jérôme d'Ambrosio or his teammates, so they can't settle this. The eight race reports cover only other drivers, and the 2000 standings list no d'Ambrosio.\n\nFrom my own knowledge, not the documents: his teammates in his F1 career (such as Timo Glock and Lucas di Grassi at Virgin Racing) did not win a drivers' championship between 2000 and 2025. This is from memory and should be checked against a source.\n\nANSWER: none",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2000 San Marino Grand Prix",
+     "score": 0.562
+    },
+    {
+     "title": "2000 season standings",
+     "score": 0.558
+    },
+    {
+     "title": "2000 United States Grand Prix",
+     "score": 0.548
+    },
+    {
+     "title": "2022 Miami Grand Prix",
+     "score": 0.542
+    },
+    {
+     "title": "2025 Monaco Grand Prix",
+     "score": 0.538
+    },
+    {
+     "title": "2000 French Grand Prix",
+     "score": 0.538
+    },
+    {
+     "title": "2025 Italian Grand Prix",
+     "score": 0.537
+    },
+    {
+     "title": "2023 Canadian Grand Prix",
+     "score": 0.536
+    }
+   ]
+  }
+ ],
+ "input_tokens": 3323,
+ "output_tokens": 1642,
+ "seconds": 8.102503900008742,
+ "error": null,
+ "qid": "champion_teammates-03",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0011533,
+ "correct": false
+}

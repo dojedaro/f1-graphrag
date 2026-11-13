@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "7",
+ "raw": "The 2025 drivers' champion was Lando Norris. The final standings in document [7] list him first with 423 points and 7 wins.\n\nANSWER: 7",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2025 Australian Grand Prix",
+     "score": 0.689
+    },
+    {
+     "title": "2025 British Grand Prix",
+     "score": 0.688
+    },
+    {
+     "title": "2025 Canadian Grand Prix",
+     "score": 0.684
+    },
+    {
+     "title": "2025 United States Grand Prix",
+     "score": 0.682
+    },
+    {
+     "title": "2025 Dutch Grand Prix",
+     "score": 0.681
+    },
+    {
+     "title": "2025 Singapore Grand Prix",
+     "score": 0.669
+    },
+    {
+     "title": "2025 season standings",
+     "score": 0.663
+    },
+    {
+     "title": "2025 Austrian Grand Prix",
+     "score": 0.662
+    }
+   ]
+  }
+ ],
+ "input_tokens": 3240,
+ "output_tokens": 189,
+ "seconds": 1.9400267000019085,
+ "error": null,
+ "qid": "champion_wins-01",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0004185,
+ "correct": true
+}

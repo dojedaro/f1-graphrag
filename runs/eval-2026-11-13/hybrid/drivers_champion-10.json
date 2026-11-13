@@ -1,0 +1,27 @@
+{
+ "system": "hybrid",
+ "answer": "Lewis Hamilton",
+ "raw": "The 2020 Formula 1 drivers' championship was won by Lewis Hamilton. He finished on 347 points with 11 wins, ahead of Valtteri Bottas (223 points) and Max Verstappen (214 points). Mercedes also took the constructors' title that year.\n\nANSWER: Lewis Hamilton",
+ "trace": [
+  {
+   "tool": "champions",
+   "input": {},
+   "output": "{\"seasons\": [{\"season\": 2000, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2001, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2002, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2003, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2004, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2005, \"drivers_champion\": \"Fernando Alonso\", \"constructors_champion\": \"Renault\"}, {\"season\": 2006, \"drivers_champion\": \"Fernando Alonso\", \"constructors_champion\": \"Renault\"}, {\"season\": 2007, \"drivers_champion\": \"Kimi Räikkönen\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2008, \"drivers_champion\": \"Lewis Hamilton\", \"constructors_champion\": \"Ferrari\"}, {\"season\": 2009, \"drivers_champion\": \"Jenson Button\", \"constructors_champion\": \"Brawn\"}, {\"season\": 2010, \"drivers_champion\": \"Sebastian Vettel\", \"constructors_champion\": \"Red Bull\"}, {\"season\": 2011, \"drivers_champion\": \"Sebastian Vettel\", \"constructors_champion\": \"Red Bull\"}, {\"season\": 2012, \"drivers_champion\": \"Sebastian Vettel\", \"constructors_champion\": \"Red Bull\"}, {\"season\": 2013, \"drivers_champion\": \"Sebastian Vettel\", \"constructors_champion\": \"Red Bull\"}, {\"season\": 2014, \"drivers_champion\": \"Lewis Hamilton\", \"constructors_champion\": \"Mercedes\"}, {\"season\": 2015, \"drivers_champion\": \"Lewis Hamilton\", \"constructors_champi"
+  },
+  {
+   "tool": "season_summary",
+   "input": {
+    "season": 2020
+   },
+   "output": "{\"season\": 2020, \"races\": 17, \"drivers_champion\": \"Lewis Hamilton\", \"constructors_champion\": \"Mercedes\", \"top_drivers\": [{\"position\": 1, \"driver\": \"Lewis Hamilton\", \"points\": 347.0, \"wins\": 11}, {\"position\": 2, \"driver\": \"Valtteri Bottas\", \"points\": 223.0, \"wins\": 2}, {\"position\": 3, \"driver\": \"Max Verstappen\", \"points\": 214.0, \"wins\": 2}, {\"position\": 4, \"driver\": \"Sergio Pérez\", \"points\": 125.0, \"wins\": 1}, {\"position\": 5, \"driver\": \"Daniel Ricciardo\", \"points\": 119.0, \"wins\": 0}], \"top_constructors\": [{\"position\": 1, \"team\": \"Mercedes\", \"points\": 573.0, \"wins\": 13}, {\"position\": 2, \"team\": \"Red Bull\", \"points\": 319.0, \"wins\": 2}, {\"position\": 3, \"team\": \"McLaren\", \"points\": 202.0, \"wins\": 0}, {\"position\": 4, \"team\": \"Racing Point\", \"points\": 195.0, \"wins\": 1}, {\"position\": 5, \"team\": \"Renault\", \"points\": 181.0, \"wins\": 0}]}"
+  }
+ ],
+ "input_tokens": 4728,
+ "output_tokens": 181,
+ "seconds": 2.3040337999991607,
+ "error": null,
+ "qid": "drivers_champion-10",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0005633,
+ "correct": true
+}

@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "Sebastian Vettel",
+ "raw": "The 2013 Formula 1 season final standings list Sebastian Vettel (Red Bull) in first place with 397 points and 13 wins, ahead of Fernando Alonso on 242 points.\n\nANSWER: Sebastian Vettel",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2013 season standings",
+     "score": 0.773
+    },
+    {
+     "title": "2014 season standings",
+     "score": 0.726
+    },
+    {
+     "title": "2013 Italian Grand Prix",
+     "score": 0.691
+    },
+    {
+     "title": "2013 United States Grand Prix",
+     "score": 0.688
+    },
+    {
+     "title": "2013 Monaco Grand Prix",
+     "score": 0.687
+    },
+    {
+     "title": "2011 season standings",
+     "score": 0.687
+    },
+    {
+     "title": "2013 Australian Grand Prix",
+     "score": 0.685
+    },
+    {
+     "title": "2012 season standings",
+     "score": 0.685
+    }
+   ]
+  }
+ ],
+ "input_tokens": 5397,
+ "output_tokens": 169,
+ "seconds": 1.6459274000080768,
+ "error": null,
+ "qid": "drivers_champion-05",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0006242,
+ "correct": true
+}

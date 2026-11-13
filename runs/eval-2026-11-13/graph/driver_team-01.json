@@ -1,0 +1,23 @@
+{
+ "system": "graph",
+ "answer": "Red Bull",
+ "raw": "Mark Webber drove for Red Bull in 2012, alongside teammate Sebastian Vettel.\n\nANSWER: Red Bull",
+ "trace": [
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Mark Webber",
+    "season": 2012
+   },
+   "output": "{\"driver\": \"Mark Webber\", \"season\": 2012, \"teams\": [\"Red Bull\"], \"teammates\": [\"Sebastian Vettel\"]}"
+  }
+ ],
+ "input_tokens": 2986,
+ "output_tokens": 124,
+ "seconds": 2.133368700000574,
+ "error": null,
+ "qid": "driver_team-01",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.00036060000000000004,
+ "correct": true
+}

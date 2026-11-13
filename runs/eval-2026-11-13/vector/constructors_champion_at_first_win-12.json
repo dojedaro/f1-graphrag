@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "Brawn GP",
+ "raw": "The documents don't say when Mark Webber won a Grand Prix for the first time. They only show his finishes in the 2005 Spanish GP (6th, Williams), the 2006 Spanish GP (9th, Williams), and the 2000-2025 races listed. So this answer relies on my own knowledge, not the documents.\n\nFrom that knowledge, Webber's first win was the 2009 German Grand Prix, driving for Red Bull. The 2009 constructors' championship was won by Brawn GP.\n\nANSWER: Brawn GP",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2000 Spanish Grand Prix",
+     "score": 0.626
+    },
+    {
+     "title": "2006 Spanish Grand Prix",
+     "score": 0.616
+    },
+    {
+     "title": "2022 Australian Grand Prix",
+     "score": 0.59
+    },
+    {
+     "title": "2002 Spanish Grand Prix",
+     "score": 0.59
+    },
+    {
+     "title": "2005 Spanish Grand Prix",
+     "score": 0.588
+    },
+    {
+     "title": "2025 Spanish Grand Prix",
+     "score": 0.587
+    },
+    {
+     "title": "2000 Australian Grand Prix",
+     "score": 0.587
+    },
+    {
+     "title": "2023 Spanish Grand Prix",
+     "score": 0.584
+    }
+   ]
+  }
+ ],
+ "input_tokens": 2753,
+ "output_tokens": 470,
+ "seconds": 2.8550468999892473,
+ "error": null,
+ "qid": "constructors_champion_at_first_win-12",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0005103,
+ "correct": true
+}

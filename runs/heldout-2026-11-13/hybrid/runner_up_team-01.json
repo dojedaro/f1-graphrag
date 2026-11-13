@@ -1,0 +1,30 @@
+{
+ "system": "hybrid",
+ "answer": "McLaren",
+ "raw": "The runner-up in the 2000 drivers' championship was Mika Häkkinen (89 points, 4 wins), who drove for McLaren that season. His teammate was David Coulthard.\n\nANSWER: McLaren",
+ "trace": [
+  {
+   "tool": "season_summary",
+   "input": {
+    "season": 2000
+   },
+   "output": "{\"season\": 2000, \"races\": 17, \"drivers_champion\": \"Michael Schumacher\", \"constructors_champion\": \"Ferrari\", \"top_drivers\": [{\"position\": 1, \"driver\": \"Michael Schumacher\", \"points\": 108.0, \"wins\": 9}, {\"position\": 2, \"driver\": \"Mika Häkkinen\", \"points\": 89.0, \"wins\": 4}, {\"position\": 3, \"driver\": \"David Coulthard\", \"points\": 73.0, \"wins\": 3}, {\"position\": 4, \"driver\": \"Rubens Barrichello\", \"points\": 62.0, \"wins\": 1}, {\"position\": 5, \"driver\": \"Ralf Schumacher\", \"points\": 24.0, \"wins\": 0}], \"top_constructors\": [{\"position\": 1, \"team\": \"Ferrari\", \"points\": 170.0, \"wins\": 10}, {\"position\": 2, \"team\": \"McLaren\", \"points\": 162.0, \"wins\": 7}, {\"position\": 3, \"team\": \"Williams\", \"points\": 36.0, \"wins\": 0}, {\"position\": 4, \"team\": \"Benetton\", \"points\": 20.0, \"wins\": 0}, {\"position\": 5, \"team\": \"BAR\", \"points\": 20.0, \"wins\": 0}]}"
+  },
+  {
+   "tool": "teammates",
+   "input": {
+    "driver": "Mika Häkkinen",
+    "season": 2000
+   },
+   "output": "{\"driver\": \"Mika Häkkinen\", \"season\": 2000, \"teams\": [\"McLaren\"], \"teammates\": [\"David Coulthard\"]}"
+  }
+ ],
+ "input_tokens": 5665,
+ "output_tokens": 201,
+ "seconds": 3.7902493000001414,
+ "error": null,
+ "qid": "runner_up_team-01",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.000667,
+ "correct": true
+}

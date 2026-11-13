@@ -1,0 +1,174 @@
+{
+ "system": "hybrid",
+ "answer": "9",
+ "raw": "In 2005, the pole-sitter (grid 1) won 9 of the 19 races.\n\nI pulled the top-10 result for each of the 19 rounds, which lists each finisher's grid slot. Winners who started from grid 1:\n\n1. Australia: Fisichella\n2. Malaysia: Alonso\n3. Bahrain: Alonso\n4. Spain: Räikkönen\n5. Monaco: Räikkönen\n6. France: Alonso\n7. Turkey: Räikkönen\n8. Italy: Montoya\n9. China: Alonso\n\nIn the other 10 races the winner started from a lower grid slot (for example, San Marino, where Alonso won from grid 2, and Japan, where Räikkönen won from 17th).\n\nANSWER: 9",
+ "trace": [
+  {
+   "tool": "season_summary",
+   "input": {
+    "season": 2005
+   },
+   "output": "{\"season\": 2005, \"races\": 19, \"drivers_champion\": \"Fernando Alonso\", \"constructors_champion\": \"Renault\", \"top_drivers\": [{\"position\": 1, \"driver\": \"Fernando Alonso\", \"points\": 133.0, \"wins\": 7}, {\"position\": 2, \"driver\": \"Kimi Räikkönen\", \"points\": 112.0, \"wins\": 7}, {\"position\": 3, \"driver\": \"Michael Schumacher\", \"points\": 62.0, \"wins\": 1}, {\"position\": 4, \"driver\": \"Juan Pablo Montoya\", \"points\": 60.0, \"wins\": 3}, {\"position\": 5, \"driver\": \"Giancarlo Fisichella\", \"points\": 58.0, \"wins\": 1}], \"top_constructors\": [{\"position\": 1, \"team\": \"Renault\", \"points\": 191.0, \"wins\": 8}, {\"position\": 2, \"team\": \"McLaren\", \"points\": 182.0, \"wins\": 10}, {\"position\": 3, \"team\": \"Ferrari\", \"points\": 100.0, \"wins\": 1}, {\"position\": 4, \"team\": \"Toyota\", \"points\": 88.0, \"wins\": 0}, {\"position\": 5, \"team\": \"Williams\", \"points\": 66.0, \"wins\": 0}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2005,
+    "race": "1"
+   },
+   "output": "{\"race\": \"2005 Australian Grand Prix\", \"round\": 1, \"circuit\": \"Albert Park Grand Prix Circuit\", \"date\": \"2005-03-06\", \"results\": [{\"position\": \"1\", \"driver\": \"Giancarlo Fisichella\", \"team\": \"Renault\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Rubens Barrichello\", \"team\": \"Ferrari\", \"grid\": 11, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Fernando Alonso\", \"team\": \"Renault\", \"grid\": 13, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"David Coulthard\", \"team\": \"Red Bull\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Mark Webber\", \"team\": \"Williams\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Juan Pablo Montoya\", \"team\": \"McLaren\", \"grid\": 9, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Christian Klien\", \"team\": \"Red Bull\", \"grid\": 6, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Kimi Räikkönen\", \"team\": \"McLaren\", \"grid\": 10, \"status\": \"Finished\"}, {\"position\": \"9\", \"driver\": \"Jarno Trulli\", \"team\": \"Toyota\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"10\", \"driver\": \"Felipe Massa\", \"team\": \"Sauber\", \"grid\": 18, \"status\": \"Finished\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2005,
+    "race": "2"
+   },
+   "output": "{\"race\": \"2005 Malaysian Grand Prix\", \"round\": 2, \"circuit\": \"Sepang International Circuit\", \"date\": \"2005-03-20\", \"results\": [{\"position\": \"1\", \"driver\": \"Fernando Alonso\", \"team\": \"Renault\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Jarno Trulli\", \"team\": \"Toyota\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Nick Heidfeld\", \"team\": \"Williams\", \"grid\": 10, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Juan Pablo Montoya\", \"team\": \"McLaren\", \"grid\": 11, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Ralf Schumacher\", \"team\": \"Toyota\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"David Coulthard\", \"team\": \"Red Bull\", \"grid\": 8, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Michael Schumacher\", \"team\": \"Ferrari\", \"grid\": 13, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Christian Klien\", \"team\": \"Red Bull\", \"grid\": 7, \"status\": \"Finished\"}, {\"position\": \"9\", \"driver\": \"Kimi Räikkönen\", \"team\": \"McLaren\", \"grid\": 6, \"status\": \"Finished\"}, {\"position\": \"10\", \"driver\": \"Felipe Massa\", \"team\": \"Sauber\", \"grid\": 14, \"status\": \"+1 Lap\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2005,
+    "race": "3"
+   },
+   "output": "{\"race\": \"2005 Bahrain Grand Prix\", \"round\": 3, \"circuit\": \"Bahrain International Circuit\", \"date\": \"2005-04-03\", \"results\": [{\"position\": \"1\", \"driver\": \"Fernando Alonso\", \"team\": \"Renault\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Jarno Trulli\", \"team\": \"Toyota\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Kimi Räikkönen\", \"team\": \"McLaren\", \"grid\": 9, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Ralf Schumacher\", \"team\": \"Toyota\", \"grid\": 6, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Pedro de la Rosa\", \"team\": \"McLaren\", \"grid\": 8, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Mark Webber\", \"team\": \"Williams\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Felipe Massa\", \"team\": \"Sauber\", \"grid\": 12, \"status\": \"+1 Lap\"}, {\"position\": \"8\", \"driver\": \"David Coulthard\", \"team\": \"Red Bull\", \"grid\": 14, \"status\": \"+1 Lap\"}, {\"position\": \"9\", \"driver\": \"Rubens Barrichello\", \"team\": \"Ferrari\", \"grid\": 20, \"status\": \"+1 Lap\"}, {\"position\": \"10\", \"driver\": \"Tiago Monteiro\", \"team\": \"Jordan\", \"grid\": 16, \"status\": \"+2 Laps\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2005,
+    "race": "4"
+   },
+   "output": "{\"race\": \"2005 San Marino Grand Prix\", \"round\": 4, \"circuit\": \"Autodromo Enzo e Dino Ferrari\", \"date\": \"2005-04-24\", \"results\": [{\"position\": \"1\", \"driver\": \"Fernando Alonso\", \"team\": \"Renault\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Michael Schumacher\", \"team\": \"Ferrari\", \"grid\": 13, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Alexander Wurz\", \"team\": \"McLaren\", \"grid\": 7, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Jacques Villeneuve\", \"team\": \"Sauber\", \"grid\": 11, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Jarno Trulli\", \"team\": \"Toyota\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Nick Heidfeld\", \"team\": \"Williams\", \"grid\": 8, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Mark Webber\", \"team\": \"Williams\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Vitantonio Liuzzi\", \"team\": \"Red Bull\", \"grid\": 15, \"status\": \"Finished\"}, {\"position\": \"9\", \"driver\": \"Ralf Schumacher\", \"team\": \"Toyota\", \"grid\": 10, \"status\": \"Finished\"}, {\"position\": \"10\", \"driver\": \"Felipe Massa\", \"team\": \"Sauber\", \"grid\": 18, \"status\": \"+1 Lap\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2005,
+    "race": "5"
+   },
+   "output": "{\"race\": \"2005 Spanish Grand Prix\", \"round\": 5, \"circuit\": \"Circuit de Barcelona-Catalunya\", \"date\": \"2005-05-08\", \"results\": [{\"position\": \"1\", \"driver\": \"Kimi Räikkönen\", \"team\": \"McLaren\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Fernando Alonso\", \"team\": \"Renault\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Jarno Trulli\", \"team\": \"Toyota\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Ralf Schumacher\", \"team\": \"Toyota\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Giancarlo Fisichella\", \"team\": \"Renault\", \"grid\": 6, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Mark Webber\", \"team\": \"Williams\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Juan Pablo Montoya\", \"team\": \"McLaren\", \"grid\": 7, \"status\": \"+1 Lap\"}, {\"position\": \"8\", \"driver\": \"David Coulthard\", \"team\": \"Red Bull\", \"grid\": 9, \"status\": \"+1 Lap\"}, {\"position\": \"9\", \"driver\": \"Rubens Barrichello\", \"team\": \"Ferrari\", \"grid\": 16, \"status\": \"+1 Lap\"}, {\"position\": \"10\", \"driver\": \"Nick Heidfeld\", \"team\": \"Williams\", \"grid\": 17, \"status\": \"+1 Lap\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2005,
+    "race": "6"
+   },
+   "output": "{\"race\": \"2005 Monaco Grand Prix\", \"round\": 6, \"circuit\": \"Circuit de Monaco\", \"date\": \"2005-05-22\", \"results\": [{\"position\": \"1\", \"driver\": \"Kimi Räikkönen\", \"team\": \"McLaren\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Nick Heidfeld\", \"team\": \"Williams\", \"grid\": 6, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Mark Webber\", \"team\": \"Williams\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Fernando Alonso\", \"team\": \"Renault\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Juan Pablo Montoya\", \"team\": \"McLaren\", \"grid\": 16, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Ralf Schumacher\", \"team\": \"Toyota\", \"grid\": 18, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Michael Schumacher\", \"team\": \"Ferrari\", \"grid\": 8, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Rubens Barrichello\", \"team\": \"Ferrari\", \"grid\": 10, \"status\": \"Finished\"}, {\"position\": \"9\", \"driver\": \"Felipe Massa\", \"team\": \"Sauber\", \"grid\": 11, \"status\": \"+1 Lap\"}, {\"position\": \"10\", \"driver\": \"Jarno Trulli\", \"team\": \"Toyota\", \"grid\": 5, \"status\": \"+1 Lap\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2005,
+    "race": "7"
+   },
+   "output": "{\"race\": \"2005 European Grand Prix\", \"round\": 7, \"circuit\": \"Nürburgring\", \"date\": \"2005-05-29\", \"results\": [{\"position\": \"1\", \"driver\": \"Fernando Alonso\", \"team\": \"Renault\", \"grid\": 6, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Nick Heidfeld\", \"team\": \"Williams\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Rubens Barrichello\", \"team\": \"Ferrari\", \"grid\": 7, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"David Coulthard\", \"team\": \"Red Bull\", \"grid\": 12, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Michael Schumacher\", \"team\": \"Ferrari\", \"grid\": 10, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Giancarlo Fisichella\", \"team\": \"Renault\", \"grid\": 9, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Juan Pablo Montoya\", \"team\": \"McLaren\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Jarno Trulli\", \"team\": \"Toyota\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"9\", \"driver\": \"Vitantonio Liuzzi\", \"team\": \"Red Bull\", \"grid\": 14, \"status\": \"Finished\"}, {\"position\": \"10\", \"driver\": \"Jenson Button\", \"team\": \"BAR\", \"grid\": 13, \"status\": \"Finished\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2005,
+    "race": "8"
+   },
+   "output": "{\"race\": \"2005 Canadian Grand Prix\", \"round\": 8, \"circuit\": \"Circuit Gilles Villeneuve\", \"date\": \"2005-06-12\", \"results\": [{\"position\": \"1\", \"driver\": \"Kimi Räikkönen\", \"team\": \"McLaren\", \"grid\": 7, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Michael Schumacher\", \"team\": \"Ferrari\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Rubens Barrichello\", \"team\": \"Ferrari\", \"grid\": 20, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Felipe Massa\", \"team\": \"Sauber\", \"grid\": 11, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Mark Webber\", \"team\": \"Williams\", \"grid\": 14, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Ralf Schumacher\", \"team\": \"Toyota\", \"grid\": 10, \"status\": \"+1 Lap\"}, {\"position\": \"7\", \"driver\": \"David Coulthard\", \"team\": \"Red Bull\", \"grid\": 12, \"status\": \"+1 Lap\"}, {\"position\": \"8\", \"driver\": \"Christian Klien\", \"team\": \"Red Bull\", \"grid\": 16, \"status\": \"+1 Lap\"}, {\"position\": \"9\", \"driver\": \"Jacques Villeneuve\", \"team\": \"Sauber\", \"grid\": 8, \"status\": \"+1 Lap\"}, {\"position\": \"10\", \"driver\": \"Tiago Monteiro\", \"team\": \"Jordan\", \"grid\": 18, \"status\": \"+3 Laps\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2005,
+    "race": "9"
+   },
+   "output": "{\"race\": \"2005 United States Grand Prix\", \"round\": 9, \"circuit\": \"Indianapolis Motor Speedway\", \"date\": \"2005-06-19\", \"results\": [{\"position\": \"1\", \"driver\": \"Michael Schumacher\", \"team\": \"Ferrari\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Rubens Barrichello\", \"team\": \"Ferrari\", \"grid\": 7, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Tiago Monteiro\", \"team\": \"Jordan\", \"grid\": 17, \"status\": \"+1 Lap\"}, {\"position\": \"4\", \"driver\": \"Narain Karthikeyan\", \"team\": \"Jordan\", \"grid\": 19, \"status\": \"+1 Lap\"}, {\"position\": \"5\", \"driver\": \"Christijan Albers\", \"team\": \"Minardi\", \"grid\": 18, \"status\": \"+2 Laps\"}, {\"position\": \"6\", \"driver\": \"Patrick Friesacher\", \"team\": \"Minardi\", \"grid\": 20, \"status\": \"+2 Laps\"}, {\"position\": \"W\", \"driver\": \"Jarno Trulli\", \"team\": \"Toyota\", \"grid\": 1, \"status\": \"Withdrew\"}, {\"position\": \"W\", \"driver\": \"Kimi Räikkönen\", \"team\": \"McLaren\", \"grid\": 2, \"status\": \"Withdrew\"}, {\"position\": \"W\", \"driver\": \"Jenson Button\", \"team\": \"BAR\", \"grid\": 3, \"status\": \"Withdrew\"}, {\"position\": \"W\", \"driver\": \"Giancarlo Fisichella\", \"team\": \"Renault\", \"grid\": 4, \"status\": \"Withdrew\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2005,
+    "race": "10"
+   },
+   "output": "{\"race\": \"2005 French Grand Prix\", \"round\": 10, \"circuit\": \"Circuit de Nevers Magny-Cours\", \"date\": \"2005-07-03\", \"results\": [{\"position\": \"1\", \"driver\": \"Fernando Alonso\", \"team\": \"Renault\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Kimi Räikkönen\", \"team\": \"McLaren\", \"grid\": 13, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Michael Schumacher\", \"team\": \"Ferrari\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Jenson Button\", \"team\": \"BAR\", \"grid\": 7, \"status\": \"+1 Lap\"}, {\"position\": \"5\", \"driver\": \"Jarno Trulli\", \"team\": \"Toyota\", \"grid\": 2, \"status\": \"+1 Lap\"}, {\"position\": \"6\", \"driver\": \"Giancarlo Fisichella\", \"team\": \"Renault\", \"grid\": 6, \"status\": \"+1 Lap\"}, {\"position\": \"7\", \"driver\": \"Ralf Schumacher\", \"team\": \"Toyota\", \"grid\": 11, \"status\": \"+1 Lap\"}, {\"position\": \"8\", \"driver\": \"Jacques Villeneuve\", \"team\": \"Sauber\", \"grid\": 10, \"status\": \"+1 Lap\"}, {\"position\": \"9\", \"driver\": \"Rubens Barrichello\", \"team\": \"Ferrari\", \"grid\": 5, \"status\": \"+1 Lap\"}, {\"position\": \"10\", \"driver\": \"David Coulthard\", \"team\": \"Red Bull\", \"grid\": 15, \"status\": \"+1 Lap\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2005,
+    "race": "11"
+   },
+   "output": "{\"race\": \"2005 British Grand Prix\", \"round\": 11, \"circuit\": \"Silverstone Circuit\", \"date\": \"2005-07-10\", \"results\": [{\"position\": \"1\", \"driver\": \"Juan Pablo Montoya\", \"team\": \"McLaren\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Fernando Alonso\", \"team\": \"Renault\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Kimi Räikkönen\", \"team\": \"McLaren\", \"grid\": 12, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Giancarlo Fisichella\", \"team\": \"Renault\", \"grid\": 6, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Jenson Button\", \"team\": \"BAR\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Michael Schumacher\", \"team\": \"Ferrari\", \"grid\": 9, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Rubens Barrichello\", \"team\": \"Ferrari\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Ralf Schumacher\", \"team\": \"Toyota\", \"grid\": 8, \"status\": \"Finished\"}, {\"position\": \"9\", \"driver\": \"Jarno Trulli\", \"team\": \"Toyota\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"10\", \"driver\": \"Felipe Massa\", \"team\": \"Sauber\", \"grid\": 16, \"status\": \"+1 Lap\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2005,
+    "race": "12"
+   },
+   "output": "{\"race\": \"2005 German Grand Prix\", \"round\": 12, \"circuit\": \"Hockenheimring\", \"date\": \"2005-07-24\", \"results\": [{\"position\": \"1\", \"driver\": \"Fernando Alonso\", \"team\": \"Renault\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Juan Pablo Montoya\", \"team\": \"McLaren\", \"grid\": 20, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Jenson Button\", \"team\": \"BAR\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Giancarlo Fisichella\", \"team\": \"Renault\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Michael Schumacher\", \"team\": \"Ferrari\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Ralf Schumacher\", \"team\": \"Toyota\", \"grid\": 12, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"David Coulthard\", \"team\": \"Red Bull\", \"grid\": 11, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Felipe Massa\", \"team\": \"Sauber\", \"grid\": 13, \"status\": \"Finished\"}, {\"position\": \"9\", \"driver\": \"Christian Klien\", \"team\": \"Red Bull\", \"grid\": 10, \"status\": \"Finished\"}, {\"position\": \"10\", \"driver\": \"Rubens Barrichello\", \"team\": \"Ferrari\", \"grid\": 15, \"status\": \"+1 Lap\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2005,
+    "race": "13"
+   },
+   "output": "{\"race\": \"2005 Hungarian Grand Prix\", \"round\": 13, \"circuit\": \"Hungaroring\", \"date\": \"2005-07-31\", \"results\": [{\"position\": \"1\", \"driver\": \"Kimi Räikkönen\", \"team\": \"McLaren\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Michael Schumacher\", \"team\": \"Ferrari\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Ralf Schumacher\", \"team\": \"Toyota\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Jarno Trulli\", \"team\": \"Toyota\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Jenson Button\", \"team\": \"BAR\", \"grid\": 8, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Nick Heidfeld\", \"team\": \"Williams\", \"grid\": 12, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Mark Webber\", \"team\": \"Williams\", \"grid\": 16, \"status\": \"+1 Lap\"}, {\"position\": \"8\", \"driver\": \"Takuma Sato\", \"team\": \"BAR\", \"grid\": 10, \"status\": \"+1 Lap\"}, {\"position\": \"9\", \"driver\": \"Giancarlo Fisichella\", \"team\": \"Renault\", \"grid\": 9, \"status\": \"+1 Lap\"}, {\"position\": \"10\", \"driver\": \"Rubens Barrichello\", \"team\": \"Ferrari\", \"grid\": 7, \"status\": \"+1 Lap\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2005,
+    "race": "14"
+   },
+   "output": "{\"race\": \"2005 Turkish Grand Prix\", \"round\": 14, \"circuit\": \"Istanbul Park\", \"date\": \"2005-08-21\", \"results\": [{\"position\": \"1\", \"driver\": \"Kimi Räikkönen\", \"team\": \"McLaren\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Fernando Alonso\", \"team\": \"Renault\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Juan Pablo Montoya\", \"team\": \"McLaren\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Giancarlo Fisichella\", \"team\": \"Renault\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Jenson Button\", \"team\": \"BAR\", \"grid\": 13, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Jarno Trulli\", \"team\": \"Toyota\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"David Coulthard\", \"team\": \"Red Bull\", \"grid\": 12, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Christian Klien\", \"team\": \"Red Bull\", \"grid\": 10, \"status\": \"Finished\"}, {\"position\": \"9\", \"driver\": \"Takuma Sato\", \"team\": \"BAR\", \"grid\": 20, \"status\": \"Finished\"}, {\"position\": \"10\", \"driver\": \"Rubens Barrichello\", \"team\": \"Ferrari\", \"grid\": 11, \"status\": \"+1 Lap\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2005,
+    "race": "15"
+   },
+   "output": "{\"race\": \"2005 Italian Grand Prix\", \"round\": 15, \"circuit\": \"Autodromo Nazionale di Monza\", \"date\": \"2005-09-04\", \"results\": [{\"position\": \"1\", \"driver\": \"Juan Pablo Montoya\", \"team\": \"McLaren\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Fernando Alonso\", \"team\": \"Renault\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Giancarlo Fisichella\", \"team\": \"Renault\", \"grid\": 8, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Kimi Räikkönen\", \"team\": \"McLaren\", \"grid\": 11, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Jarno Trulli\", \"team\": \"Toyota\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Ralf Schumacher\", \"team\": \"Toyota\", \"grid\": 9, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Antônio Pizzonia\", \"team\": \"Williams\", \"grid\": 16, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Jenson Button\", \"team\": \"BAR\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"9\", \"driver\": \"Felipe Massa\", \"team\": \"Sauber\", \"grid\": 15, \"status\": \"Finished\"}, {\"position\": \"10\", \"driver\": \"Michael Schumacher\", \"team\": \"Ferrari\", \"grid\": 6, \"status\": \"Finished\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2005,
+    "race": "16"
+   },
+   "output": "{\"race\": \"2005 Belgian Grand Prix\", \"round\": 16, \"circuit\": \"Circuit de Spa-Francorchamps\", \"date\": \"2005-09-11\", \"results\": [{\"position\": \"1\", \"driver\": \"Kimi Räikkönen\", \"team\": \"McLaren\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Fernando Alonso\", \"team\": \"Renault\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Jenson Button\", \"team\": \"BAR\", \"grid\": 8, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Mark Webber\", \"team\": \"Williams\", \"grid\": 9, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Rubens Barrichello\", \"team\": \"Ferrari\", \"grid\": 12, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Jacques Villeneuve\", \"team\": \"Sauber\", \"grid\": 14, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Ralf Schumacher\", \"team\": \"Toyota\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Tiago Monteiro\", \"team\": \"Jordan\", \"grid\": 19, \"status\": \"+1 Lap\"}, {\"position\": \"9\", \"driver\": \"Christian Klien\", \"team\": \"Red Bull\", \"grid\": 16, \"status\": \"+1 Lap\"}, {\"position\": \"10\", \"driver\": \"Felipe Massa\", \"team\": \"Sauber\", \"grid\": 7, \"status\": \"+1 Lap\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2005,
+    "race": "17"
+   },
+   "output": "{\"race\": \"2005 Brazilian Grand Prix\", \"round\": 17, \"circuit\": \"Autódromo José Carlos Pace\", \"date\": \"2005-09-25\", \"results\": [{\"position\": \"1\", \"driver\": \"Juan Pablo Montoya\", \"team\": \"McLaren\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Kimi Räikkönen\", \"team\": \"McLaren\", \"grid\": 5, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Fernando Alonso\", \"team\": \"Renault\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Michael Schumacher\", \"team\": \"Ferrari\", \"grid\": 7, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Giancarlo Fisichella\", \"team\": \"Renault\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Rubens Barrichello\", \"team\": \"Ferrari\", \"grid\": 9, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Jenson Button\", \"team\": \"BAR\", \"grid\": 4, \"status\": \"+1 Lap\"}, {\"position\": \"8\", \"driver\": \"Ralf Schumacher\", \"team\": \"Toyota\", \"grid\": 10, \"status\": \"+1 Lap\"}, {\"position\": \"9\", \"driver\": \"Christian Klien\", \"team\": \"Red Bull\", \"grid\": 6, \"status\": \"+1 Lap\"}, {\"position\": \"10\", \"driver\": \"Takuma Sato\", \"team\": \"BAR\", \"grid\": 19, \"status\": \"+1 Lap\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2005,
+    "race": "18"
+   },
+   "output": "{\"race\": \"2005 Japanese Grand Prix\", \"round\": 18, \"circuit\": \"Suzuka Circuit\", \"date\": \"2005-10-09\", \"results\": [{\"position\": \"1\", \"driver\": \"Kimi Räikkönen\", \"team\": \"McLaren\", \"grid\": 17, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Giancarlo Fisichella\", \"team\": \"Renault\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Fernando Alonso\", \"team\": \"Renault\", \"grid\": 16, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Mark Webber\", \"team\": \"Williams\", \"grid\": 7, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Jenson Button\", \"team\": \"BAR\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"David Coulthard\", \"team\": \"Red Bull\", \"grid\": 6, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Michael Schumacher\", \"team\": \"Ferrari\", \"grid\": 14, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Ralf Schumacher\", \"team\": \"Toyota\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"9\", \"driver\": \"Christian Klien\", \"team\": \"Red Bull\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"10\", \"driver\": \"Felipe Massa\", \"team\": \"Sauber\", \"grid\": 10, \"status\": \"Finished\"}]}"
+  },
+  {
+   "tool": "race_result",
+   "input": {
+    "season": 2005,
+    "race": "19"
+   },
+   "output": "{\"race\": \"2005 Chinese Grand Prix\", \"round\": 19, \"circuit\": \"Shanghai International Circuit\", \"date\": \"2005-10-16\", \"results\": [{\"position\": \"1\", \"driver\": \"Fernando Alonso\", \"team\": \"Renault\", \"grid\": 1, \"status\": \"Finished\"}, {\"position\": \"2\", \"driver\": \"Kimi Räikkönen\", \"team\": \"McLaren\", \"grid\": 3, \"status\": \"Finished\"}, {\"position\": \"3\", \"driver\": \"Ralf Schumacher\", \"team\": \"Toyota\", \"grid\": 9, \"status\": \"Finished\"}, {\"position\": \"4\", \"driver\": \"Giancarlo Fisichella\", \"team\": \"Renault\", \"grid\": 2, \"status\": \"Finished\"}, {\"position\": \"5\", \"driver\": \"Christian Klien\", \"team\": \"Red Bull\", \"grid\": 14, \"status\": \"Finished\"}, {\"position\": \"6\", \"driver\": \"Felipe Massa\", \"team\": \"Sauber\", \"grid\": 11, \"status\": \"Finished\"}, {\"position\": \"7\", \"driver\": \"Mark Webber\", \"team\": \"Williams\", \"grid\": 10, \"status\": \"Finished\"}, {\"position\": \"8\", \"driver\": \"Jenson Button\", \"team\": \"BAR\", \"grid\": 4, \"status\": \"Finished\"}, {\"position\": \"9\", \"driver\": \"David Coulthard\", \"team\": \"Red Bull\", \"grid\": 7, \"status\": \"Finished\"}, {\"position\": \"10\", \"driver\": \"Jacques Villeneuve\", \"team\": \"Sauber\", \"grid\": 16, \"status\": \"Finished\"}]}"
+  }
+ ],
+ "input_tokens": 17795,
+ "output_tokens": 2199,
+ "seconds": 8.996268100003363,
+ "error": null,
+ "qid": "pole_to_win-06",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.002879,
+ "correct": true
+}

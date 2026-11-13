@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "Max Verstappen",
+ "raw": "Yuki Tsunoda's teammate who won a drivers' championship in 2000-2025 was **Max Verstappen**. The documents show Tsunoda driving for Red Bull in the 2025 Emilia Romagna Grand Prix (Document 2), where Verstappen was also a Red Bull driver. Verstappen won the drivers' championship in 2021-2024, but those years are not covered by the documents, so that part comes from general knowledge.\n\nThe other drivers who shared a team with Tsunoda (Pierre Gasly, Daniel Ricciardo, Liam Lawson) have not won a drivers' championship, again based on general knowledge rather than the documents.\n\nANSWER: Max Verstappen",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2024 Japanese Grand Prix",
+     "score": 0.605
+    },
+    {
+     "title": "2025 Emilia Romagna Grand Prix",
+     "score": 0.575
+    },
+    {
+     "title": "2024 Emilia Romagna Grand Prix",
+     "score": 0.567
+    },
+    {
+     "title": "2025 Japanese Grand Prix",
+     "score": 0.559
+    },
+    {
+     "title": "2022 Spanish Grand Prix",
+     "score": 0.557
+    },
+    {
+     "title": "2024 British Grand Prix",
+     "score": 0.557
+    },
+    {
+     "title": "2024 Australian Grand Prix",
+     "score": 0.557
+    },
+    {
+     "title": "2022 Emilia Romagna Grand Prix",
+     "score": 0.555
+    }
+   ]
+  }
+ ],
+ "input_tokens": 2738,
+ "output_tokens": 1173,
+ "seconds": 5.933271499990951,
+ "error": null,
+ "qid": "champion_teammates-12",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0008602999999999999,
+ "correct": true
+}

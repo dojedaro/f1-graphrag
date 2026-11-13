@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "Michael Schumacher",
+ "raw": "Michael Schumacher won the 2003 Formula 1 drivers' championship. The 2003 final standings in document [1] list him first with 93 points and 6 wins, ahead of Kimi Räikkönen (91 points) and Juan Pablo Montoya (82 points).\n\nANSWER: Michael Schumacher",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2003 season standings",
+     "score": 0.75
+    },
+    {
+     "title": "2004 season standings",
+     "score": 0.724
+    },
+    {
+     "title": "2003 United States Grand Prix",
+     "score": 0.695
+    },
+    {
+     "title": "2005 season standings",
+     "score": 0.69
+    },
+    {
+     "title": "2003 Austrian Grand Prix",
+     "score": 0.682
+    },
+    {
+     "title": "2003 Monaco Grand Prix",
+     "score": 0.68
+    },
+    {
+     "title": "2003 Italian Grand Prix",
+     "score": 0.68
+    },
+    {
+     "title": "2003 San Marino Grand Prix",
+     "score": 0.679
+    }
+   ]
+  }
+ ],
+ "input_tokens": 4655,
+ "output_tokens": 188,
+ "seconds": 1.2381468000094173,
+ "error": null,
+ "qid": "drivers_champion-09",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0005595,
+ "correct": true
+}

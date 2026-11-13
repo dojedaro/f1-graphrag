@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "Sebastian Vettel",
+ "raw": "Sebastian Vettel won the 2012 Formula 1 drivers' championship. The 2012 final standings in document [1] list him first with 281 points, two ahead of Fernando Alonso on 278.\n\nANSWER: Sebastian Vettel",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2012 season standings",
+     "score": 0.777
+    },
+    {
+     "title": "2012 Monaco Grand Prix",
+     "score": 0.714
+    },
+    {
+     "title": "2011 season standings",
+     "score": 0.71
+    },
+    {
+     "title": "2013 season standings",
+     "score": 0.704
+    },
+    {
+     "title": "2012 Canadian Grand Prix",
+     "score": 0.704
+    },
+    {
+     "title": "2012 Spanish Grand Prix",
+     "score": 0.702
+    },
+    {
+     "title": "2012 United States Grand Prix",
+     "score": 0.694
+    },
+    {
+     "title": "2012 Hungarian Grand Prix",
+     "score": 0.692
+    }
+   ]
+  }
+ ],
+ "input_tokens": 4749,
+ "output_tokens": 189,
+ "seconds": 1.5488695000094594,
+ "error": null,
+ "qid": "drivers_champion-11",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0005694000000000001,
+ "correct": true
+}

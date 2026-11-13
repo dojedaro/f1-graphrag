@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "4",
+ "raw": "Four of the 2025 races in the documents were won by the driver who started from pole (grid 1):\n\n- **Australian GP (round 1):** Lando Norris started 1st and won.\n- **Japanese GP (round 3):** Max Verstappen started 1st and won.\n- **Canadian GP (round 10):** George Russell started 1st and won.\n- **Dutch GP (round 15):** Oscar Piastri started 1st and won.\n\nAt the British GP, Verstappen started from pole but finished 5th, and Norris (who started 3rd) won. The documents cover only some of the 2025 rounds, so this count is limited to those races.\n\nANSWER: 4",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2025 Canadian Grand Prix",
+     "score": 0.66
+    },
+    {
+     "title": "2025 Dutch Grand Prix",
+     "score": 0.65
+    },
+    {
+     "title": "2025 British Grand Prix",
+     "score": 0.646
+    },
+    {
+     "title": "2023 Canadian Grand Prix",
+     "score": 0.642
+    },
+    {
+     "title": "2025 Australian Grand Prix",
+     "score": 0.641
+    },
+    {
+     "title": "2025 Japanese Grand Prix",
+     "score": 0.637
+    },
+    {
+     "title": "2023 Dutch Grand Prix",
+     "score": 0.636
+    },
+    {
+     "title": "2024 Canadian Grand Prix",
+     "score": 0.635
+    }
+   ]
+  }
+ ],
+ "input_tokens": 2688,
+ "output_tokens": 486,
+ "seconds": 2.555769800004782,
+ "error": null,
+ "qid": "pole_to_win-05",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0005118,
+ "correct": false
+}

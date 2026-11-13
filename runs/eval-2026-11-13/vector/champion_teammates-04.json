@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "Sebastian Vettel, Fernando Alonso",
+ "raw": "Lance Stroll's teammates in the provided results include Sebastian Vettel (Aston Martin, 2021, Document 4) and Fernando Alonso (Aston Martin, 2023 and 2025, Documents 6 and 5). Nico Hülkenberg (Racing Point, 2020, Document 8) also appears as a teammate, but he never won a championship.\n\nThe documents don't state championship counts, so this part comes from my general knowledge rather than the sources. Vettel won four drivers' titles (2010–2013) and Alonso won two (2005, 2006), all within 2000–2025. Sergio Pérez and Felipe Massa, who were also Stroll's teammates in other seasons, never won a championship.\n\nANSWER: Sebastian Vettel, Fernando Alonso",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2022 French Grand Prix",
+     "score": 0.631
+    },
+    {
+     "title": "2022 Miami Grand Prix",
+     "score": 0.614
+    },
+    {
+     "title": "2022 Dutch Grand Prix",
+     "score": 0.613
+    },
+    {
+     "title": "2021 French Grand Prix",
+     "score": 0.613
+    },
+    {
+     "title": "2025 Dutch Grand Prix",
+     "score": 0.611
+    },
+    {
+     "title": "2023 Belgian Grand Prix",
+     "score": 0.607
+    },
+    {
+     "title": "2021 Monaco Grand Prix",
+     "score": 0.6
+    },
+    {
+     "title": "2020 70th Anniversary Grand Prix",
+     "score": 0.593
+    }
+   ]
+  }
+ ],
+ "input_tokens": 2710,
+ "output_tokens": 942,
+ "seconds": 4.915952900002594,
+ "error": null,
+ "qid": "champion_teammates-04",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.000742,
+ "correct": true
+}

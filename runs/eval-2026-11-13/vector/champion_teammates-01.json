@@ -1,0 +1,51 @@
+{
+ "system": "vector",
+ "answer": "Lando Norris",
+ "raw": "The documents show Oscar Piastri racing alongside Lando Norris at McLaren in 2025 (Documents 2, 4, 6, 7, 8). No other teammate of Piastri appears in them. None of the documents report championship results, though, so they cannot confirm whether Norris won a drivers' championship. Based on my general knowledge rather than the documents, Norris won the 2025 World Drivers' Championship, which would make him the answer.\n\nANSWER: Lando Norris",
+ "trace": [
+  {
+   "retrieved": [
+    {
+     "title": "2000 United States Grand Prix",
+     "score": 0.58
+    },
+    {
+     "title": "2025 Miami Grand Prix",
+     "score": 0.58
+    },
+    {
+     "title": "2000 San Marino Grand Prix",
+     "score": 0.573
+    },
+    {
+     "title": "2025 Chinese Grand Prix",
+     "score": 0.572
+    },
+    {
+     "title": "2025 Singapore Grand Prix",
+     "score": 0.572
+    },
+    {
+     "title": "2025 Dutch Grand Prix",
+     "score": 0.57
+    },
+    {
+     "title": "2025 Spanish Grand Prix",
+     "score": 0.568
+    },
+    {
+     "title": "2025 Mexico City Grand Prix",
+     "score": 0.568
+    }
+   ]
+  }
+ ],
+ "input_tokens": 2713,
+ "output_tokens": 587,
+ "seconds": 3.27022200000647,
+ "error": null,
+ "qid": "champion_teammates-01",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0005648,
+ "correct": true
+}
