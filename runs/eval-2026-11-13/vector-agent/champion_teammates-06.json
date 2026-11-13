@@ -1,0 +1,29 @@
+{
+ "system": "vector-agent",
+ "answer": "Sebastian Vettel",
+ "raw": "Mark Webber's Formula 1 teammates who went on to win a drivers' championship in 2000-2025: only **Sebastian Vettel**.\n\nWebber drove alongside several drivers at Jaguar, Williams, Red Bull and others, and none of them won the F1 title except Vettel. Vettel was his Red Bull teammate from 2009 (and for part of 2008), and Vettel won the drivers' championship in 2010, 2011, 2012 and 2013. The searches confirmed the 2009-2011 Red Bull pairing. I did not retrieve results on the other teammates' records, so I'm relying on my own knowledge for the claim that none of them won an F1 title.\n\nThe search results did not cover sports car racing. From my own knowledge, not the retrieved material, Webber also won the 2015 WEC drivers' championship with Porsche alongside Timo Bernhard and Brendon Hartley. If a non-F1 championship counts, those two would also qualify.\n\nANSWER: Sebastian Vettel",
+ "trace": [
+  {
+   "tool": "vector_search",
+   "input": {
+    "query": "Mark Webber teammate Red Bull 2009 Sebastian Vettel world champion"
+   },
+   "output": "{\"results\": [{\"title\": \"2009 Spanish Grand Prix\", \"text\": \"2009 Spanish Grand Prix, round 5 of the 2009 season, at Circuit de Barcelona-Catalunya on 2009-05-10. Top 10: 1. Jenson Button (Brawn), started 1, Finished; 2. Rubens Barrichello (Brawn), started 3, Finished; 3. Mark Webber (Red Bull), started 5, Finished; 4. Sebastian Vettel (Red Bull), started 2, Finished; 5. Fernando Alonso (Renault), started 8, Finished; 6. Felipe Massa (Ferrari), started 4, Finished; 7. Nick Heidfeld (BMW Sauber), started 13, Finished; 8. Nico Rosberg (Williams), started 9, Finished; 9. Lewis Hamilton (McLaren), started 14, +1 Lap; 10. Timo Glock (Toyota), started 6, +1 Lap\"}, {\"title\": \"2009 German Grand Prix\", \"text\": \"2009 German Grand Prix, round 9 of the 2009 season, at Nürburgring on 2009-07-12. Top 10: 1. Mark Webber (Red Bull), started 1, Finished; 2. Sebastian Vettel (Red Bull), started 4, Finished; 3. Felipe Massa (Ferrari), started 8, Finished; 4. Nico Rosberg (Williams), started 15, Finished; 5. Jenson Button (Brawn), started 3, Finished; 6. Rubens Barrichello (Brawn), started 2, Finished; 7. Fernando Alonso (Renault), started 12, Finished; 8. Heikki Kovalainen (McLaren), started 6, Finished; 9. Timo Glock (Toyota), started 20, Finished; 10. Nick Heidfeld (BMW Sauber), started 11, Finished\"}, {\"title\": \"2011 Spanish Grand Prix\", \"text\": \"2011 Spanish Grand Prix, round 5 of the 2011 season, at Circuit de Barcelona-Catalunya on 2011-05-22. Top 10: 1. Sebastian Vettel (Red Bull), started"
+  },
+  {
+   "tool": "vector_search",
+   "input": {
+    "query": "Mark Webber Williams Jaguar Minardi teammates 2002 2003 2004 2005"
+   },
+   "output": "{\"results\": [{\"title\": \"2003 Spanish Grand Prix\", \"text\": \"2003 Spanish Grand Prix, round 5 of the 2003 season, at Circuit de Barcelona-Catalunya on 2003-05-04. Top 10: 1. Michael Schumacher (Ferrari), started 1, Finished; 2. Fernando Alonso (Renault), started 3, Finished; 3. Rubens Barrichello (Ferrari), started 2, Finished; 4. Juan Pablo Montoya (Williams), started 9, Finished; 5. Ralf Schumacher (Williams), started 7, +1 Lap; 6. Cristiano da Matta (Toyota), started 13, +1 Lap; 7. Mark Webber (Jaguar), started 12, +1 Lap; 8. Ralph Firman (Jordan), started 15, +2 Laps; 9. Jenson Button (BAR), started 5, +2 Laps; 10. Nick Heidfeld (Sauber), started 14, +2 Laps\"}, {\"title\": \"2005 Spanish Grand Prix\", \"text\": \"2005 Spanish Grand Prix, round 5 of the 2005 season, at Circuit de Barcelona-Catalunya on 2005-05-08. Top 10: 1. Kimi Räikkönen (McLaren), started 1, Finished; 2. Fernando Alonso (Renault), started 3, Finished; 3. Jarno Trulli (Toyota), started 5, Finished; 4. Ralf Schumacher (Toyota), started 4, Finished; 5. Giancarlo Fisichella (Renault), started 6, Finished; 6. Mark Webber (Williams), started 2, Finished; 7. Juan Pablo Montoya (McLaren), started 7, +1 Lap; 8. David Coulthard (Red Bull), started 9, +1 Lap; 9. Rubens Barrichello (Ferrari), started 16, +1 Lap; 10. Nick Heidfeld (Williams), started 17, +1 Lap\"}, {\"title\": \"2000 Spanish Grand Prix\", \"text\": \"2000 Spanish Grand Prix, round 5 of the 2000 season, at Circuit de Barcelona-Catalunya on 2000-05-07. Top 10: 1. Mika"
+  }
+ ],
+ "input_tokens": 4838,
+ "output_tokens": 1985,
+ "seconds": 11.057621899992228,
+ "error": null,
+ "qid": "champion_teammates-06",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0014763,
+ "correct": false
+}

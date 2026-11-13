@@ -1,0 +1,22 @@
+{
+ "system": "vector-agent",
+ "answer": "Sebastian Vettel",
+ "raw": "The 2012 Formula 1 drivers' championship was won by Sebastian Vettel of Red Bull, who finished first with 281 points and 5 race wins. Fernando Alonso was second on 278 points, just 3 behind.\n\nANSWER: Sebastian Vettel",
+ "trace": [
+  {
+   "tool": "vector_search",
+   "input": {
+    "query": "2012 Formula 1 drivers' championship final standings champion"
+   },
+   "output": "{\"results\": [{\"title\": \"2012 season standings\", \"text\": \"2012 Formula 1 season final standings. Drivers: 1. Sebastian Vettel (Red Bull) 281 pts, 5 wins; 2. Fernando Alonso (Ferrari) 278 pts, 3 wins; 3. Kimi Räikkönen (Lotus F1) 207 pts, 1 wins; 4. Lewis Hamilton (McLaren) 190 pts, 4 wins; 5. Jenson Button (McLaren) 188 pts, 3 wins; 6. Mark Webber (Red Bull) 179 pts, 2 wins; 7. Felipe Massa (Ferrari) 122 pts, 0 wins; 8. Romain Grosjean (Lotus F1) 96 pts, 0 wins; 9. Nico Rosberg (Mercedes) 93 pts, 1 wins; 10. Sergio Pérez (Sauber) 66 pts, 0 wins; 11. Nico Hülkenberg (Force India) 63 pts, 0 wins; 12. Kamui Kobayashi (Sauber) 60 pts, 0 wins; 13. Michael Schumacher (Mercedes) 49 pts, 0 wins; 14. Paul di Resta (Force India) 46 pts, 0 wins; 15. Pastor Maldonado (Williams) 45 pts, 1 wins; 16. Bruno Senna (Williams) 31 pts, 0 wins; 17. Jean-Éric Vergne (Toro Rosso) 16 pts, 0 wins; 18. Daniel Ricciardo (Toro Rosso) 10 pts, 0 wins; 19. Vitaly Petrov (Caterham) 0 pts, 0 wins; 20. Timo Glock (Marussia) 0 pts, 0 wins; 21. Charles Pic (Marussia) 0 pts, 0 wins; 22. Heikki Kovalainen (Caterham) 0 pts, 0 wins; 23. Jérôme d'Ambrosio (Lotus F1) 0 pts, 0 wins; 24. Narain Karthikeyan (HRT) 0 pts, 0 wins; 25. Pedro de la Rosa (HRT) 0 pts, 0 wins. Constructors: 1. Red Bull 460 pts, 7 wins; 2. Ferrari 400 pts, 3 wins; 3. McLaren 378 pts, 7 wins; 4. Lotus F1 303 pts, 1 wins; 5. Mercedes 142 pts, 1 wins; 6. Sauber 126 pts, 0 wins; 7. Force India 109 pts, 0 wins; 8. Williams 76 pts, 1 wins; 9. Toro Ross"
+  }
+ ],
+ "input_tokens": 3325,
+ "output_tokens": 228,
+ "seconds": 2.6828489000035916,
+ "error": null,
+ "qid": "drivers_champion-11",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0004465,
+ "correct": true
+}

@@ -1,0 +1,22 @@
+{
+ "system": "vector-agent",
+ "answer": "Lewis Hamilton",
+ "raw": "Lewis Hamilton won the 2018 Azerbaijan Grand Prix at the Baku City Circuit on 29 April 2018. He started from 2nd on the grid. Kimi Räikkönen was second and Sergio Pérez third.\n\nANSWER: Lewis Hamilton",
+ "trace": [
+  {
+   "tool": "vector_search",
+   "input": {
+    "query": "2018 Azerbaijan Grand Prix race winner"
+   },
+   "output": "{\"results\": [{\"title\": \"2018 Azerbaijan Grand Prix\", \"text\": \"2018 Azerbaijan Grand Prix, round 4 of the 2018 season, at Baku City Circuit on 2018-04-29. Top 10: 1. Lewis Hamilton (Mercedes), started 2, Finished; 2. Kimi Räikkönen (Ferrari), started 6, Finished; 3. Sergio Pérez (Force India), started 8, Finished; 4. Sebastian Vettel (Ferrari), started 1, Finished; 5. Carlos Sainz (Renault), started 9, Finished; 6. Charles Leclerc (Sauber), started 13, Finished; 7. Fernando Alonso (McLaren), started 12, Finished; 8. Lance Stroll (Williams), started 10, Finished; 9. Stoffel Vandoorne (McLaren), started 16, Finished; 10. Brendon Hartley (Toro Rosso), started 19, Finished\"}, {\"title\": \"2019 Azerbaijan Grand Prix\", \"text\": \"2019 Azerbaijan Grand Prix, round 4 of the 2019 season, at Baku City Circuit on 2019-04-28. Top 10: 1. Valtteri Bottas (Mercedes), started 1, Finished; 2. Lewis Hamilton (Mercedes), started 2, Finished; 3. Sebastian Vettel (Ferrari), started 3, Finished; 4. Max Verstappen (Red Bull), started 4, Finished; 5. Charles Leclerc (Ferrari), started 8, Finished; 6. Sergio Pérez (Racing Point), started 5, Finished; 7. Carlos Sainz (McLaren), started 9, Finished; 8. Lando Norris (McLaren), started 7, Finished; 9. Lance Stroll (Racing Point), started 13, Finished; 10. Kimi Räikkönen (Alfa Romeo), started 0, +1 Lap\"}, {\"title\": \"2017 Azerbaijan Grand Prix\", \"text\": \"2017 Azerbaijan Grand Prix, round 8 of the 2017 season, at Baku City Circuit on 2017-06-25. Top 10: 1. Danie"
+  }
+ ],
+ "input_tokens": 2626,
+ "output_tokens": 194,
+ "seconds": 2.559193699999014,
+ "error": null,
+ "qid": "race_winner-05",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.0003596,
+ "correct": true
+}

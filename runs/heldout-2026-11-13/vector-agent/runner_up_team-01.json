@@ -1,0 +1,22 @@
+{
+ "system": "vector-agent",
+ "answer": "McLaren",
+ "raw": "The 2000 champion was Michael Schumacher, and the runner-up was Mika Häkkinen with 89 points and 4 wins. The 2000 season standings list Häkkinen as a McLaren driver.\n\nANSWER: McLaren",
+ "trace": [
+  {
+   "tool": "vector_search",
+   "input": {
+    "query": "2000 drivers' championship standings runner-up"
+   },
+   "output": "{\"results\": [{\"title\": \"2000 season standings\", \"text\": \"2000 Formula 1 season final standings. Drivers: 1. Michael Schumacher (Ferrari) 108 pts, 9 wins; 2. Mika Häkkinen (McLaren) 89 pts, 4 wins; 3. David Coulthard (McLaren) 73 pts, 3 wins; 4. Rubens Barrichello (Ferrari) 62 pts, 1 wins; 5. Ralf Schumacher (Williams) 24 pts, 0 wins; 6. Giancarlo Fisichella (Benetton) 18 pts, 0 wins; 7. Jacques Villeneuve (BAR) 17 pts, 0 wins; 8. Jenson Button (Williams) 12 pts, 0 wins; 9. Heinz-Harald Frentzen (Jordan) 11 pts, 0 wins; 10. Jarno Trulli (Jordan) 6 pts, 0 wins; 11. Mika Salo (Sauber) 6 pts, 0 wins; 12. Jos Verstappen (Arrows) 5 pts, 0 wins; 13. Eddie Irvine (Jaguar) 4 pts, 0 wins; 14. Ricardo Zonta (BAR) 3 pts, 0 wins; 15. Alexander Wurz (Benetton) 2 pts, 0 wins; 16. Pedro de la Rosa (Arrows) 2 pts, 0 wins; 0. Johnny Herbert (Jaguar) 0 pts, 0 wins; 0. Pedro Diniz (Sauber) 0 pts, 0 wins; 0. Marc Gené (Minardi) 0 pts, 0 wins; 0. Nick Heidfeld (Prost) 0 pts, 0 wins; 0. Gastón Mazzacane (Minardi) 0 pts, 0 wins; 0. Jean Alesi (Prost) 0 pts, 0 wins; 0. Luciano Burti (Jaguar) 0 pts, 0 wins. Constructors: 1. Ferrari 170 pts, 10 wins; 2. McLaren 162 pts, 7 wins; 3. Williams 36 pts, 0 wins; 4. Benetton 20 pts, 0 wins; 5. BAR 20 pts, 0 wins; 6. Jordan 17 pts, 0 wins; 7. Arrows 7 pts, 0 wins; 8. Sauber 6 pts, 0 wins; 9. Jaguar 4 pts, 0 wins; 0. Minardi 0 pts, 0 wins; 0. Prost 0 pts, 0 wins.\"}, {\"title\": \"2000 United States Grand Prix\", \"text\": \"2000 United States Grand Prix, round 15 of th"
+  }
+ ],
+ "input_tokens": 3269,
+ "output_tokens": 225,
+ "seconds": 2.658339600020554,
+ "error": null,
+ "qid": "runner_up_team-01",
+ "model": "claude-haiku-5-5",
+ "cost_usd": 0.00043940000000000006,
+ "correct": true
+}

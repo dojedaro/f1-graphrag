@@ -257,3 +257,22 @@ class GraphAgent:
 
 class HybridAgent(GraphAgent):
     name = "hybrid"
+
+
+class VectorAgent(GraphAgent):
+    """A stronger vector baseline: the same tool loop as the graph agent, but its only tool is vector search.
+
+    It can issue several searches with its own queries (for example one per season) and combine the
+    results, which plain top-k retrieval can't.
+    """
+
+    name = "vector-agent"
+    system = (
+        "You answer Formula 1 questions (2000-2025 seasons) by searching race reports and season standings "
+        "with the vector_search tool. Search as many times as you need, with focused queries (for example one "
+        "per season or race), and compute counts from what you retrieve rather than guessing. " + ANSWER_RULES
+    )
+
+    def __init__(self, client, tools: GraphTools, index: VectorIndex):
+        super().__init__(client, tools, index)
+        self.tool_defs = [VECTOR_TOOL]

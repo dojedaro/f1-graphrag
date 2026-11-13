@@ -14,7 +14,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install (no embedding model needed for the offline tests)
-        run: pip install networkx numpy pytest==9.2.0 ruff==0.17.4
+        run: pip install networkx==3.7 numpy==2.5.4 pytest==9.2.0 ruff==0.17.4
       - run: ruff check src tests
       - name: Tests (graph, tools, question generator, scorer; no API calls)
         run: PYTHONPATH=src pytest -q

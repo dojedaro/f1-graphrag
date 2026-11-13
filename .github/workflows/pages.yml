@@ -19,7 +19,7 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
-      - run: pip install networkx numpy
+      - run: pip install networkx==3.7 numpy==2.5.4
       - name: Bundle the saved eval run (no API calls)
         run: PYTHONPATH=src python -m f1rag.site runs/eval-2026-11-13 site/data/bundle.json runs/heldout-2026-11-13
       - uses: actions/configure-pages@v6

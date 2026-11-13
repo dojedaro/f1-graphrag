@@ -2,9 +2,9 @@
 
 // Static showcase: everything comes from data/bundle.json (built by `python -m f1rag.site`).
 
-const SYSTEMS = ["vector", "graph", "hybrid"];
-const LABEL = { vector: "Vector RAG", graph: "Graph agent", hybrid: "Hybrid" };
-const COLOR = { vector: "#5b9bff", graph: "#ff8a3d", hybrid: "#b48cff" };
+const SYSTEMS = ["vector", "vector-agent", "graph", "hybrid"];
+const LABEL = { vector: "Vector RAG", "vector-agent": "Vector agent", graph: "Graph agent", hybrid: "Hybrid" };
+const COLOR = { vector: "#5b9bff", "vector-agent": "#3fd0c9", graph: "#ff8a3d", hybrid: "#b48cff" };
 let HOPS = ["1-hop", "2-hop", "3-hop", "aggregation"];
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
@@ -46,39 +46,33 @@ function renderHero() {
     return n ? c / n : 0;
   };
   const one = (s) => (s["1-hop"] ? s["1-hop"].accuracy : 0);
-  const mg = multi(g), mv = multi(v), diff = mg - mv;
-  const verdict =
-    Math.abs(diff) < 0.05
-      ? `the graph agent and vector search scored about the same (<b>${pct(mg)}</b> vs <b>${pct(mv)}</b>)`
-      : diff > 0
-        ? `the graph agent answered <b>${pct(mg)}</b> correctly against <b>${pct(mv)}</b> for vector search`
-        : `vector search answered <b>${pct(mv)}</b> correctly against <b>${pct(mg)}</b> for the graph agent`;
+  const va = S["vector-agent"];
+  const all = (x) => (x ? total(x).accuracy : 0);
   $("#headline").innerHTML =
-    `On questions that chain facts or count across seasons, ${verdict}. ` +
-    `On single-fact questions: graph ${pct(one(g))}, vector ${pct(one(v))}.` +
-    (g["held-out"]
-      ? ` On ${g["held-out"].n} held-out questions written after the graph tools existed, so no single tool answers them: ` +
-        `graph ${pct(g["held-out"].accuracy)}, vector ${pct(v["held-out"].accuracy)}.`
-      : "");
+    `Plain vector search answers <b>${pct(all(v))}</b> of 160 Formula 1 questions. Letting it search repeatedly ` +
+    `in an agent loop lifts that to <b>${pct(all(va))}</b>. A graph agent with typed tools answers <b>${pct(all(g))}</b>, ` +
+    `at about a third of the vector agent's cost` +
+    (va ? ` ($${S.graph.cost_usd.toFixed(2)} vs $${va.cost_usd.toFixed(2)}).` : ".") +
+    ` On structured questions, the graph's edge is reliability and efficiency more than capability.`;
   const stats = [
     [B.questions.length, "questions, answers computed from data"],
-    [pct(total(g).accuracy), "graph agent, all questions"],
-    [pct(total(v).accuracy), "vector RAG, all questions"],
-    [pct(total(h).accuracy), "hybrid, all questions"],
+    [pct(total(g).accuracy), "graph agent"],
+    [S["vector-agent"] ? pct(total(S["vector-agent"]).accuracy) : "-", "vector agent (search loop)"],
+    [pct(total(v).accuracy), "vector RAG (one retrieval)"],
   ];
   $("#hero-stats").innerHTML = stats.map(([vv, k]) => `<div class="stat"><div class="v">${vv}</div><div class="k">${esc(k)}</div></div>`).join("");
 }
 
 function renderChart() {
   const S = B.summary;
-  const W = 1000, H = 330, left = 50, top = 20, bottom = 50, groupW = (W - left - 20) / HOPS.length, barW = 46;
+  const W = 1000, H = 330, left = 50, top = 20, bottom = 50, groupW = (W - left - 20) / HOPS.length, barW = 36;
   const y = (a) => top + (1 - a) * (H - top - bottom);
   let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Accuracy by question type and system">`;
   for (const t of [0, 0.25, 0.5, 0.75, 1]) {
     svg += `<line class="axis" x1="${left}" x2="${W - 20}" y1="${y(t)}" y2="${y(t)}"/><text x="${left - 8}" y="${y(t) + 4}" text-anchor="end">${t * 100}%</text>`;
   }
   HOPS.forEach((hop, gi) => {
-    const x0 = left + gi * groupW + (groupW - barW * 3 - 16) / 2;
+    const x0 = left + gi * groupW + (groupW - barW * SYSTEMS.length - 8 * (SYSTEMS.length - 1)) / 2;
     SYSTEMS.forEach((s, si) => {
       const cell = S[s]?.[hop];
       if (!cell) return;
@@ -124,7 +118,7 @@ function renderList() {
   $("#qlist").innerHTML = qs
     .map(
       (q) => `<li data-q="${esc(q.qid)}"><div>${esc(q.question)}</div><div class="marks"><span class="pill">${q.hops}</span>${SYSTEMS.map(
-        (s) => `<span class="mark ${q.results[s]?.correct ? "ok" : "bad"}" title="${LABEL[s]}">${s[0].toUpperCase()}${q.results[s]?.correct ? "✓" : "✗"}</span>`,
+        (s) => `<span class="mark ${q.results[s]?.correct ? "ok" : "bad"}" title="${LABEL[s]}">${s === "vector-agent" ? "VA" : s[0].toUpperCase()}${q.results[s]?.correct ? "✓" : "✗"}</span>`,
       ).join("")}</div></li>`,
     )
     .join("");

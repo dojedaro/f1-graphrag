@@ -28,6 +28,11 @@
             the question go to the model in one call.</p>
         </div>
         <div class="card">
+          <h3><span class="dot vector-agent"></span>Vector agent</h3>
+          <p>A stronger baseline: the same model with a <code>vector_search</code> tool it can call as often as it
+            likes, writing its own queries, in the same tool loop the graph agent uses.</p>
+        </div>
+        <div class="card">
           <h3><span class="dot graph"></span>Graph agent</h3>
           <p>A knowledge graph of drivers, teams, races, circuits and seasons. The model plans a chain of
             lookups through 9 typed tools, such as <code>teammates(driver, season)</code>.</p>
@@ -37,7 +42,7 @@
           <p>The graph agent plus a <code>vector_search</code> tool for anything the graph tools don't cover.</p>
         </div>
       </div>
-      <p class="note">All three use the same model (<span id="model"></span>). Every gold answer is
+      <p class="note">All four use the same model (<span id="model"></span>). Every gold answer is
         computed by code from the same data the systems read, so scoring is exact, with no human labels and
         no LLM judge.</p>
     </section>

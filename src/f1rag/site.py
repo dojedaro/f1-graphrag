@@ -8,7 +8,7 @@ from pathlib import Path
 
 from f1rag.evaluate import summary
 
-SYSTEMS = ("vector", "graph", "hybrid")
+SYSTEMS = ("vector", "vector-agent", "graph", "hybrid")
 
 
 def build(run_dir: Path, out: Path, heldout_dir: Path | None = None) -> Path:

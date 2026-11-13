@@ -37,10 +37,10 @@ def wilson(k: int, n: int, z: float = 1.96) -> list[float] | None:
     return [round(max(0.0, c - h), 3), round(min(1.0, c + h), 3)]
 
 
-def run(per_template: int, out: Path, heldout: bool = False) -> None:
+def run(per_template: int, out: Path, heldout: bool = False, only: list[str] | None = None) -> None:
     import anthropic
 
-    from f1rag.systems import MODEL, GraphAgent, HybridAgent, VectorIndex, VectorRAG, build_documents
+    from f1rag.systems import MODEL, GraphAgent, HybridAgent, VectorAgent, VectorIndex, VectorRAG, build_documents
 
     d = load(Path("data/raw"))
     tools = GraphTools(d, build_graph(d))
@@ -50,7 +50,9 @@ def run(per_template: int, out: Path, heldout: bool = False) -> None:
     (out / "questions.json").write_text(json.dumps([q.to_dict() for q in questions], indent=1, ensure_ascii=False), encoding="utf-8")
     index = VectorIndex(build_documents(d, tools))
     client = anthropic.Anthropic()
-    systems = [VectorRAG(client, index), GraphAgent(client, tools), HybridAgent(client, tools, index)]
+    systems = [VectorRAG(client, index), VectorAgent(client, tools, index), GraphAgent(client, tools), HybridAgent(client, tools, index)]
+    if only:
+        systems = [s for s in systems if s.name in only]
     for q in questions:
         for s in systems:
             path = out / s.name / f"{q.qid}.json"
@@ -86,6 +88,7 @@ def summary(out: Path) -> dict:
         n = by["all"][1]
         result[system] = {
             **{k: {"correct": c, "n": t, "accuracy": round(c / t, 3), "ci": wilson(c, t)} for k, (c, t) in by.items()},
+            "n_missing": len(questions) - n,  # failed calls write nothing; never let them shrink the denominator silently
             "cost_usd": round(cost[system], 4),
             "mean_tool_calls": round(calls[system] / n, 2),
             "mean_seconds": round(secs[system] / n, 1),
@@ -100,13 +103,17 @@ def main() -> None:
     r.add_argument("--per-template", type=int, default=12)
     r.add_argument("--out", type=Path, default=Path("runs/eval"))
     r.add_argument("--heldout", action="store_true", help="the question types written after the tools")
+    r.add_argument("--systems", help="comma-separated subset: vector,vector-agent,graph,hybrid")
     s = sub.add_parser("summary")
     s.add_argument("out", type=Path)
     args = p.parse_args()
     load_env()
     if args.cmd == "run":
-        run(args.per_template, args.out, args.heldout)
+        run(args.per_template, args.out, args.heldout, args.systems.split(",") if args.systems else None)
     res = summary(args.out)
+    missing = {k: v["n_missing"] for k, v in res.items() if v["n_missing"]}
+    if missing:
+        print(f"WARNING: questions with no saved result: {missing}. Re-run to fill them before reporting.")
     order = ["1-hop", "2-hop", "3-hop", "aggregation", "held-out", "all"]
     print(f"\n{'system':8}" + "".join(f"{k:>14}" for k in order) + f"{'cost':>9}{'tools/q':>9}{'s/q':>7}")
     for system, v in res.items():
