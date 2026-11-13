@@ -10,24 +10,33 @@
 
 Same model for every system (Claude Haiku 5.5), same data, exact scoring:
 
-| Question type | Example | Vector RAG | Graph agent | Hybrid |
-|---|---|---|---|---|
-| 1-hop (36) | Who won the 2009 German Grand Prix? | 97% | 100% | 100% |
-| 2-hop (36) | Who was Fisichella's teammate for the whole 2004 season? | 58% | 100% | 100% |
-| 3-hop (24) | How many races did the team that won the 2010 Monaco GP win the next season? | 58% | 100% | 100% |
-| Aggregation (24) | How many Grands Prix did Räikkönen win driving for Lotus? | **8%** | 100% | 100% |
-| **Held-out (40)** | In how many 2016 races did the pole-sitter win? | **40%** | **100%** | **100%** |
-| **All 160** | | **88 (55%)** | **160 (100%)** | **160 (100%)** |
+| Question type | Example | Vector RAG | Vector agent | Graph agent | Hybrid |
+|---|---|---|---|---|---|
+| 1-hop (36) | Who won the 2009 German Grand Prix? | 97% | 97% | 100% | 100% |
+| 2-hop (36) | Who was Fisichella's teammate for the whole 2004 season? | 58% | 94% | 100% | 100% |
+| 3-hop (24) | How many races did the team that won the 2010 Monaco GP win the next season? | 58% | 83% | 100% | 100% |
+| Aggregation (24) | How many Grands Prix did Räikkönen win driving for Lotus? | **8%** | 75% | 100% | 100% |
+| **Held-out (40)** | In how many 2016 races did the pole-sitter win? | **40%** | 92% | **100%** | **100%** |
+| **All 160** | | **88 (55%)** | **144 (90%)** | **160 (100%)** | **160 (100%)** |
 
-| | Vector RAG | Graph agent | Hybrid |
-|---|---|---|---|
-| Tool calls per question | 0 | 3.3 | 3.6 |
-| Seconds per question | 3.4 | 4.5 | 4.6 |
-| Total cost, 160 questions | $0.10 | $0.14 | $0.15 |
+| | Vector RAG | Vector agent | Graph agent | Hybrid |
+|---|---|---|---|---|
+| Tool calls per question | 0 | 5.7 | 3.3 | 3.6 |
+| Seconds per question | 3.4 | 8.8 | 4.5 | 4.6 |
+| Total cost, 160 questions | $0.10 | **$0.46** | $0.14 | $0.15 |
+
+**Vector RAG** retrieves the 8 most similar documents once. The **vector agent** is the stronger baseline: the
+same model with a `vector_search` tool it can call as often as it likes, writing its own queries, in the
+same tool loop and turn limit as the graph agent.
 
 **What the numbers say:**
 
-- **Vector search is fine for single facts and collapses on counting.** It gets 97% of "who won race X",
+- **A search loop closes most of the gap.** Letting vector search run in an agent loop lifts it from 55% to
+  90%: it issues one query per season or race and assembles the pieces itself. On structured questions
+  the graph agent's edge is **reliability and efficiency**: it was right on all 160, with fewer tool calls,
+  in half the time and at about a third of the vector agent's cost.
+
+- **Plain vector search is fine for single facts and collapses on counting.** It gets 97% of "who won race X",
   because one retrieved race report holds the answer. It gets 8% of counting questions ("how many races
   did X win for team Y"), because the answer is spread across many race reports and the 8 most similar
   ones are not the complete set. Counting needs completeness, which similarity search doesn't promise.
@@ -50,11 +59,12 @@ The graph agent still scored 40/40, but needed **6 tool calls per question inste
 the general tools. Vector search scored 16/40, and all 8 runner-up questions were among them: those are
 the only held-out questions answered inside a single document (the season standings).
 
-**The vector baseline is deliberately standard, not tuned:** top-8 retrieval with a small embedding model
-(MiniLM), race documents that list only the top 10 finishers, and a single model call. Stronger variants
-(more documents, BM25 or reranking, a retrieval loop) would close part of the gap on lookups; counting
-across seasons needs the complete set of records, which is the structural reason a graph or a database
-wins there. These are structured, computable questions, the home ground for a graph.
+**About the baselines:** plain vector RAG is deliberately standard (top-8 retrieval with a small embedding
+model, MiniLM, race documents listing the top 10 finishers, one model call). The vector agent tests the
+obvious objection that a retrieval loop would fix it: it does close most of the gap (55% to 90%), but its
+remaining misses are counting and multi-season questions, where it must find every relevant record by
+search, and a graph or database simply has them. These are structured, computable questions, the home
+ground for a graph; unstructured text would favour retrieval.
 
 **Limits:** one model, one run per question, 8–12 questions per type, so a 100% score has a 95%
 confidence interval reaching down to about 70–90% per type. And 100% on structured questions about one

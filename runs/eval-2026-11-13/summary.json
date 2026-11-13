@@ -148,5 +148,55 @@
   "cost_usd": 0.0739,
   "mean_tool_calls": 0.0,
   "mean_seconds": 3.5
+ },
+ "vector-agent": {
+  "3-hop": {
+   "correct": 20,
+   "n": 24,
+   "accuracy": 0.833,
+   "ci": [
+    0.641,
+    0.933
+   ]
+  },
+  "all": {
+   "correct": 107,
+   "n": 120,
+   "accuracy": 0.892,
+   "ci": [
+    0.823,
+    0.936
+   ]
+  },
+  "2-hop": {
+   "correct": 34,
+   "n": 36,
+   "accuracy": 0.944,
+   "ci": [
+    0.819,
+    0.985
+   ]
+  },
+  "1-hop": {
+   "correct": 35,
+   "n": 36,
+   "accuracy": 0.972,
+   "ci": [
+    0.858,
+    0.995
+   ]
+  },
+  "aggregation": {
+   "correct": 18,
+   "n": 24,
+   "accuracy": 0.75,
+   "ci": [
+    0.551,
+    0.88
+   ]
+  },
+  "cost_usd": 0.2742,
+  "mean_tool_calls": 4.22,
+  "mean_seconds": 8.0
  }
 }
