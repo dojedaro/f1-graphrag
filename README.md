@@ -79,7 +79,7 @@ didn't anticipate.
 ```mermaid
 flowchart LR
     API[Jolpica F1 API<br/>2000-2025] --> T[Tables: drivers, teams,<br/>circuits, races, results,<br/>standings]
-    T --> G[(Knowledge graph<br/>734 nodes, 12,246 edges)]
+    T --> G[(Knowledge graph<br/>734 nodes, 13,141 edges)]
     T --> D[530 documents<br/>race reports + season standings]
     T --> Q[Question generator<br/>gold answers by code]
     D --> E[MiniLM embeddings] --> V[Vector RAG<br/>top 8, one call]
@@ -91,8 +91,12 @@ flowchart LR
 ```
 
 **The graph:** Driver, Constructor, Race, Circuit and Season nodes. `RACED` edges carry finishing
-position, points, grid slot and status; `DROVE_FOR` edges are keyed by season; seasons point to their
-champions.
+position, points, grid slot and status; `DROVE_FOR` edges are keyed by season; `STANDING` edges hold
+each season's final championship tables; seasons point to their champions. Every tool answers by walking
+edges: `teammates` goes driver → `DROVE_FOR:<season>` → team → other drivers on that team, and
+`circuit_history` goes circuit → `HELD_AT` races → the driver whose `RACED` edge says P1. (The first
+version answered from indexed tables; the traversal rewrite was checked against it on all 5,200 possible
+tool calls and returns identical results, so the evaluation above is unchanged.)
 
 **The tools are the design that matters.** Nine typed functions an analyst would ask for:
 `find_entity`, `driver_career`, `teammates`, `driver_wins`, `season_summary`, `race_result`,

@@ -16,7 +16,7 @@ from dataclasses import asdict
 from pathlib import Path
 
 from f1rag.data import load
-from f1rag.graph import GraphTools, build_graph
+from f1rag.graph import GraphTools
 from f1rag.questions import Generator, Question, score
 
 
@@ -43,7 +43,7 @@ def run(per_template: int, out: Path, heldout: bool = False, only: list[str] | N
     from f1rag.systems import MODEL, GraphAgent, HybridAgent, VectorAgent, VectorIndex, VectorRAG, build_documents
 
     d = load(Path("data/raw"))
-    tools = GraphTools(d, build_graph(d))
+    tools = GraphTools.from_data(d)
     gen = Generator(d, tools, seed=11 if heldout else 7)
     questions = gen.generate(per_template, gen.HELDOUT if heldout else None)
     out.mkdir(parents=True, exist_ok=True)
