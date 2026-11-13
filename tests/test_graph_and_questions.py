@@ -5,12 +5,12 @@ from pathlib import Path
 import pytest
 
 from f1rag.data import load
-from f1rag.graph import GraphTools, build_graph, norm
+from f1rag.graph import GraphTools, norm
 from f1rag.questions import Generator, parse_names, parse_number, score
 from f1rag.systems import extract_answer
 
 DATA = load(Path(__file__).parents[1] / "data" / "raw")
-TOOLS = GraphTools(DATA, build_graph(DATA))
+TOOLS = GraphTools.from_data(DATA)
 
 
 def test_known_facts():
@@ -50,3 +50,21 @@ def test_answer_parsing():
     assert parse_names("Hamilton and Fernando Alonso", TOOLS, "driver") == {"hamilton", "alonso"}
     assert parse_names("Schumacher", TOOLS, "driver") is None  # ambiguous answers don't score
     assert parse_names("none", TOOLS, "driver") == set()
+
+
+def test_tools_answer_from_the_graph_alone():
+    """No tables involved: a hand-built graph is enough, so the tools really traverse edges."""
+    import networkx as nx
+
+    g = nx.MultiDiGraph()
+    for key, name in [("a", "Ann Able"), ("b", "Bo Bright"), ("c", "Cy Clear")]:
+        g.add_node(("driver", key), name=name)
+    for key, name in [("red", "Red Team"), ("blue", "Blue Team")]:
+        g.add_node(("constructor", key), name=name)
+    g.add_node(("season", 2030), name="2030")
+    g.add_edge(("driver", "a"), ("constructor", "red"), key="DROVE_FOR:2030", season=2030)
+    g.add_edge(("driver", "b"), ("constructor", "red"), key="DROVE_FOR:2030", season=2030)
+    g.add_edge(("driver", "c"), ("constructor", "blue"), key="DROVE_FOR:2030", season=2030)
+
+    result = GraphTools(g).teammates("Ann Able", 2030)
+    assert result["teams"] == ["Red Team"] and result["teammates"] == ["Bo Bright"]

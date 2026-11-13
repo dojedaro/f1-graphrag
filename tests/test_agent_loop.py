@@ -4,11 +4,11 @@ from pathlib import Path
 from types import SimpleNamespace as NS
 
 from f1rag.data import load
-from f1rag.graph import GraphTools, build_graph
+from f1rag.graph import GraphTools
 from f1rag.systems import MAX_TURNS, GraphAgent
 
 DATA = load(Path(__file__).parents[1] / "data" / "raw")
-TOOLS = GraphTools(DATA, build_graph(DATA))
+TOOLS = GraphTools.from_data(DATA)
 
 
 def tool_use(name, args, id_="t1"):
@@ -73,3 +73,10 @@ def test_turn_limit_stops_a_looping_agent():
 def test_refusal_is_recorded():
     r = GraphAgent(FakeClient([reply(stop="refusal")]), TOOLS).answer("q")
     assert r.error == "refusal" and r.answer == ""
+
+
+def test_only_declared_tools_are_callable():
+    client = FakeClient([reply(tool_use("_resolve", {"kind": "driver", "value": "x"}), stop="tool_use"), reply(text("ANSWER: none"))])
+    GraphAgent(client, TOOLS).answer("q")
+    sent = client.requests[1]["messages"][-1]["content"][0]
+    assert sent.get("is_error") is True and "unknown tool" in sent["content"]

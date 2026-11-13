@@ -14,6 +14,7 @@ import json
 import os
 import re
 import time
+from collections.abc import Callable
 from dataclasses import dataclass, field
 
 import numpy as np
@@ -219,14 +220,37 @@ class GraphAgent:
         self.client, self.tools, self.index = client, tools, index
         self.tool_defs = GRAPH_TOOLS + ([VECTOR_TOOL] if index else [])
 
+    def _handlers(self) -> dict[str, Callable[[dict], dict]]:
+        """An explicit name -> function table, limited to the tools this agent was given.
+
+        The model can only reach what's listed here; it can't call arbitrary methods by name.
+        """
+        t = self.tools
+        table: dict[str, Callable[[dict], dict]] = {
+            "find_entity": lambda a: t.find(a["name"], a["kind"]),
+            "driver_career": lambda a: t.driver_career(a["driver"]),
+            "teammates": lambda a: t.teammates(a["driver"], a["season"]),
+            "driver_wins": lambda a: t.driver_wins(a["driver"]),
+            "season_summary": lambda a: t.season_summary(a["season"]),
+            "race_result": lambda a: t.race_result(a["season"], a["race"]),
+            "team_season": lambda a: t.team_season(a["constructor"], a["season"]),
+            "circuit_history": lambda a: t.circuit_history(a["circuit"]),
+            "champions": lambda a: t.champions(),
+            "vector_search": self._vector_search,
+        }
+        allowed = {tool["name"] for tool in self.tool_defs}
+        return {name: fn for name, fn in table.items() if name in allowed}
+
+    def _vector_search(self, args: dict) -> dict:
+        hits = self.index.search(args["query"], self.search_k)
+        return {"results": [{"title": d["title"], "text": d["text"]} for d, _ in hits]}
+
     def _run_tool(self, name: str, args: dict) -> dict:
+        handler = self._handlers().get(name)
+        if handler is None:
+            return {"error": f"unknown tool {name!r}"}
         try:
-            if name == "find_entity":
-                return self.tools.find(args["name"], args["kind"])
-            if name == "vector_search":
-                k = self.search_k
-                return {"results": [{"title": d["title"], "text": d["text"]} for d, _ in self.index.search(args["query"], k)]}
-            return getattr(self.tools, name)(**args)
+            return handler(args)
         except LookupError as e:
             return {"error": e.args[0]}
         except Exception as e:  # noqa: BLE001 - a bad tool call is reported to the model, not raised
