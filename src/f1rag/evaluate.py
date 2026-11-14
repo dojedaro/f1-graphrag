@@ -50,7 +50,7 @@ def run(per_template: int, out: Path, heldout: bool = False, only: list[str] | N
     (out / "questions.json").write_text(json.dumps([q.to_dict() for q in questions], indent=1, ensure_ascii=False), encoding="utf-8")
     index = VectorIndex(build_documents(d, tools))
     client = anthropic.Anthropic()
-    systems = [VectorRAG(client, index), VectorAgent(client, tools, index), GraphAgent(client, tools), HybridAgent(client, tools, index)]
+    systems = [VectorRAG(client, index), VectorAgent(client, index), GraphAgent(client, tools), HybridAgent(client, tools, index)]
     if only:
         systems = [s for s in systems if s.name in only]
     for q in questions:

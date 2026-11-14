@@ -33,6 +33,13 @@ ANSWER_RULES = (
 )
 
 
+def price_per_mtok(model: str) -> tuple[float, float]:
+    """(input, output) USD per million tokens. Unknown models fail loudly instead of costing $0."""
+    if model not in PRICES:
+        raise ValueError(f"no price for {model!r}; add it to PRICES in systems.py")
+    return PRICES[model]
+
+
 @dataclass
 class Result:
     system: str
@@ -43,16 +50,21 @@ class Result:
     output_tokens: int = 0
     seconds: float = 0.0
     error: str | None = None
+    model: str = MODEL
 
     @property
     def cost_usd(self) -> float:
-        pin, pout = PRICES.get(MODEL, (0.0, 0.0))
+        pin, pout = price_per_mtok(self.model)
         return (self.input_tokens * pin + self.output_tokens * pout) / 1e6
 
 
 def extract_answer(text: str) -> str:
+    """The text after the last 'ANSWER:', or the last non-empty line if the model forgot the marker."""
     hits = re.findall(r"ANSWER:\s*(.+)", text)
-    return hits[-1].strip().rstrip(".") if hits else text.strip().splitlines()[-1] if text.strip() else ""
+    if hits:
+        return hits[-1].strip().rstrip(".")
+    lines = text.strip().splitlines()
+    return lines[-1] if lines else ""
 
 
 def _text(content) -> str:
@@ -189,36 +201,48 @@ GRAPH_TOOLS = [
 for _t in GRAPH_TOOLS:
     _t["strict"] = True
 
-VECTOR_TOOL = {
-    "name": "vector_search",
-    "description": "Semantic search over race reports and season standings. Use for questions the graph tools don't cover.",
-    "input_schema": _schema({"query": {"type": "string"}}, ["query"]),
-    "strict": True,
-}
+
+def _vector_tool(description: str) -> dict:
+    return {
+        "name": "vector_search",
+        "description": description,
+        "input_schema": _schema({"query": {"type": "string"}}, ["query"]),
+        "strict": True,
+    }
 
 
-VECTOR_AGENT_TOOL = {
-    "name": "vector_search",
-    "description": "Semantic search over race reports (top 10 finishers per race) and season standings. "
-    "Returns the 8 most similar documents. Call it as many times as needed with focused queries.",
-    "input_schema": _schema({"query": {"type": "string"}}, ["query"]),
-    "strict": True,
-}
+# As a secondary tool for the hybrid agent (4 documents per call) and as the only tool of the vector agent.
+VECTOR_TOOL = _vector_tool("Semantic search over race reports and season standings. Use for questions the graph tools don't cover.")
+VECTOR_AGENT_TOOL = _vector_tool(
+    "Semantic search over race reports (top 10 finishers per race) and season standings. "
+    "Returns the 8 most similar documents. Call it as many times as needed with focused queries."
+)
+
+GRAPH_SYSTEM = (
+    "You answer Formula 1 questions (2000-2025 seasons) by querying a knowledge graph with tools. "
+    "Plan the chain of lookups, resolve ambiguous names with find_entity, and compute counts from the "
+    "tool results rather than guessing. " + ANSWER_RULES
+)
+VECTOR_SYSTEM = (
+    "You answer Formula 1 questions (2000-2025 seasons) by searching race reports and season standings "
+    "with the vector_search tool. Search as many times as you need, with focused queries (for example one "
+    "per season or race), and compute counts from what you retrieve rather than guessing. " + ANSWER_RULES
+)
 
 
-class GraphAgent:
-    name = "graph"
-    system = (
-        "You answer Formula 1 questions (2000-2025 seasons) by querying a knowledge graph with tools. "
-        "Plan the chain of lookups, resolve ambiguous names with find_entity, and compute counts from the "
-        "tool results rather than guessing. " + ANSWER_RULES
-    )
+class ToolLoopAgent:
+    """Claude in a manual tool-use loop over a fixed set of tools.
 
-    search_k = 4  # documents per vector_search call when vector search is a secondary tool (hybrid)
+    The three agent systems differ only in name, system prompt, tool list and documents per search; the
+    loop, the dispatch and the trace are shared, so their comparison measures the tools, not the code.
+    """
 
-    def __init__(self, client, tools: GraphTools, index: VectorIndex | None = None):
-        self.client, self.tools, self.index = client, tools, index
-        self.tool_defs = GRAPH_TOOLS + ([VECTOR_TOOL] if index else [])
+    name: str
+    system: str
+    search_k = 4  # documents per vector_search call
+
+    def __init__(self, client, tool_defs: list[dict], tools: GraphTools | None = None, index: VectorIndex | None = None):
+        self.client, self.tool_defs, self.tools, self.index = client, tool_defs, tools, index
 
     def _handlers(self) -> dict[str, Callable[[dict], dict]]:
         """An explicit name -> function table, limited to the tools this agent was given.
@@ -275,42 +299,54 @@ class GraphAgent:
                 result.raw = _text(resp.content)
                 break
             messages.append({"role": "assistant", "content": resp.content})
-            outputs = []
-            for c in calls:
-                out = self._run_tool(c.name, c.input)
-                text = json.dumps(out, ensure_ascii=False)
-                result.trace.append({"tool": c.name, "input": c.input, "output": text[:1500]})
-                outputs.append(
-                    {"type": "tool_result", "tool_use_id": c.id, "content": text, **({"is_error": True} if "error" in out else {})}
-                )
-            messages.append({"role": "user", "content": outputs})
+            messages.append({"role": "user", "content": [self._call(c, result) for c in calls]})
         else:
             result.error = "max turns reached"
         result.answer = extract_answer(result.raw) if result.raw else ""
         result.seconds = time.monotonic() - t0
         return result
 
+    def _call(self, call, result: Result) -> dict:
+        """Run one tool call, record it in the trace, and build its tool_result block."""
+        out = self._run_tool(call.name, call.input)
+        text = json.dumps(out, ensure_ascii=False)
+        result.trace.append({"tool": call.name, "input": call.input, "output": text[:1500]})
+        block = {"type": "tool_result", "tool_use_id": call.id, "content": text}
+        if "error" in out:
+            block["is_error"] = True
+        return block
 
-class HybridAgent(GraphAgent):
+
+class GraphAgent(ToolLoopAgent):
+    """Walks the knowledge graph through the typed tools."""
+
+    name = "graph"
+    system = GRAPH_SYSTEM
+
+    def __init__(self, client, tools: GraphTools):
+        super().__init__(client, GRAPH_TOOLS, tools=tools)
+
+
+class HybridAgent(ToolLoopAgent):
+    """The graph tools plus vector search for anything they don't cover."""
+
     name = "hybrid"
+    system = GRAPH_SYSTEM
+
+    def __init__(self, client, tools: GraphTools, index: VectorIndex):
+        super().__init__(client, GRAPH_TOOLS + [VECTOR_TOOL], tools=tools, index=index)
 
 
-class VectorAgent(GraphAgent):
-    """A stronger vector baseline: the same tool loop as the graph agent, but its only tool is vector search.
+class VectorAgent(ToolLoopAgent):
+    """A stronger vector baseline: the same loop, with vector search as its only tool.
 
     It can issue several searches with its own queries (for example one per season) and combine the
     results, which plain top-k retrieval can't.
     """
 
     name = "vector-agent"
-    system = (
-        "You answer Formula 1 questions (2000-2025 seasons) by searching race reports and season standings "
-        "with the vector_search tool. Search as many times as you need, with focused queries (for example one "
-        "per season or race), and compute counts from what you retrieve rather than guessing. " + ANSWER_RULES
-    )
-
+    system = VECTOR_SYSTEM
     search_k = 8  # the same k as plain vector RAG, so the only difference is the search loop
 
-    def __init__(self, client, tools: GraphTools, index: VectorIndex):
-        super().__init__(client, tools, index)
-        self.tool_defs = [VECTOR_AGENT_TOOL]
+    def __init__(self, client, index: VectorIndex):
+        super().__init__(client, [VECTOR_AGENT_TOOL], index=index)
