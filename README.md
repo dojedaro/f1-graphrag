@@ -83,10 +83,10 @@ model typed query tools and keep vector search for the unstructured remainder:
 | Per question | Vector agent | Graph agent |
 |---|---|---|
 | Accuracy on these 160 | 94% | 100% |
-| Cost | $0.0034 | $0.0009 |
+| Cost | $0.0034 | $0.00085 |
 | Latency | 8.1 s | 4.5 s |
 
-At 100,000 questions a month that is about $340 against $90 on this model, and the larger cost is the
+At 100,000 questions a month that is about $340 against $85 on this model, and the larger cost is the
 6% the vector agent gets wrong, because a miscount looks exactly like a right answer. Before building
 either for a real system I would check two things: what share of the questions are counts or
 multi-step joins, and how messy the entity names are, since these questions use exact names.
