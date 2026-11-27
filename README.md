@@ -55,7 +55,8 @@ I designed the graph tools alongside the first 10 question templates, so some qu
 tool call (`teammates(driver, season)` answers "who was X's teammate"). A perfect score there partly
 measures how well the tools fit the questions. To test the tool *design*, I wrote **5 more question
 types after the tools existed** (distinct winners in a season, pole-to-win conversions, most wins at a
-circuit, podiums without a win, and the runner-up's team). No single tool answers any of them.
+circuit, podiums without a win, and the runner-up's team). No tool returns any of these answers
+directly: 33 of the 40 needed several tool calls, and 7 needed one call plus counting by the model.
 
 The graph agent still scored 40/40, but needed **6 tool calls per question instead of 2.3**: it composed
 the general tools. Vector search scored 16/40, and all 8 runner-up questions were among them: those are
@@ -74,13 +75,29 @@ confidence interval reaching down to about 68–76% per template (about 86–91%
 clean dataset is an upper bound: real questions arrive misspelled, ambiguous and about things the schema
 didn't anticipate.
 
+## What I would recommend from this
+
+If the questions are lookups, joins and counts over records you already hold in tables, give the
+model typed query tools and keep vector search for the unstructured remainder:
+
+| Per question | Vector agent | Graph agent |
+|---|---|---|
+| Accuracy on these 160 | 94% | 100% |
+| Cost | $0.0034 | $0.00085 |
+| Latency | 8.1 s | 4.5 s |
+
+At 100,000 questions a month that is about $340 against $85 on this model, and the larger cost is the
+6% the vector agent gets wrong, because a miscount looks exactly like a right answer. Before building
+either for a real system I would check two things: what share of the questions are counts or
+multi-step joins, and how messy the entity names are, since these questions use exact names.
+
 ## How it works
 
 ```mermaid
 flowchart LR
     API[Jolpica F1 API<br/>2000-2025] --> T[Tables: drivers, teams,<br/>circuits, races, results,<br/>standings]
     T --> G[(Knowledge graph<br/>734 nodes, 13,141 edges)]
-    T --> D[530 documents<br/>race reports + season standings]
+    T --> D[529 documents<br/>race reports + season standings]
     T --> Q[Question generator<br/>gold answers by code]
     D --> E[MiniLM embeddings] --> V[Vector RAG<br/>top 8, one call]
     G --> A[Graph agent<br/>9 typed tools]

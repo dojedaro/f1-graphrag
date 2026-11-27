@@ -1,6 +1,7 @@
-"""Three ways to answer an F1 question, all on the same Claude model:
+"""Four ways to answer an F1 question, all on the same Claude model:
 
 * VectorRAG:  embed race and season documents, retrieve the top k, answer in one call.
+* VectorAgent: the same documents behind a vector_search tool the model calls in a loop.
 * GraphAgent: Claude walks the knowledge graph through typed tools (manual tool-use loop).
 * Hybrid:     the graph tools plus a vector_search tool.
 
