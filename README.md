@@ -1,10 +1,14 @@
 # Graph RAG vs. Vector RAG on 26 Seasons of Formula 1
 
-**When does a knowledge graph beat vector search for question answering over structured data? Measured on 160 Formula 1 questions whose answers are computable from the data, broken down by how many facts each question chains together.**
+**On 160 Formula 1 questions with answers computed from the data, an agent with typed knowledge-graph tools scored 100%, a vector-search agent 94% and one-shot vector RAG 55% (8% on counting), on the same model. The graph agent cost about a quarter as much as the vector agent.** The question behind it: when does a knowledge graph beat vector search over structured data, broken down by how many facts each question chains together?
 
 **[Explore every question and trace →](https://dojedaro.github.io/f1-graphrag/)**
 
 [![CI](https://github.com/dojedaro/f1-graphrag/actions/workflows/ci.yml/badge.svg)](https://github.com/dojedaro/f1-graphrag/actions/workflows/ci.yml)
+
+![Accuracy by question type for vector RAG, the vector agent and the graph agent](assets/accuracy_by_type.png)
+
+<sub>Chart: `python scripts/plot_results.py`, from `runs/*/summary.json`.</sub>
 
 ## Results
 
